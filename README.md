@@ -53,7 +53,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 ////////////////////////////////////////////////////////////////////////////////
 
 const string c_Dbms_Name ="Firebird";
-const string c_Dbms_Descr="Of course I still \u2764 you!"; // ;)
+const string c_Dbms_Descr="Of course I still \u2764 you! \ud83d\ude04"; // ;)
  
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -131,7 +131,8 @@ class MyDbContext:DbContext
    +"dbclient_type=fb.direct;"
    +"user id=SYSDBA;"
    +"password=masterkey;"
-   +"auto_commit=true;";
+   +"auto_commit=true;"
+   +"wchars_in_utf8_symbol=2;"; //Enabling full UTF8 support. Because we can.
 
  public DbSet<DatabaseServer>? DatabaseServers { get; set; }
 
