@@ -1,0 +1,373 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <EnableDefaultItems>false</EnableDefaultItems>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <RootNamespace>EFCore_LcpiOleDb_Tests.General</RootNamespace>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <OutputPath>bin\vs2022-net60.0-$(Configuration)-dev\</OutputPath>
+    <IntermediateOutputPath>obj\vs2022-net60.0-$(Configuration)-dev\</IntermediateOutputPath>
+    <KeyContainerName>lcpi.net.code.keys</KeyContainerName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AssemblyName>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Tests.General-net6_0_0.debug</AssemblyName>
+    <DefineConstants>BUILD_CONF__NET6_0_0;TRACE;DEBUG</DefineConstants>
+    <Optimize>false</Optimize>
+    <NoWarn>1701;1702;EF1001</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AssemblyName>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Tests.General-net6_0_0</AssemblyName>
+    <DefineConstants>BUILD_CONF__NET6_0_0</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>1701;1702;EF1001</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="..\..\Version\ef_core__lcpi_oledb_v2.cs">
+      <Link>Properties\ef_core__lcpi_oledb_v2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\Version\ef_core__lcpi_oledb_v2_tests.cs">
+      <Link>Properties\ef_core__lcpi_oledb_v2_tests.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\AssemblyInfoData.cs" />
+    <Compile Include="Source\CheckErrors.cs" />
+    <Compile Include="Source\Research\CSharp\TestSet_001__CallOfPrivateMethod.cs" />
+    <Compile Include="Source\Research\CSharp\TestSet_004__TimeOnly.cs" />
+    <Compile Include="Source\Research\CSharp\TestSet_003__Decimal.cs" />
+    <Compile Include="Source\TestBaseDbContext.cs" />
+    <Compile Include="Source\TestLogger.cs" />
+    <Compile Include="Source\TestLoggerFactory.cs" />
+    <Compile Include="Source\TestServices.cs" />
+    <Compile Include="Source\TestSqlTemplate.cs" />
+    <Compile Include="Source\TestTracer.cs" />
+    <Compile Include="Source\TestTypes\Enums\EnumInt16.cs" />
+    <Compile Include="Source\TestTypes\Enums\EnumInt32.cs" />
+    <Compile Include="Source\TestTypes\Enums\EnumInt64.cs" />
+    <Compile Include="Source\TestUtils.cs" />
+    <Compile Include="Source\Unit\Core\Core_ExceptionRecord\TestSet_01.cs" />
+    <Compile Include="Source\Unit\Core\Core_ExceptionRecord\TestSet_02__serialization_bin.cs" />
+    <Compile Include="Source\Unit\Core\Core_MapSysETypeToLcpiOleDbEType\TryMap\TestSet_001__all_src_ids.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__Error_NoPrefix\TestsFor__Create.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__Error_NoPrefix\TestsFor__ExtractInvariantParameterName.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__Error_NoPrefix\TestsFor__GenParameterMarker__builder_name.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__Error_NoPrefix\TestsFor__GenParameterMarker__name.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__Error_NoPrefix\TestsFor__GenParameterName__builder_name.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__Error_NoPrefix\TestsFor__GenParameterName__name.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithoutPrefix\TestsFor__Create.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithoutPrefix\TestsFor__ExtractInvariantParameterName.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithoutPrefix\TestsFor__GenParameterMarker__builder_name.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithoutPrefix\TestsFor__GenParameterMarker__name.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithoutPrefix\TestsFor__GenParameterName__builder_name.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithoutPrefix\TestsFor__GenParameterName__name.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithPrefix\TestsFor__Create.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithPrefix\TestsFor__ExtractInvariantParameterName.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithPrefix\TestsFor__GenParameterMarker__builder_name.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithPrefix\TestsFor__GenParameterMarker__name.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithPrefix\TestsFor__GenParameterName__builder_name.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithPrefix\TestsFor__GenParameterName__name.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BIGINT\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BIGINT\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BIGINT\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BINARY\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BINARY\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BINARY\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BLABLABLA\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BLABLABLA\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BLOB\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BLOB\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BLOB\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BOOLEAN\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BOOLEAN\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BOOLEAN\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\CHAR\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\CHAR\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\CHAR\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\DATE\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\DATE\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\DATE\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\DECIMAL\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\DECIMAL\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\DECIMAL\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\DOUBLE_PRECISION\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\DOUBLE_PRECISION\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\DOUBLE_PRECISION\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\FLOAT\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\FLOAT\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\FLOAT\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\INTEGER\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\INTEGER\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\INTEGER\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\NUMERIC\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\NUMERIC\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\NUMERIC\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\SMALLINT\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\SMALLINT\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\SMALLINT\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\TestHelpers.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\TIMESTAMP\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\TIMESTAMP\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\TIMESTAMP\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\TIME\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\TIME\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\TIME\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\VARBINARY\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\VARBINARY\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\VARBINARY\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\VARCHAR\TestSet_001___lower.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\VARCHAR\TestSet_001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\VARCHAR\TestSet_ERR001.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\IscBase\IscBase_EngineSvc__ObjectIdentifierBuilder__cn_d1\TestsFor__Create.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\IscBase\IscBase_EngineSvc__ObjectIdentifierBuilder__cn_d1\TestsFor__QuoteIdentifier__builder_id.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\IscBase\IscBase_EngineSvc__ObjectIdentifierBuilder__cn_d1\TestsFor__QuoteIdentifier__id.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\IscBase\IscBase_EngineSvc__ObjectIdentifierBuilder__cn_d3\TestsFor__Create.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\IscBase\IscBase_EngineSvc__ObjectIdentifierBuilder__cn_d3\TestsFor__QuoteIdentifier__builder_id.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\IscBase\IscBase_EngineSvc__ObjectIdentifierBuilder__cn_d3\TestsFor__QuoteIdentifier__id.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateOnly\Test_01__AddYears.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateOnly\Test_02__AddMonths.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateOnly\Test_03__AddDays.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateOnly\Test_04__ExtractYear.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateOnly\Test_05__ExtractMonth.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateOnly\Test_06__ExtractDay.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateOnly\Test_07__ExtractDayOfWeek.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateOnly\Test_08__ExtractDayOfYear.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_01__AddYears.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_02__AddMonths.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_03__AddDays.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_04__AddHours.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_05__AddMinutes.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_06__AddSeconds.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_07__AddMilliseconds.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_08__ExtractYear.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_09__ExtractMonth.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_10__ExtractDay.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_11__ExtractHour.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_12__ExtractMinute.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_13__ExtractSecond.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_14__ExtractMillisecond.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_15__ExtractDayOfWeek.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_16__ExtractDayOfYear.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_DateTime\Test_17__ExtractDate.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableBoolean\Test_01__GetValueOrDefault__NullableBoolean.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateOnly\Test_01__AddYears.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateOnly\Test_02__AddMonths.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateOnly\Test_03__AddDays.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateOnly\Test_04__ExtractYear.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateOnly\Test_05__ExtractMonth.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateOnly\Test_06__ExtractDay.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateOnly\Test_07__ExtractDayOfWeek.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateOnly\Test_08__ExtractDayOfYear.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_01__AddYears.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_02__AddMonths.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_03__AddDays.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_04__AddHours.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_05__AddMinutes.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_06__AddSeconds.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_07__AddMilliseconds.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_17__ExtractDate.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_08__ExtractYear.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_09__ExtractMonth.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_10__ExtractDay.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_11__ExtractHour.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_12__ExtractMinute.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_13__ExtractSecond.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_14__ExtractMillisecond.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_15__ExtractDayOfWeek.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableDateTime\Test_16__ExtractDayOfYear.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableInt16\Test_07__GetValueOrDefault__NullableInt32.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableInt16\Test_06__GetValueOrDefault__Int32.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableInt16\Test_05__GetValueOrDefault__NullableInt16.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableInt16\Test_04__GetValueOrDefault__NullableDouble.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableInt16\Test_03__GetValueOrDefault__Double.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableInt16\Test_02__GetValueOrDefault__NullableInt64.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableInt16\Test_01__GetValueOrDefault__Int64.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableTimeOnly\Test_01__Add___NullableTimeSpan.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableTimeOnly\Test_02__AddMinutes.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_NullableTimeOnly\Test_03__AddMinutes.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_String\Test_01__Substring__nullableStartIndex.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_String\Test_02__Substring__nullableStartIndex_nullableLength.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_TimeOnly\Test_03__AddMinutes.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_TimeOnly\Test_02__AddMinutes.cs" />
+    <Compile Include="Source\Unit\DataTypes\Extensions\System_TimeOnly\Test_01__Add___NullableTimeSpan.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbCast\Test_01__AsDouble.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbCast\Test_02__AsInteger.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbCast\Test_03__AsBigInt.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_01__Abs__SByte.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_02__Abs__Int16.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_03__Abs__Int32.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_04__Abs__Int64.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_05__Abs__Decimal.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_06__Abs__Single.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_07__Abs__Double.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_N1__Abs__NullableSByte.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_N2__Abs__NullableInt16.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_N3__Abs__NullableInt32.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_N4__Abs__NullableInt64.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_N5__Abs__NullableDecimal.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_N6__Abs__NullableSingle.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Abs\Test_N7__Abs__NullableDouble.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Ceiling\Test_01__Ceiling__Double.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Ceiling\Test_02__Ceiling__Decimal.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Ceiling\Test_N1__Ceiling__NullableDouble.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Ceiling\Test_N2__Ceiling__NullableDecimal.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Floor\Test_01__Floor__Double.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Floor\Test_02__Floor__Decimal.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Floor\Test_N1__Floor__NullableDouble.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Floor\Test_N2__Floor__NullableDecimal.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Round\Test_01__Round__Double.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Round\Test_01__Round__Double_Int32.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Round\Test_02__Round__Decimal.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Round\Test_02__Round__Decimal_Int32.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Round\Test_N1__Round__NullableDouble.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Round\Test_N1__Round__NullableDouble_NullableInt32.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Round\Test_N2__Round__NullableDecimal.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Round\Test_N2__Round__NullableDecimal_NullableInt32.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_01__Sign__SByte.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_02__Sign__Int16.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_03__Sign__Int32.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_04__Sign__Int64.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_05__Sign__Decimal.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_06__Sign__Single.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_07__Sign__Double.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_N1__Sign__NullableSByte.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_N2__Sign__NullableInt16.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_N3__Sign__NullableInt32.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_N4__Sign__NullableInt64.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_N5__Sign__NullableDecimal.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_N6__Sign__NullableSingle.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Sign\Test_N7__Sign__NullableDouble.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Truncate\Test_01__Truncate__Double.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Truncate\Test_02__Truncate__Decimal.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Truncate\Test_N1__Truncate__NullableDouble.cs" />
+    <Compile Include="Source\Unit\DbFunctions\DbMath\Truncate\Test_N2__Truncate__NullableDecimal.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__Arg_NotNull.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__Arg_IsNull.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__Arg_IsNullOrNotEmpty.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__Arg_IsNullOrNotEmpty__T.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__Arg_ListSize.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__Arg_ListSize__GreaterThanOrEqual.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__Arg_NotNullAndInstanceOf.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__Arg_NotNullAndNotEmpty.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__Arg_NotNullAndNotEmpty___T.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__Arg_NullOrInstanceOf.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__BugCheck_Value_NotNullAndNotEmpty.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__BugCheck_Value_NotNull.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__BugCheck_Value_NotNullAndInstanceOf.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__ClrType.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__IsFixedLength__optional.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__IsRowVersion.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__IsUnicode.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__Precision.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__PrecisionIsNull.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__Scale.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__ScaleIsNull.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__SizeIsNull.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__SizeIsNullOrExpected.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__SizeIsPositive.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__StoreTypeName.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__StoreTypeNameBase.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__StoreTypeNameBases.cs" />
+    <Compile Include="Source\Unit\ErrorServices\Check\TestsFor__RelationalTypeMappingInfo__StoreTypeNames.cs" />
+    <Compile Include="Source\Unit\ErrorServices\ThrowBugCheck\TestSet_01.cs" />
+    <Compile Include="Source\Unit\ErrorServices\ThrowError\TestSet_01.cs" />
+    <Compile Include="Source\Unit\ErrorServices\ThrowSysError\TestSet_01.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__DbContextOptions\TestSet_01__UseLcpiOleDb__opt_cnStr.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__DbContextOptions\TestSet_02__UseLcpiOleDb__opt_cn.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__DbContextOptions\TestSet_03__UseLcpiOleDb__optT_cnStr.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__DbContextOptions\TestSet_04__UseLcpiOleDb__optT_cn.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__Type\TestsFor__Extension__BindToTypeMethod.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__Type\TestsFor__Extension__BuildHumanName.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__Type\TestsFor__Extension__GetNestedType.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__Type\TestsFor__Extension__GetRuntimeMethod.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__Type\TestsFor__Extension__IsInteger__Exact.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__Type\TestsFor__Extension__IsNullableType.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__Type\TestsFor__Extension__IsNullableValueType.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__Type\TestsFor__Extension__SwitchToUnderlying.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__Type\TestsFor__Extension__UnwrapNullableType.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__Type\TestsFor__Extension__GetUnderlyingValueType.cs" />
+    <Compile Include="Source\Unit\Objects\DataProvider\Dbms\Firebird\Common\FB_Common__Utilities\TestsFor__BytesToSqlLiteral.cs" />
+    <Compile Include="Source\Unit\Objects\DataProvider\Dbms\Firebird\Common\FB_Common__Utilities\TestsFor__TextToSqlLiteral__char.cs" />
+    <Compile Include="Source\Unit\Objects\DataProvider\Dbms\Firebird\Common\FB_Common__Utilities\TestsFor__TextToSqlLiteral__chars.cs" />
+    <Compile Include="Source\Unit\Objects\DataProvider\Dbms\Firebird\Common\FB_Common__Utilities\TestsFor__TextToSqlLiteral__string.cs" />
+    <Compile Include="Source\Unit\Objects\LcpiOleDb__DataToolException\TestSet_01__Constructors.cs" />
+    <Compile Include="Source\Unit\Objects\LcpiOleDb__DataToolException\TestSet_02__Serialization_bin.cs" />
+    <Compile Include="Source\Unit\Resources\TestErrorResourceData.cs" />
+    <Compile Include="Source\Unit\Resources\TestErrorResourceIDs.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__ConstructDecimalFromLongValue.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__Exchange.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__EqualDatabaseTypeName.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__EqualDbmsName.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__FourBitsToHEX.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__GetBoolean_NN.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__GetInt32_NN.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__GetString2_AsValueWithNull.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__GetString2_NN.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__GetString_Safe.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__IndexOf__DataColumn.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__IsValidSymbolOfQuotedObjectName.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__IsValidSymbolOfUnquotedObjectName_1.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__IsValidSymbolOfUnquotedObjectName_2.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__StrHasDoubleValueAttrs.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__StrHasFloatValueAttrs.cs" />
+    <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__Type\TestsFor__Extension__UnwrapMappingClrType.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_CS_UTF16\TestsFor__GetCharCount.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_CS_UTF16\TestsFor__IsSingleUnicodeChar.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_MemberId\TestsFor__Create_ClassMember.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_MemberId\TestsFor__Create_ObjectMember.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_MemberId\TestsFor__Equals__id.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_MemberId\TestsFor__Equals__obj.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_MemberId\TestsFor__ToString.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_MemberId\TestsFor__GetHashCode.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_MemberId\TestsFor__op_Equal.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_MemberId\TestsFor__op_NotEqual.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_NumericDigits\TestsFor__Clamp.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_NumericDigits\TestsFor__ShiftOnNegativeScale.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_NumericDigits\TestsFor__ShiftOnPositiveScale.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_NumericDigits__PrepareForPack\TestsFor__AdjustPrecisionAndScale.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ReflectionUtils\TestFor__BuildMemberSign.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ReflectionUtils\TestFor__BuildMethodSign.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ReflectionUtils\TestFor__IsExtensionMethod.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_CS_UTF16\TestsFor__GetOffset.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_StrHelpers\TestsFor__TestStrRange__ASCII_UPPER__span.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_SwitchToUnderlying\Exec__MethodInfo\Test_001__STD.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_SwitchToUnderlying\Exec__MethodInfo\Test_002__STATIC.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_SwitchToUnderlying\Exec__MethodInfo\Test_003__EXT.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_SwitchToUnderlying\Exec__MethodInfo\Test_T001__STD.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_SwitchToUnderlying\Exec__MethodInfo\Test_T002__STATIC.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_SwitchToUnderlying\Exec__MethodInfo\Test_T003__EXT.cs" />
+    <Compile Include="Source\Work\DBMS\Firebird\V03_0_0\D1\LocalCnHelper.cs" />
+    <Compile Include="Source\Work\DBMS\Firebird\V03_0_0\D1\LocalDbObjNames.cs" />
+    <Compile Include="Source\Work\DBMS\Firebird\V03_0_0\D2\LocalCnHelper.cs" />
+    <Compile Include="Source\Work\DBMS\Firebird\V03_0_0\D2\LocalDbObjNames.cs" />
+    <Compile Include="Source\Work\DBMS\Firebird\V03_0_0\D3\LocalCnHelper.cs" />
+    <Compile Include="Source\Work\DBMS\Firebird\V03_0_0\D3\LocalDbObjNames.cs" />
+    <Compile Include="Source\Work\DBMS\Firebird\V03_0_0\Local\LocalCnHelper.cs" />
+    <Compile Include="Source\Work\DBMS\Firebird\V03_0_0\Local\ReMap\Members\TestSet_001.cs" />
+    <Compile Include="Source\Work\DBMS\Firebird\V03_0_0\MasterTestData.cs" />
+    <Compile Include="Source\Work\DBMS\Firebird\V03_0_0\MasterValues.cs" />
+    <Compile Include="Source\Work\Simple\Work_Simple__Test_001.cs" />
+    <Compile Include="Source\Work\Simple\Work_Simple__Test_011__LocalEval.cs" />
+    <Compile Include="Source\Work\Simple\Work_Simple__Test_012.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="NUnit" Version="3.13.2" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.0.0" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj" />
+  </ItemGroup>
+</Project>

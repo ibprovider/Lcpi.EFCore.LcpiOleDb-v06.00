@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb", "Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj", "{E675F202-4C22-4690-AFD9-47FE4E16BF73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Code", "Code", "{52183A95-B2BA-466A-8351-C353593CA089}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{97E72C88-B2AE-44F4-8D30-62A3BC2CE725}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Tests.General", "Tests\General\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Tests.General.csproj", "{7CF42E14-C532-4457-AE25-03033FEE0BA1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E675F202-4C22-4690-AFD9-47FE4E16BF73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E675F202-4C22-4690-AFD9-47FE4E16BF73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E675F202-4C22-4690-AFD9-47FE4E16BF73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E675F202-4C22-4690-AFD9-47FE4E16BF73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7CF42E14-C532-4457-AE25-03033FEE0BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7CF42E14-C532-4457-AE25-03033FEE0BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7CF42E14-C532-4457-AE25-03033FEE0BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7CF42E14-C532-4457-AE25-03033FEE0BA1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E675F202-4C22-4690-AFD9-47FE4E16BF73} = {52183A95-B2BA-466A-8351-C353593CA089}
+		{7CF42E14-C532-4457-AE25-03033FEE0BA1} = {97E72C88-B2AE-44F4-8D30-62A3BC2CE725}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8568075A-154D-49FE-9A65-25F0ACB7103A}
+	EndGlobalSection
+EndGlobal

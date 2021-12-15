@@ -1,0 +1,15 @@
+﻿////////////////////////////////////////////////////////////////////////////////
+//EF Core Provider for LCPI OLE DB. Core.
+//                                      IBProvider and Contributors. 13.01.2021.
+using System;
+
+namespace Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core{
+////////////////////////////////////////////////////////////////////////////////
+//interface Core_OperationCtx
+
+interface Core_OperationCtx:Core_SvcProvider
+{
+};//interface Core_OperationCtx
+
+////////////////////////////////////////////////////////////////////////////////
+}//namespace Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core

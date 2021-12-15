@@ -1,0 +1,1056 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="common" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb</value>
+  </data>
+  <data name="multiple_sources" xml:space="preserve">
+    <value>Multiple Sources</value>
+  </data>
+  <data name="unknown_source" xml:space="preserve">
+    <value>Unknown Source</value>
+  </data>
+  <data name="EXT" xml:space="preserve">
+    <value>Lcpi.EXT</value>
+  </data>
+  <data name="LcpiOleDb__Extensions__DbContextOptions" xml:space="preserve">
+    <value>Microsoft.EntityFrameworkCore.LcpiOleDb__Extensions__DbContextOptions</value>
+  </data>
+  <data name="LcpiOleDb__Extensions__Property" xml:space="preserve">
+    <value>Microsoft.EntityFrameworkCore.LcpiOleDb__Extensions__Property</value>
+  </data>
+  <data name="LcpiOleDb__Extensions__PropertyBuilder" xml:space="preserve">
+    <value>Microsoft.EntityFrameworkCore.LcpiOleDb__Extensions__PropertyBuilder</value>
+  </data>
+  <data name="LcpiOleDb__Extensions__Model" xml:space="preserve">
+    <value>Microsoft.EntityFrameworkCore.LcpiOleDb__Extensions__Model</value>
+  </data>
+  <data name="LcpiOleDb__Extensions__ModelBuilder" xml:space="preserve">
+    <value>Microsoft.EntityFrameworkCore.LcpiOleDb__Extensions__ModelBuilder</value>
+  </data>
+  <data name="LcpiOleDb__Extensions__Type" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.LcpiOleDb__Extensions__Type</value>
+  </data>
+  <data name="LcpiOleDb__DataToolException" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.LcpiOleDb__DataToolException</value>
+  </data>
+  <data name="LcpiOleDb__DbContextOptionsExtension" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Infrastructure.LcpiOleDb__DbContextOptionsExtension</value>
+  </data>
+  <data name="LcpiOleDb__DbContextOptionsExtension_tagExtensionInfo" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Infrastructure.LcpiOleDb__DbContextOptionsExtension.tagExtensionInfo</value>
+  </data>
+  <data name="LcpiOleDb__ValueGenerationStrategy" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.MetaData.LcpiOleDb__ValueGenerationStrategy</value>
+  </data>
+  <data name="LcpiOleDb__AnnotationProvider" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.MetaData.Internal.LcpiOleDb__AnnotationProvider</value>
+  </data>
+  <data name="LcpiOleDb__DesignTimeServices" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Design.Internal.LcpiOleDb__DesignTimeServices</value>
+  </data>
+  <data name="LcpiOleDb__EntityFrameworkServicesBuilder" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Infrastructure.LcpiOleDb__EntityFrameworkServicesBuilder</value>
+  </data>
+  <data name="LcpiOleDb__RelationalConnection" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Storage.LcpiOleDb__RelationalConnection</value>
+  </data>
+  <data name="LcpiOleDb__RelationalCommandBuilderFactory" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Storage.LcpiOleDb__RelationalCommandBuilderFactory</value>
+  </data>
+  <data name="LcpiOleDb__RelationalCommandBuilder" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Storage.LcpiOleDb__RelationalCommandBuilder</value>
+  </data>
+  <data name="LcpiOleDb__RelationalCommand" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Storage.LcpiOleDb__RelationalCommand</value>
+  </data>
+  <data name="LcpiOleDb__RelationalDatabaseCreator" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Storage.LcpiOleDb__RelationalDatabaseCreator</value>
+  </data>
+  <data name="LcpiOleDb__QueryCompiler" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.LcpiOleDb__QueryCompiler</value>
+  </data>
+  <data name="LcpiOleDb__QueryTranslationPreprocessor" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.LcpiOleDb__QueryTranslationPreprocessor</value>
+  </data>
+  <data name="LcpiOleDb__QueryTranslationPreprocessorFactory" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.LcpiOleDb__QueryTranslationPreprocessorFactory</value>
+  </data>
+  <data name="LcpiOleDb__SqlTranslatingExpressionVisitorFactory" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.ExpressionVisitors.LcpiOleDb__SqlTranslatingExpressionVisitorFactory</value>
+  </data>
+  <data name="LcpiOleDb__SqlStubExpression" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Expressions.LcpiOleDb__SqlStubExpression</value>
+  </data>
+  <data name="LcpiOleDb__SqlTranslatingExpressionVisitor" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.ExpressionVisitors.LcpiOleDb__SqlTranslatingExpressionVisitor</value>
+  </data>
+  <data name="LcpiOleDb__FromSqlParameterExpandingExpressionVisitor" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.ExpressionVisitors.LcpiOleDb__FromSqlParameterExpandingExpressionVisitor</value>
+  </data>
+  <data name="LcpiOleDb__ParameterExtractingExpressionVisitor" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.ExpressionVisitors.LcpiOleDb__ParameterExtractingExpressionVisitor</value>
+  </data>
+  <data name="LcpiOleDb__SqlNullabilityProcessor" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.LcpiOleDb__SqlNullabilityProcessor</value>
+  </data>
+  <data name="LcpiOleDb__SqlExpressionFactory" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.LcpiOleDb__SqlExpressionFactory</value>
+  </data>
+  <data name="LcpiOleDb__ParameterBasedSqlProcessor" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.ExpressionVisitors.LcpiOleDb__ParameterBasedSqlProcessor</value>
+  </data>
+  <data name="LcpiOleDb__ParameterBasedSqlProcessorFactory" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.ExpressionVisitors.LcpiOleDb__ParameterBasedSqlProcessorFactory</value>
+  </data>
+  <data name="LcpiOleDb__ColumnModification" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Update.LcpiOleDb__ColumnModification</value>
+  </data>
+  <data name="LcpiOleDb__MethodCallTranslatorProvider" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Sql.LcpiOleDb__MethodCallTranslatorProvider</value>
+  </data>
+  <data name="LcpiOleDb__MemberTranslatorProvider" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Sql.LcpiOleDb__MemberTranslatorProvider</value>
+  </data>
+  <data name="LcpiOleDb__TestSafeSqlConversion" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Sql.LcpiOleDb__TestSafeSqlConversion</value>
+  </data>
+  <data name="LcpiOleDb__ISqlTreeNodeBuilder__Extensions" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Sql.Extensions.LcpiOleDb__ISqlTreeNodeBuilder__Extensions.LcpiOleDb__ISqlTreeNodeBuilder__Extensions</value>
+  </data>
+  <data name="LcpiOleDb__LocalEval_Services__Extensions" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Extensions.LcpiOleDb__LocalEval_Services__Extensions.LcpiOleDb__LocalEval_Services__Extensions</value>
+  </data>
+  <data name="LcpiOleDb__LocalSvc__PrepareForLocalEvaluation" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Svcs.LcpiOleDb__LocalSvc__PrepareForLocalEvaluation</value>
+  </data>
+  <data name="Root_Query_Local_Expressions_Methods__ETranslator__EF__std__Functions" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Methods.Translators.ETranslator__EF__std__Functions</value>
+  </data>
+  <data name="Root_Query_Local_Expressions_Methods__ETranslator__String__std__Equals__str" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Methods.Translators.ETranslator__String__std__Equals__str</value>
+  </data>
+  <data name="Root_Query_Local_Expressions_Unary__ETranslator__Convert" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Unary.Translators.ETranslator__Convert</value>
+  </data>
+  <data name="Root_Query_Local_Expressions_Unary__ETranslator__Op1" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Unary.Translators.ETranslator__Op1</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Op2_Code__Equal___Object__Object" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op2.Code.Op2_Code__Equal___Object__Object</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Op2_Code__NotEqual___Object__Object" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op2.Code.Op2_Code__NotEqual___Object__Object</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Op1_MasterCode__Negate___Int64___checked" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op1.MasterCode.Op1_MasterCode__Negate___Int64___checked</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Op2_MasterCode__ANY___VALUE__TEXT" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op2.MasterCode.Op2_MasterCode__ANY___VALUE__TEXT</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Op2_MasterCode__ANY___TEXT__VALUE" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op2.MasterCode.Op2_MasterCode__ANY___TEXT__VALUE</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Op2_MasterCode__Add___Decimal__Decimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op2.MasterCode.Op2_MasterCode__Add___Decimal__Decimal</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Op2_MasterCode__Subtract___Decimal__Decimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op2.MasterCode.Op2_MasterCode__Subtract___Decimal__Decimal</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Op2_MasterCode__Multiply___Decimal__Decimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op2.MasterCode.Op2_MasterCode__Multiply___Decimal__Decimal</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Op2_MasterCode__ArrayIndex___Array_Byte__Int32" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op2.MasterCode.Op2_MasterCode__ArrayIndex___Array_Byte__Int32</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Op2_MasterCode__ArrayIndex___Array_Byte__Int64" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op2.MasterCode.Op2_MasterCode__ArrayIndex___Array_Byte__Int64</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Op2_MasterCode__Equal___Array1_generic__Array1_generic" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op2.MasterCode.Op2_MasterCode__Equal___Array1_generic__Array1_generic</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Op2_MasterCode__NotEqual___Array1_generic__Array1_generic" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op2.MasterCode.Op2_MasterCode__NotEqual___Array1_generic__Array1_generic</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Method_Code__IEnumerableByte__First" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Methods.Code.Method_Code__IEnumerableByte__First</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Method_Code__String__Length" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Methods.Code.Method_Code__String__Length</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Method_Code__String__Substring___startIndex" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Methods.Code.Method_Code__String__Substring___startIndex</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Method_Code__String__Substring___startIndex__length" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Methods.Code.Method_Code__String__Substring___startIndex__length</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Method_Code__String__Substring___nullableStartIndex" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Methods.Code.Method_Code__String__Substring___nullableStartIndex</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Method_Code__String__Substring___nullableStartIndex__nullableLength" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Methods.Code.Method_Code__String__Substring___nullableStartIndex__nullableLength</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Method_MasterCode__IEnumerable_generic__Contains" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Methods.MasterCode.Method_MasterCode__IEnumerable_generic__Contains</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Method_MasterCode__Object__ToString" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Methods.MasterCode.Method_MasterCode__Object__ToString</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableBoolean" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableBoolean</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableGuid" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableGuid</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableDateOnly" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableDateOnly</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableDateTime" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableDateTime</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeOnly" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableTimeOnly</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeSpan" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableTimeSpan</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableByte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableByte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableSByte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableSByte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableInt16" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableInt16</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableInt32" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableInt32</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableInt64" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableInt64</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableDecimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableDecimal</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableSingle" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableSingle</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableDouble" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableDouble</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__String" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__String</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__Array1_Char" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__Array1_Char</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__String__NullableDecimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__String__NullableDecimal</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__String__NullableInt16" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__String__NullableInt16</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__String__NullableInt32" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__String__NullableInt32</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__String__NullableInt64" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__String__NullableInt64</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__String__NullableSingle" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__String__NullableSingle</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__String__NullableDouble" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__String__NullableDouble</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Byte__SByte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Byte__SByte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__SByte__Byte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__SByte__Byte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Int16__Byte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Int16__Byte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Int16__SByte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Int16__SByte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Int32__Byte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Int32__Byte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Int32__SByte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Int32__SByte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Int32__Int16" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Int32__Int16</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Int64__Byte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Int64__Byte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Int64__SByte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Int64__SByte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Int64__Int16" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Int64__Int16</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Int64__Int32" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Int64__Int32</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Decimal__Byte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Decimal__Byte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Double__Decimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Double__Decimal</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Double__Byte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Double__Byte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Double__SByte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Double__SByte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Double__Int16" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Double__Int16</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Double__Int32" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Double__Int32</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Double__Int64" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Double__Int64</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Double__Single" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Double__Single</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Single__Decimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Single__Decimal</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Single__Byte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Single__Byte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Single__SByte" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Single__SByte</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Single__Int16" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Single__Int16</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Single__Int32" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Single__Int32</value>
+  </data>
+  <data name="Root_Query_Local_Expressions__Cvt_MasterCode__Single__Int64" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Single__Int64</value>
+  </data>
+  <data name="FB_Common__Initializer" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.FB_Common__Initializer</value>
+  </data>
+  <data name="FB_Common__BatchExecutor" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Update.FB_Common__BatchExecutor</value>
+  </data>
+  <data name="FB_Common__UpdateSqlGenerator" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Update.FB_Common__UpdateSqlGenerator</value>
+  </data>
+  <data name="FB_Common__ModificationCommandBatch" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Update.FB_Common__ModificationCommandBatch</value>
+  </data>
+  <data name="FB_Common__QuerySqlGenerator" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.FB_Common__QuerySqlGenerator</value>
+  </data>
+  <data name="FB_Common__SqlExpressionUtils" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.FB_Common__SqlExpressionUtils</value>
+  </data>
+  <data name="FB_Common__BinaryOperatorTranslatorProvider" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.FB_Common__BinaryOperatorTranslatorProvider</value>
+  </data>
+  <data name="FB_Common__UnaryOperatorTranslatorProvider" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.FB_Common__UnaryOperatorTranslatorProvider</value>
+  </data>
+  <data name="FB_Common__TypeMappingUtils" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMappingUtils</value>
+  </data>
+  <data name="FB_Common__TypeMapping__BIGINT" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__BIGINT</value>
+  </data>
+  <data name="FB_Common__TypeMapping__BLOB_BINARY" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__BLOB_BINARY</value>
+  </data>
+  <data name="FB_Common__TypeMapping__BLOB_TEXT" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__BLOB_TEXT</value>
+  </data>
+  <data name="FB_Common__TypeMapping__BLOB_TEXT__as_chars" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__BLOB_TEXT__as_chars</value>
+  </data>
+  <data name="FB_Common__TypeMapping__BOOLEAN" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__BOOLEAN</value>
+  </data>
+  <data name="FB_Common__TypeMapping__DOUBLE" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__DOUBLE</value>
+  </data>
+  <data name="FB_Common__TypeMapping__FLOAT" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__FLOAT</value>
+  </data>
+  <data name="FB_Common__TypeMapping__GUID__as_bytes" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__GUID__as_bytes</value>
+  </data>
+  <data name="FB_Common__TypeMapping__INTEGER" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__INTEGER</value>
+  </data>
+  <data name="FB_Common__TypeMapping__SMALLINT" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__SMALLINT</value>
+  </data>
+  <data name="FB_Common__TypeMapping__TIMESTAMP" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__TIMESTAMP</value>
+  </data>
+  <data name="FB_Common__TypeMapping__CHAR" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__CHAR</value>
+  </data>
+  <data name="FB_Common__TypeMapping__CHAR__as_chars" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__CHAR__as_chars</value>
+  </data>
+  <data name="FB_Common__TypeMapping__CHAR1" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__CHAR1</value>
+  </data>
+  <data name="FB_Common__TypeMapping__VARCHAR" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__VARCHAR</value>
+  </data>
+  <data name="FB_Common__TypeMapping__VARCHAR__as_chars" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__VARCHAR__as_chars</value>
+  </data>
+  <data name="FB_Common__TypeMapping__BINARY" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__BINARY</value>
+  </data>
+  <data name="FB_Common__TypeMapping__VARBINARY" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__VARBINARY</value>
+  </data>
+  <data name="FB_Common__TypeMapping__NUMERIC" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__NUMERIC</value>
+  </data>
+  <data name="FB_Common__TypeMapping__DECIMAL" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__DECIMAL</value>
+  </data>
+  <data name="FB_Common__TypeMapping__TimeSpan__as_Decimal9_4" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__TimeSpan__as_Decimal9_4</value>
+  </data>
+  <data name="FB_Common__TypeMapping__TimeSpan__as_Decimal18_4" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.FB_Common__TypeMapping__TimeSpan__as_Decimal18_4</value>
+  </data>
+  <data name="FB_Common__TypeMapping_D1__TYPE_DATE__as_DateOnly" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.D1.FB_Common__TypeMapping__TYPE_DATE__as_DateOnly</value>
+  </data>
+  <data name="FB_Common__TypeMapping_D1__TYPE_DATE__as_DateTime" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.D1.FB_Common__TypeMapping__TYPE_DATE__as_DateTime</value>
+  </data>
+  <data name="FB_Common__TypeMapping_D1__TYPE_TIME__as_TimeOnly" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.D1.FB_Common__TypeMapping__TYPE_TIME__as_TimeOnly</value>
+  </data>
+  <data name="FB_Common__TypeMapping_D3__TYPE_DATE__as_DateOnly" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.D3.FB_Common__TypeMapping__TYPE_DATE__as_DateOnly</value>
+  </data>
+  <data name="FB_Common__TypeMapping_D3__TYPE_DATE__as_DateTime" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.D3.FB_Common__TypeMapping__TYPE_DATE__as_DateTime</value>
+  </data>
+  <data name="FB_Common__TypeMapping_D3__TYPE_TIME__as_TimeOnly" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.D3.FB_Common__TypeMapping__TYPE_TIME__as_TimeOnly</value>
+  </data>
+  <data name="FB_Common__TypeMapping_D3__TYPE_TIME__as_TimeSpan" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.Mapping.D3.FB_Common__TypeMapping__TYPE_TIME__as_TimeSpan</value>
+  </data>
+  <data name="FB_Common__ValueConversion__TimeSpanToDecimal9_4" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.ValueConversion.FB_Common__ValueConversion__TimeSpanToDecimal9_4</value>
+  </data>
+  <data name="FB_Common__ValueConversion__TimeSpanToDecimal18_4" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Storage.ValueConversion.FB_Common__ValueConversion__TimeSpanToDecimal18_4</value>
+  </data>
+  <data name="FB_Common__Sql_ETranslator_Unary__Op1" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Translators.Code.FB_Common__Sql_ETranslator_Unary__Op1</value>
+  </data>
+  <data name="FB_Common__Sql_ETranslator_Unary__Convert" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Translators.Code.FB_Common__Sql_ETranslator_Unary__Convert</value>
+  </data>
+  <data name="FB_Common__Sql_ETranslator_Unary__Equal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Translators.Code.FB_Common__Sql_ETranslator_Unary__Equal</value>
+  </data>
+  <data name="FB_Common__Sql_ETranslator_Unary__NotEqual" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Translators.Code.FB_Common__Sql_ETranslator_Unary__NotEqual</value>
+  </data>
+  <data name="FB_Common__Sql_ETranslator_Op1__Not" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Translators.Code.FB_Common__Sql_ETranslator_Op1__Not</value>
+  </data>
+  <data name="FB_Common__Sql_ETranslator__String__std__EndsWith__str___through_RIGHT" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Translators.Code.FB_Common__Sql_ETranslator__String__std__EndsWith__str___through_RIGHT</value>
+  </data>
+  <data name="FB_Common__Sql_ETranslator__Dummy__MemberNotSupportedInCurrentCnDialect" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Translators.Internal.FB_Common__Sql_ETranslator__Dummy__MemberNotSupportedInCurrentCnDialect</value>
+  </data>
+  <data name="FB_Common__Sql_ETranslator__Dummy__MethodNotSupportedInCurrentCnDialect" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Translators.Internal.FB_Common__Sql_ETranslator__Dummy__MethodNotSupportedInCurrentCnDialect</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__Nullable_Value" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__Nullable_Value</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__ABS" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__ABS</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__ASCII_CHAR" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__ASCII_CHAR</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__CAST_AS" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__CAST_AS</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__CHARACTER_LENGTH" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__CHARACTER_LENGTH</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__ASCII_VAL" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__ASCII_VAL</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__SIGN" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__SIGN</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__STARTING_WITH" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__STARTING_WITH</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__SUBSTRING_from" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__SUBSTRING_from</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__SUBSTRING_from_for" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__SUBSTRING_from_for</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__ROUND" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__ROUND</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__ROUND_scale" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__ROUND_scale</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__TRUNC" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__TRUNC</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__FLOOR" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__FLOOR</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__LIKE" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__LIKE</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__LIKE_escape" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__LIKE_escape</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__CEILING" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__CEILING</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__COALESCE" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__COALESCE</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__CURRENT_TIMESTAMP" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__CURRENT_TIMESTAMP</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__CURRENT_DATE_d3" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__CURRENT_DATE_d3</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__BIN_XOR" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__BIN_XOR</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__BIN_AND" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__BIN_AND</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__BIN_OR" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__BIN_OR</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__BIN_SHL" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__BIN_SHL</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__BIN_SHR" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__BIN_SHR</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__MOD" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__MOD</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__OCTET_LENGTH" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__OCTET_LENGTH</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__OP_CONCAT" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__OP_CONCAT</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__OP_DIV" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__OP_DIV</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__OP_EQUAL" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__OP_EQUAL</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__OP_MUL" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__OP_MUL</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__OP_SUB" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__OP_SUB</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__POSITION" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__POSITION</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__RAND" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__RAND</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__RIGHT" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__RIGHT</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__DATEADD" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__DATEADD</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__DATEDIFF" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__DATEDIFF</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__EXTRACT" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__EXTRACT</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__TRIM" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__TRIM</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__TRIM__ch1" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__TRIM__ch1</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__TRIM_START" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__TRIM_START</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__TRIM_START__ch1" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__TRIM_START__ch1</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__TRIM_END" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__TRIM_END</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Function__SQL__TRIM_END__ch1" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Function__SQL__TRIM_END__ch1</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Unary__Convert" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Unary__Convert</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Unary__SQL__IS_NULL" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Unary__SQL__IS_NULL</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Unary__SQL__IS_NOT_NULL" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Unary__SQL__IS_NOT_NULL</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Unary__SQL__NEGATE" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Unary__SQL__NEGATE</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Unary__SQL__NOT" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.FB_Common__Sql_ENode_Unary__SQL__NOT</value>
+  </data>
+  <data name="FB_Common__Sql_ENode_Helpers__SqlExpressionFactory__STD" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Sql.Expressions.Nodes.Helpers.SqlExpressionFactory__STD</value>
+  </data>
+  <data name="FB_DatabaseModelFactory" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Scaffolding.Internal.FB_DatabaseModelFactory</value>
+  </data>
+  <data name="FB_DataReaderExtension" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Scaffolding.Internal.FB_DataReaderExtension</value>
+  </data>
+  <data name="FB_ScaffoldingCodeGenerator" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Scaffolding.Internal.FB_ScaffoldingCodeGenerator</value>
+  </data>
+  <data name="FB_IndexModelAnnotations" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Scaffolding.Metadata.FB_IndexModelAnnotations</value>
+  </data>
+  <data name="FB_DatabaseColumnAnnotations" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Scaffolding.Metadata.FB_DatabaseColumnAnnotations</value>
+  </data>
+  <data name="FB_Common__Query_Local_Expressions__DbCast_Cvt__Int64__Int32" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Local.Expressions.Methods.Code.DbCast.Converters.DbCast_Cvt__Int64__Int32</value>
+  </data>
+  <data name="FB_Common__Query_Local_Expressions__DbCast_Cvt__Decimal__Int32" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Local.Expressions.Methods.Code.DbCast.Converters.DbCast_Cvt__Decimal__Int32</value>
+  </data>
+  <data name="FB_Common__Query_Local_Expressions__DbCast_Cvt__Double__Int32" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Local.Expressions.Methods.Code.DbCast.Converters.DbCast_Cvt__Double__Int32</value>
+  </data>
+  <data name="FB_Common__Query_Local_Expressions__Method_Code__DbCast__AsInteger" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Local.Expressions.Methods.Code.Method_Code__DbCast__AsInteger</value>
+  </data>
+  <data name="FB_Common__Query_Local_Expressions__Method_Code__DbCast__AsDouble" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.Common.Query.Local.Expressions.Methods.Code.Method_Code__DbCast__AsDouble</value>
+  </data>
+  <data name="FB_V03_0_0__Initializer" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.FB_V03_0_0__Initializer</value>
+  </data>
+  <data name="FB_V03_0_0__TypeMappingSource__Base" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Storage.FB_V03_0_0__TypeMappingSource__Base</value>
+  </data>
+  <data name="FB_V03_0_0_D1__TypeMappingSource__Base" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Storage.D1.FB_V03_0_0_D1__TypeMappingSource__Base</value>
+  </data>
+  <data name="FB_V03_0_0_D1__TypeMappingSourceForDDL" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Storage.D1.FB_V03_0_0_D1__TypeMappingSourceForDDL</value>
+  </data>
+  <data name="FB_V03_0_0_D2__TypeMappingSource__Base" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Storage.D2.FB_V03_0_0_D2__TypeMappingSource__Base</value>
+  </data>
+  <data name="FB_V03_0_0_D2__TypeMappingSourceForDDL" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Storage.D2.FB_V03_0_0_D2__TypeMappingSourceForDDL</value>
+  </data>
+  <data name="FB_V03_0_0_D3__TypeMappingSource" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Storage.D3.FB_V03_0_0_D3__TypeMappingSource</value>
+  </data>
+  <data name="FB_V03_0_0__SqlGenerationHelper" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Storage.FB_V03_0_0__SqlGenerationHelper</value>
+  </data>
+  <data name="FB_V03_0_0__MigrationsSqlGenerator" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Migrations.FB_V03_0_0__MigrationsSqlGenerator</value>
+  </data>
+  <data name="FB_V03_0_0__HistoryRepository" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Migrations.FB_V03_0_0__HistoryRepository</value>
+  </data>
+  <data name="FB_V03_0_0__QueryTranslationPostprocessor" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.FB_V03_0_0__QueryTranslationPostprocessor</value>
+  </data>
+  <data name="FB_V03_0_0_D0__Sql_ETranslator__QUERABLE__AVG" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D0.Expressions.Translators.Code.FB_V03_0_0_D0__Sql_ETranslator__QUERABLE__AVG</value>
+  </data>
+  <data name="FB_V03_0_0_D0__Sql_ETranslator__QUERABLE__SUM" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D0.Expressions.Translators.Code.FB_V03_0_0_D0__Sql_ETranslator__QUERABLE__SUM</value>
+  </data>
+  <data name="FB_V03_0_0_D1__Sql_ENode__SSCode_Unary_Convert__CastAs__FloatToDecimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D1.Expressions.Nodes.SSCodes.Unary_Convert.SSCode_Unary_Convert__CastAs__FloatToDecimal</value>
+  </data>
+  <data name="FB_V03_0_0_D1__Sql_ENode__SSCode_Unary_Convert__CastAs__Int16ToDecimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D1.Expressions.Nodes.SSCodes.Unary_Convert.SSCode_Unary_Convert__CastAs__Int16ToDecimal</value>
+  </data>
+  <data name="FB_V03_0_0_D1__Sql_ENode__SSCode_Unary_Convert__CastAs__Int32ToDecimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D1.Expressions.Nodes.SSCodes.Unary_Convert.SSCode_Unary_Convert__CastAs__Int32ToDecimal</value>
+  </data>
+  <data name="FB_V03_0_0_D1__Sql_ENode__SSCode_Unary_Convert__CastAs__Int64ToDecimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D1.Expressions.Nodes.SSCodes.Unary_Convert.SSCode_Unary_Convert__CastAs__Int64ToDecimal</value>
+  </data>
+  <data name="FB_V03_0_0_D1__Sql_ENode_Function__SQL__AVG" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D1.Expressions.Nodes.FB_V03_0_0_D1__Sql_ENode_Function__SQL__AVG</value>
+  </data>
+  <data name="FB_V03_0_0_D1__Sql_ENode_Function__SQL__SUM" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D1.Expressions.Nodes.FB_V03_0_0_D1__Sql_ENode_Function__SQL__SUM</value>
+  </data>
+  <data name="FB_V03_0_0_D1__Sql_ETranslator_Op1__Negate__STD" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D1.Expressions.Translators.Code.FB_V03_0_0_D1__Sql_ETranslator_Op1__Negate__STD</value>
+  </data>
+  <data name="FB_V03_0_0_D3__Sql_ENode__SSCode_Unary_Convert__CastAs__FloatToDecimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D3.Expressions.Nodes.SSCode.Unary_Convert.SSCode_Unary_Convert__CastAs__FloatToDecimal</value>
+  </data>
+  <data name="FB_V03_0_0_D3__Sql_ENode__SSCode_Unary_Convert__CastAs__Int16ToDecimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D3.Expressions.Nodes.SSCode.Unary_Convert.SSCode_Unary_Convert__CastAs__Int16ToDecimal</value>
+  </data>
+  <data name="FB_V03_0_0_D3__Sql_ENode__SSCode_Unary_Convert__CastAs__Int32ToDecimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D3.Expressions.Nodes.SSCode.Unary_Convert.SSCode_Unary_Convert__CastAs__Int32ToDecimal</value>
+  </data>
+  <data name="FB_V03_0_0_D3__Sql_ENode__SSCode_Unary_Convert__CastAs__Int64ToDecimal" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D3.Expressions.Nodes.SSCode.Unary_Convert.SSCode_Unary_Convert__CastAs__Int64ToDecimal</value>
+  </data>
+  <data name="FB_V03_0_0_D3__Sql_ENode_Function__SQL__AVG" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D3.Expressions.Nodes.FB_V03_0_0_D3__Sql_ENode_Function__SQL__AVG</value>
+  </data>
+  <data name="FB_V03_0_0_D3__Sql_ENode_Function__SQL__SUM" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D3.Expressions.Nodes.FB_V03_0_0_D3__Sql_ENode_Function__SQL__SUM</value>
+  </data>
+  <data name="FB_V03_0_0_D3__Sql_ETranslator_Op1__Negate__STD" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Sql.D3.Expressions.Translators.Code.FB_V03_0_0_D3__Sql_ETranslator_Op1__Negate__STD</value>
+  </data>
+  <data name="FB_V03_0_0__Query_Local_D0_Expressions__Op2_MasterCode__Add___Int64__Int64___checked" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D0.Expressions.Op2.MasterCode.Op2_MasterCode__Add___Int64__Int64___checked</value>
+  </data>
+  <data name="FB_V03_0_0__Query_Local_D0_Expressions__Op2_MasterCode__Add___Double__Double" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D0.Expressions.Op2.MasterCode.Op2_MasterCode__Add___Double__Double</value>
+  </data>
+  <data name="FB_V03_0_0__Query_Local_D0_Expressions__Op2_MasterCode__Add___DateTime__TimeSpan" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D0.Expressions.Op2.MasterCode.Op2_MasterCode__Add___DateTime__TimeSpan</value>
+  </data>
+  <data name="FB_V03_0_0__Query_Local_D0_Expressions__Op2_MasterCode__Add___TimeSpan__TimeSpan" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D0.Expressions.Op2.MasterCode.Op2_MasterCode__Add___TimeSpan__TimeSpan</value>
+  </data>
+  <data name="FB_V03_0_0__Query_Local_D0_Expressions__Op2_MasterCode__Subtract___Int64__Int64___checked" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D0.Expressions.Op2.MasterCode.Op2_MasterCode__Subtract___Int64__Int64___checked</value>
+  </data>
+  <data name="FB_V03_0_0__Query_Local_D0_Expressions__Op2_MasterCode__Subtract___Double__Double" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D0.Expressions.Op2.MasterCode.Op2_MasterCode__Subtract___Double__Double</value>
+  </data>
+  <data name="FB_V03_0_0__Query_Local_D0_Expressions__Op2_MasterCode__Subtract___DateTime__TimeSpan" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D0.Expressions.Op2.MasterCode.Op2_MasterCode__Subtract___DateTime__TimeSpan</value>
+  </data>
+  <data name="FB_V03_0_0__Query_Local_D0_Expressions__Op2_MasterCode__Subtract___TimeSpan__TimeSpan" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D0.Expressions.Op2.MasterCode.Op2_MasterCode__Subtract___TimeSpan__TimeSpan</value>
+  </data>
+  <data name="FB_V03_0_0__Query_Local_D0_Expressions__Op2_MasterCode__Multiply___Int64__Int64___checked" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D0.Expressions.Op2.MasterCode.Op2_MasterCode__Multiply___Int64__Int64___checked</value>
+  </data>
+  <data name="FB_V03_0_0__Query_Local_D0_Expressions__Op2_MasterCode__Multiply___Double__Double" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D0.Expressions.Op2.MasterCode.Op2_MasterCode__Multiply___Double__Double</value>
+  </data>
+  <data name="FB_V03_0_0__Query_Local_D0_Expressions__Op2_MasterCode__Divide___Int64__Int64___checked" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D0.Expressions.Op2.MasterCode.Op2_MasterCode__Divide___Int64__Int64___checked</value>
+  </data>
+  <data name="FB_V03_0_0__Query_Local_D0_Expressions__Op2_MasterCode__Divide___Double__Double" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D0.Expressions.Op2.MasterCode.Op2_MasterCode__Divide___Double__Double</value>
+  </data>
+  <data name="Basement_EF_Dbms_Firebird_V03_0_0_Infrastructure___FB_V03_0_0__ModelValidator" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Infrastructure.FB_V03_0_0__ModelValidator</value>
+  </data>
+  <data name="Basement_EF_Dbms_Firebird_V03_0_0_Metadata_Conventions___FB_V03_0_0__ConventionSetBuilder" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Metadata.Conventions.FB_V03_0_0__ConventionSetBuilder</value>
+  </data>
+  <data name="Basement_EF_Dbms_Firebird_V03_0_0_Metadata_Conventions___FB_V03_0_0__Convention_ValueGenerationStrategy" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Metadata.Conventions.FB_V03_0_0__Convention_ValueGenerationStrategy</value>
+  </data>
+  <data name="Basement_EF_Dbms_Firebird_V03_0_0_Metadata_Conventions___FB_V03_0_0__Convention_StoreGeneration" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Metadata.Conventions.FB_V03_0_0__Convention_StoreGeneration</value>
+  </data>
+  <data name="Basement_EF_Dbms_Firebird_V03_0_0_Metadata_Conventions___FB_V03_0_0__Convention_ValueGeneration" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Metadata.Conventions.FB_V03_0_0__Convention_ValueGeneration</value>
+  </data>
+  <data name="Basement_EF_Dbms_Firebird_V03_0_0_Migrations_D1_Internal_SvcImpls___FB_V03_0_0__MigrationsSvcImpl__GenerateCreateSequence" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Migrations.D1.Internal.SvcImpls.FB_V03_0_0__MigrationsSvcImpl__GenerateCreateSequence</value>
+  </data>
+  <data name="Basement_EF_Dbms_Firebird_V03_0_0_Migrations_D1_Internal_SvcImpls___FB_V03_0_0__MigrationsSvcImpl__GenerateRestartSequence" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Migrations.D1.Internal.SvcImpls.FB_V03_0_0__MigrationsSvcImpl__GenerateRestartSequence</value>
+  </data>
+  <data name="Basement_EF_Dbms_Firebird_V03_0_0_Migrations_D1_Internal_SvcImpls___FB_V03_0_0__MigrationsSvcImpl__GenerateAlterSequence" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Migrations.D1.Internal.SvcImpls.FB_V03_0_0__MigrationsSvcImpl__GenerateAlterSequence</value>
+  </data>
+  <data name="Basement_EF_Dbms_Firebird_V03_0_0_Migrations_D3_Internal_SvcImpls___FB_V03_0_0__MigrationsSvcImpl__GenerateCreateSequence" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Migrations.D3.Internal.SvcImpls.FB_V03_0_0__MigrationsSvcImpl__GenerateCreateSequence</value>
+  </data>
+  <data name="Basement_EF_Dbms_Firebird_V03_0_0_Migrations_D3_Internal_SvcImpls___FB_V03_0_0__MigrationsSvcImpl__GenerateAlterSequence" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Migrations.D3.Internal.SvcImpls.FB_V03_0_0__MigrationsSvcImpl__GenerateAlterSequence</value>
+  </data>
+  <data name="DataTypes_Extensions__System_DateTime" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.DataTypes.Extensions.System_DateTime</value>
+  </data>
+  <data name="DataTypes_Extensions__System_DateOnly" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.DataTypes.Extensions.System_DateOnly</value>
+  </data>
+  <data name="DataTypes_Extensions__System_TimeOnly" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.DataTypes.Extensions.System_TimeOnly</value>
+  </data>
+  <data name="DataTypes_Extensions__System_NullableDateTime" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.DataTypes.Extensions.System_NullableDateTime</value>
+  </data>
+  <data name="DataTypes_Extensions__System_NullableDateOnly" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.DataTypes.Extensions.System_NullableDateOnly</value>
+  </data>
+  <data name="DataTypes_Extensions__System_NullableTimeOnly" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.DataTypes.Extensions.System_NullableTimeOnly</value>
+  </data>
+  <data name="DataTypes_Extensions__System_String" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.DataTypes.Extensions.System_String</value>
+  </data>
+  <data name="DataTypes_Extensions__System_NullableInt16" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.DataTypes.Extensions.System_NullableInt16</value>
+  </data>
+  <data name="DataTypes_Extensions__System_NullableBoolean" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.DataTypes.Extensions.System_NullableBoolean</value>
+  </data>
+  <data name="DbFunctions__DbCast" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.DbFunctions.DbCast</value>
+  </data>
+  <data name="DbFunctions__DbMath" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.DbFunctions.DbMath</value>
+  </data>
+  <data name="Core_ExceptionRecord" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Core_ExceptionRecord</value>
+  </data>
+  <data name="Core_ConnectionOptions" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Core_ConnectionOptions</value>
+  </data>
+  <data name="Core_ConnectionOptionsInitializer" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Core_ConnectionOptionsInitializer</value>
+  </data>
+  <data name="Core_ValueInstaller" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Core_ValueInstaller</value>
+  </data>
+  <data name="Core_SQL__ExpressionUtils" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.SQL.Core_SQL__ExpressionUtils</value>
+  </data>
+  <data name="Core_SQL__TestExpressionKind" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.SQL.Core_SQL__TestExpressionKind</value>
+  </data>
+  <data name="Core_SQL__TestNullable" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.SQL.Core_SQL__TestNullable</value>
+  </data>
+  <data name="Core_Engines_Dbms_FB_ConnectionInitializer" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.Firebird.FB_ConnectionInitializer</value>
+  </data>
+  <data name="Core_Engines_Dbms_FB_Common_Mirror__Convert_Code__STRING__BOOLEAN" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.Firebird.Common.Mirror.Value.Converts.Code.Convert_Code__STRING__BOOLEAN</value>
+  </data>
+  <data name="Core_Engines_Dbms_FB_Common_Mirror__Convert_Code__STRING__TYPE_DATE" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.Firebird.Common.Mirror.Value.Converts.Code.Convert_Code__STRING__TYPE_DATE</value>
+  </data>
+  <data name="Core_Engines_Dbms_FB_Common_Mirror__Convert_Code__STRING__TYPE_TIME_as_TimeOnly" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.Firebird.Common.Mirror.Value.Converts.Code.Convert_Code__STRING__TYPE_TIME_as_TimeOnly</value>
+  </data>
+  <data name="Core_Engines_Dbms_FB_Common_Mirror__Convert_Code__STRING__TIMESTAMP___D1" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.Firebird.Common.Mirror.Value.Converts.Code.Convert_Code__STRING__TIMESTAMP___D1</value>
+  </data>
+  <data name="Core_Engines_Dbms_FB_Common_Mirror__Convert_Code__STRING__TIMESTAMP___D3" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.Firebird.Common.Mirror.Value.Converts.Code.Convert_Code__STRING__TIMESTAMP___D3</value>
+  </data>
+  <data name="Core_Engines_Dbms_FB_Common_Mirror__Convert_Helper__DOUBLE__STRING" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.Firebird.Common.Mirror.Value.Converts.Helpers.Convert_Helper__DOUBLE__STRING</value>
+  </data>
+  <data name="Core_Engines_Dbms_FB_Common_Mirror__Convert_Helper__ParserPart__STRING_DATE___D1" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.Firebird.Common.Mirror.Value.Converts.Helpers.Convert_Helper__ParserPart__STRING_DATE___D1</value>
+  </data>
+  <data name="Core_Engines_Dbms_FB_Common_Mirror__Convert_Helper__ParserPart__STRING_DATE___D3" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.Firebird.Common.Mirror.Value.Converts.Helpers.Convert_Helper__ParserPart__STRING_DATE___D3</value>
+  </data>
+  <data name="Core_Engines_Dbms_FB_V03_0_0__ConnectionInitializer" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.Firebird.V03_0_0.FB_ConnectionInitializer</value>
+  </data>
+  <data name="Core_Engines_Dbms_FB_V03_0_0__DataTypeParser" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.Firebird.V03_0_0.FB_DataTypeParser</value>
+  </data>
+  <data name="IscBase_EngineSvc__ConnectionInfo" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.IscBase.IscBase_EngineSvc__ConnectionInfo</value>
+  </data>
+  <data name="IscBase_EngineSvc__ObjectIdentifierBuilder__cn_d1" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.IscBase.IscBase_EngineSvc__ObjectIdentifierBuilder__cn_d1</value>
+  </data>
+  <data name="IscBase_EngineSvc__ObjectIdentifierBuilder__cn_d3" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Dbms.IscBase.IscBase_EngineSvc__ObjectIdentifierBuilder__cn_d3</value>
+  </data>
+  <data name="Common_EngineSvc__CommandParamereterNameBuilder__Error_NoPrefix" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Common.Common_EngineSvc__CommandParamereterNameBuilder__Error_NoPrefix</value>
+  </data>
+  <data name="Common_EngineSvc__CommandParamereterNameBuilder__NameWithoutPrefix" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Common.Common_EngineSvc__CommandParamereterNameBuilder__NameWithoutPrefix</value>
+  </data>
+  <data name="Common_EngineSvc__CommandParamereterNameBuilder__NameWithPrefix" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Engines.Common.Common_EngineSvc__CommandParamereterNameBuilder__NameWithPrefix</value>
+  </data>
+  <data name="Core_ValueCvt__Int32__Int16" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Values.Converters.Core_ValueCvt__Int32__Int16</value>
+  </data>
+  <data name="Core_ValueCvt__Int64__Int16" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Values.Converters.Core_ValueCvt__Int64__Int16</value>
+  </data>
+  <data name="Core_ValueCvt__Int64__Int32" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Values.Converters.Core_ValueCvt__Int64__Int32</value>
+  </data>
+  <data name="Core_ValueCvt__Double__Int32" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Core.Values.Converters.Core_ValueCvt__Double__Int32</value>
+  </data>
+  <data name="Structure_CS_UTF16" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Structure.Structure_CS_UTF16</value>
+  </data>
+  <data name="Structure_NumericDigits_RW" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Structure.Structure_NumericDigits.RW</value>
+  </data>
+  <data name="Structure_SwitchToUnderlying" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Structure.Structure_SwitchToUnderlying</value>
+  </data>
+</root>

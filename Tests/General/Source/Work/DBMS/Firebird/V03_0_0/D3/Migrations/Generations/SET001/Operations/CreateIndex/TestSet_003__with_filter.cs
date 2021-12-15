@@ -1,0 +1,47 @@
+﻿////////////////////////////////////////////////////////////////////////////////
+//NUnit tests for "EF Core Provider for LCPI OLE DB"
+//                                      IBProvider and Contributors. 11.11.2021.
+using NUnit.Framework;
+
+using EF_MnOP
+ =Microsoft.EntityFrameworkCore.Migrations.Operations;
+
+namespace EFCore_LcpiOleDb_Tests.General.Work.DBMS.Firebird.V03_0_0.D3.Migrations.Generations.SET001.Operations.CreateIndex{
+////////////////////////////////////////////////////////////////////////////////
+//class TestSet_003__with_filter
+
+public static class TestSet_003__with_filter
+{
+ private const string c_NameOf_Table
+  ="MASTER_TABLE";
+
+ private const string c_NameOf_UNIQUE
+  ="UNIQUE_MASTER";
+
+ //-----------------------------------------------------------------------
+ [Test]
+ public static void Test_0001()
+ {
+  var operation
+   =new EF_MnOP.CreateIndexOperation
+    {
+     Table            = c_NameOf_Table,
+     Name             = c_NameOf_UNIQUE,
+
+     Filter           = "FILTER BODY",
+    };//operation
+
+  //----------------------------------------
+  var expectedSQL
+   =new TestSqlTemplate()
+     .T("CREATE INDEX ").N(c_NameOf_UNIQUE).T(" ON ").N(c_NameOf_Table)
+     .T(" COMPUTED BY (FILTER BODY);").CRLF();
+
+  TestHelper.Exec
+   (new[]{operation},
+    new[]{expectedSQL});
+ }//Test_0001
+};//class TestSet_003__with_filter
+
+////////////////////////////////////////////////////////////////////////////////
+}//namespace EFCore_LcpiOleDb_Tests.General.Work.DBMS.Firebird.V03_0_0.D3.Migrations.Generations.SET001.Operations.CreateIndex

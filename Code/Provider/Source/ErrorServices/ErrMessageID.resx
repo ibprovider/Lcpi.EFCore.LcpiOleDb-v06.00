@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="text__not_avail__tag_style" xml:space="preserve">
+    <value>&lt;not available&gt;</value>
+  </data>
+  <data name="common_err__argument_is_null__2" xml:space="preserve">
+    <value>Method "%1". Argument "%2" is null.</value>
+  </data>
+  <data name="common_err__argument_is_not_null__2" xml:space="preserve">
+    <value>Method "%1". Argument "%2" is not null [expected null].</value>
+  </data>
+  <data name="common_err__argument_is_empty__2" xml:space="preserve">
+    <value>Method "%1". Argument "%2" is empty.</value>
+  </data>
+  <data name="common_err__argument_is_negative__3" xml:space="preserve">
+    <value>Method "%1". Argument "%2" contains negative value [%3].</value>
+  </data>
+  <data name="common_err__bad_argument_type_4" xml:space="preserve">
+    <value>Method "%1". Bad value type of argument "%2": %3. Expected value with type: %4.</value>
+  </data>
+  <data name="common_err__bad_argument_list_size_3" xml:space="preserve">
+    <value>Method "%1". Bad size of list in argument "%2": %3.</value>
+  </data>
+  <data name="common_err__bad_argument_list_size_4" xml:space="preserve">
+    <value>Method "%1". Bad size of list in argument "%2": %3. Expected list size: %4.</value>
+  </data>
+  <data name="common_err__object_was_disposed__1" xml:space="preserve">
+    <value>Object [%1] was disposed.</value>
+  </data>
+  <data name="common_err__object_was_disposed__cant_exec_method__2" xml:space="preserve">
+    <value>Can't execute method [%2] of disposed object [%1].</value>
+  </data>
+  <data name="common_err__feature_not_supported__1" xml:space="preserve">
+    <value>Feature [%1] not supported.</value>
+  </data>
+  <data name="common_err__method_not_impl__1" xml:space="preserve">
+    <value>Method "%1" was not implemented.</value>
+  </data>
+  <data name="common_err__method_not_impl__2" xml:space="preserve">
+    <value>Method "%1" was not implemented. Point [%2].</value>
+  </data>
+  <data name="common_err__overflow_in_arithmetic_op1__3" xml:space="preserve">
+    <value>Overflow in calculation of unary arithmetic operation [%1]. Argument: [%2] %3.</value>
+  </data>
+  <data name="common_err__overflow_in_arithmetic_op2__5" xml:space="preserve">
+    <value>Overflow in calculation of binary arithmetic operation [%1]. Left argument: [%2] %3. Right argument: [%4] %5.</value>
+  </data>
+  <data name="common_err__out_of_range_in_arithmetic_op2__5" xml:space="preserve">
+    <value>Result of arithmetic operation [%1] is out of range. Left argument: [%2] %3. Right argument: [%4] %5.</value>
+  </data>
+  <data name="common_err__index_out_of_range__2" xml:space="preserve">
+    <value>The index [%1] of the element is out of range. Count of elements: %2.</value>
+  </data>
+  <data name="common_err__empty_list_of_values__0" xml:space="preserve">
+    <value>Empty list of values.</value>
+  </data>
+  <data name="common_err__divide_by_zero__0" xml:space="preserve">
+    <value>Divide by zero.</value>
+  </data>
+  <data name="common_err__cant_alloc_new_array__overflow__2" xml:space="preserve">
+    <value>Failed to allocate array. Too many elements. Check point [%1][%2].</value>
+  </data>
+  <data name="common_err__unk_column_name__2" xml:space="preserve">
+    <value>Table [%1] not contains the column with name [%2].</value>
+  </data>
+  <data name="common_err__invalid_column_value__4" xml:space="preserve">
+    <value>Invalid value of column [index: %2][name: %3] of table [%1]: %4.</value>
+  </data>
+  <data name="common_err__invalid_column_value_type__5" xml:space="preserve">
+    <value>Invalid value type in column [index: %2][name: %3] of table [%1]: %4. Expected to value with type: %5.</value>
+  </data>
+  <data name="common_err__no_connection_object__0" xml:space="preserve">
+    <value>No object of connection to database.</value>
+  </data>
+  <data name="common_err__unexpected_connection_object_type__2" xml:space="preserve">
+    <value>Incorrect type of database connection object: [%1]. Expected to object with type: [%2].</value>
+  </data>
+  <data name="common_err__unexpected_connection_state_1" xml:space="preserve">
+    <value>Unexpected state of connection object: %1.</value>
+  </data>
+  <data name="common_err__failed_to_read_connection_properties_0" xml:space="preserve">
+    <value>Failed to read connection properties.</value>
+  </data>
+  <data name="common_err__connection_object_contains_empty_connection_string_0" xml:space="preserve">
+    <value>Connection object contains empty connection string.</value>
+  </data>
+  <data name="common_err__no_source_for_load_connection_info_0" xml:space="preserve">
+    <value>No source for loading a connection information.</value>
+  </data>
+  <data name="common_err__object_already_initialized_0" xml:space="preserve">
+    <value>Object already initialized.</value>
+  </data>
+  <data name="common_err__extension_not_found_1" xml:space="preserve">
+    <value>Extension [%1] not found.</value>
+  </data>
+  <data name="common_err__cant_work_with_uninitialized_object_1" xml:space="preserve">
+    <value>Can't call [%1] of uninitialized object.</value>
+  </data>
+  <data name="common_err__zero_symbol_in_string_literal_1" xml:space="preserve">
+    <value>Zero symbol [position: %1] in string literal.</value>
+  </data>
+  <data name="common_err__unknown_dbms_name_1" xml:space="preserve">
+    <value>Unknown DBMS name: [%1].</value>
+  </data>
+  <data name="common_err__unsupported_dbms_version_2" xml:space="preserve">
+    <value>Unsupported version of DBMS [%1]: [%2].</value>
+  </data>
+  <data name="common_err__unsupported_connection_dialect_1" xml:space="preserve">
+    <value>Unsupported connection dialect [%1].</value>
+  </data>
+  <data name="common_err__empty_object_name_0" xml:space="preserve">
+    <value>Empty object name.</value>
+  </data>
+  <data name="common_err__bad_symbol_in_unquoted_object_name_2" xml:space="preserve">
+    <value>Bad symbol in unquoted object name [position: %1, char code: %2].</value>
+  </data>
+  <data name="common_err__bad_symbol_in_quoted_object_name_2" xml:space="preserve">
+    <value>Bad symbol in quoted object name [position: %1, char code: %2].</value>
+  </data>
+  <data name="common_err__not_defined_cmd_parameter_prefix_0" xml:space="preserve">
+    <value>Not defined named parameter prefix.</value>
+  </data>
+  <data name="common_err__no_provider_configured_0" xml:space="preserve">
+    <value>No configuration for LcpiOleDb provider.</value>
+  </data>
+  <data name="common_err__multiple_provider_configured_0" xml:space="preserve">
+    <value>Multiple configurations for LcpiOleDb provider.</value>
+  </data>
+  <data name="common_err__unsupported_datatypes_conversion_2" xml:space="preserve">
+    <value>Conversion of value from [%1] to [%2] does not supported.</value>
+  </data>
+  <data name="common_err__cant_convert_value_between_types_2" xml:space="preserve">
+    <value>Failed to convert a value from type [%1] to type [%2].</value>
+  </data>
+  <data name="common_err__target_property_not_accept_null_value_0" xml:space="preserve">
+    <value>Target property does not allow NULL value.</value>
+  </data>
+  <data name="common_err__failed_to_set_property_value_3" xml:space="preserve">
+    <value>Failed to set value of property [%1][%2], which linked to column [%3].</value>
+  </data>
+  <data name="common_err__unexpected_command_param_direction_2" xml:space="preserve">
+    <value>Unexpected direction of command parameter [%1]: %2.</value>
+  </data>
+  <data name="common_err__no_command_param_value_1" xml:space="preserve">
+    <value>No value of command parameter [%1].</value>
+  </data>
+  <data name="common_err__direct_call_of_linq_method_not_allowed_1" xml:space="preserve">
+    <value>Direct call of method [%1] not allowed. You may call this method in linq-expressions only.</value>
+  </data>
+  <data name="common_err__failed_to_process_value_1" xml:space="preserve">
+    <value>Failed to process value [%1].</value>
+  </data>
+  <data name="common_err__overflow_in_number_scale_calculation_0" xml:space="preserve">
+    <value>Overflow in calculation of number scale.</value>
+  </data>
+  <data name="common_err__ConflictingRowValuesSensitive_6" xml:space="preserve">
+    <value>Instances of entity types '%1' and '%2' are mapped to the same row with the key value %3, but have different property values %4 and %5 for the column '%6'.</value>
+  </data>
+  <data name="common_err__ConflictingRowValues_5" xml:space="preserve">
+    <value>Instances of entity types '%1' and '%2' are mapped to the same row, but have different property values for the properties %3 and %4 mapped to '%5'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting values.</value>
+  </data>
+  <data name="common_err__ConflictingOriginalRowValuesSensitive_6" xml:space="preserve">
+    <value>Instances of entity types '%1' and '%2' are mapped to the same row with the key value %3, but have different original property values %4 and %5 for the column '%6'.</value>
+  </data>
+  <data name="common_err__ConflictingOriginalRowValues_5" xml:space="preserve">
+    <value>Instances of entity types '%1' and '%2' are mapped to the same row, but have different original property values for the properties %3 and %4 mapped to '%5'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see the conflicting values.</value>
+  </data>
+  <data name="common_err__cant_remap_normal_method_3" xml:space="preserve">
+    <value>Can't remap method [%1] to method of class %2 with parameters (%3).</value>
+  </data>
+  <data name="common_err__type_not_support_method_3" xml:space="preserve">
+    <value>Type %1 does not provide a method %2 with parameters (%3).</value>
+  </data>
+  <data name="common_err__cant_remap_generic_method_4" xml:space="preserve">
+    <value>Can't remap method [%1] to method of class %2 with parameters &lt;%4&gt;(%3).</value>
+  </data>
+  <data name="common_err__bad_cmd_parameter_name_format_1" xml:space="preserve">
+    <value>Bad format of command parameter name: [%1].</value>
+  </data>
+  <data name="common_err__bad_cmd_parameter_name_format__incorrect_prefix_1" xml:space="preserve">
+    <value>Bad format of command parameter name, incorrect prefix: [%1].</value>
+  </data>
+  <data name="common_err__unknown_annotation__1" xml:space="preserve">
+    <value>Unknown annotation [%1].</value>
+  </data>
+  <data name="common_err__annotation_has_unknown_value__2" xml:space="preserve">
+    <value>Annotation [%1] has unknown value: [%2].</value>
+  </data>
+  <data name="common_err__annotation_has_null_value__1" xml:space="preserve">
+    <value>Annotation [%1] has null value.</value>
+  </data>
+  <data name="common_err__annotation_has_value_with_unexpected_type__2" xml:space="preserve">
+    <value>Annotation [%1] has value with unexpected type: [%2].</value>
+  </data>
+  <data name="common_err__annotation_has_value_with_unexpected_type__3" xml:space="preserve">
+    <value>Annotation [%1] has value with unexpected type: [%2]. Expected type: [%3].</value>
+  </data>
+  <data name="common_err__multiple_definition_of_annotation__3" xml:space="preserve">
+    <value>Annotation [%1] already defined with value [%2]. New value: [%3].</value>
+  </data>
+  <data name="common_err__model_defines_incorrect_global_value_generation_strategy__1" xml:space="preserve">
+    <value>Model defines incorrect global value generation strategy [%1].</value>
+  </data>
+  <data name="common_err__property_with_datatype_is_not_compatible_with_value_generation_strategy__4" xml:space="preserve">
+    <value>Property [%3] with datatype [%4] is not compatible with value generation strategy [%1]. Property declared in type %2.</value>
+  </data>
+  <data name="common_err__value_generation_strategy_cant_be_defined_at_model_level__1" xml:space="preserve">
+    <value>Value generation strategy [%1] can't be defined at data model level.</value>
+  </data>
+  <data name="common_err__entity_property_has_conflict_of_value_generation_strategies__4" xml:space="preserve">
+    <value>Both the value generation strategy [%3] and [%4] have been set on property [%2] of entity type [%1].</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_non_cyclic_sequence__1" xml:space="preserve">
+    <value>Firebird does not support sequence with control of cycling. Setup in definition of sequence [%1] a value of property IsCyclic equal to true.</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_configuration_of_sequence_bound_value__3" xml:space="preserve">
+    <value>Firebird does not support configuration of sequence property %1. Setup in definition of sequence [%2] a value of property %1 equal to NULL or %3.</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_drop_identity_attribute_from_column__0" xml:space="preserve">
+    <value>Firebird does not support removing IDENTITY attribute from table column.</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_add_identity_attribute_to_column__0" xml:space="preserve">
+    <value>Firebird does not support adding IDENTITY attribute to table column.</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_renaming_of_tables__0" xml:space="preserve">
+    <value>Firebird does not support renaming of tables.</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_renaming_of_sequences__0" xml:space="preserve">
+    <value>Firebird does not support renaming of sequences.</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_renaming_of_indexes__0" xml:space="preserve">
+    <value>Firebird does not support renaming of indexes.</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_schemas__0" xml:space="preserve">
+    <value>Firebird does not support schemas.</value>
+  </data>
+  <data name="validation_err__failed_to_entity_validation_1" xml:space="preserve">
+    <value>Failed to validate entity [%1].</value>
+  </data>
+  <data name="validation_err__failed_to_entity_property_validation_2" xml:space="preserve">
+    <value>Failed to validate entity property [%1]::[%2].</value>
+  </data>
+  <data name="sql_translator_err__method_not_supported_1" xml:space="preserve">
+    <value>Failed translation to SQL. Method %1 not supported.</value>
+  </data>
+  <data name="sql_translator_err__member_not_supported_2" xml:space="preserve">
+    <value>Failed translation to SQL. Member [%1].[%2] not supported.</value>
+  </data>
+  <data name="sql_translator_err__unsupported_binary_operator_type_1" xml:space="preserve">
+    <value>Failed translation to SQL. Unsupported binary operation type: %1.</value>
+  </data>
+  <data name="sql_translator_err__unsupported_binary_operator_type_3" xml:space="preserve">
+    <value>Failed translation to SQL. Unsupported binary operation type: %1. Left argument type: %2. Right argument type: %3.</value>
+  </data>
+  <data name="sql_translator_err__unsupported_unary_operator_type_1" xml:space="preserve">
+    <value>Failed translation to SQL. Unsupported unary operation type: %1.</value>
+  </data>
+  <data name="sql_translator_err__unsupported_unary_operator_type_3" xml:space="preserve">
+    <value>Failed translation to SQL. Unsupported unary operation type: %1. Argument type: %2. Result type: %3.</value>
+  </data>
+  <data name="sql_translator_err__cant_present_unary_operation_as_SqlUnaryExpression_3" xml:space="preserve">
+    <value>SQL-translation of unary operation [%1][operand: %2][result: %3] is supported, but can't be present as SqlUnaryExpression class.</value>
+  </data>
+  <data name="sql_translator_err__cant_present_binary_operation_as_SqlBinaryExpression_3" xml:space="preserve">
+    <value>SQL-translation of binary operation [%1][left: %2][right: %3] is supported, but can't be present as SqlBinaryExpression class.</value>
+  </data>
+  <data name="sql_translator_err__cant_present_function_as_SqlFunctionExpression_1" xml:space="preserve">
+    <value>SQL-translation of function [%1] is supported, but can't be present as SqlFunctionExpression class.</value>
+  </data>
+  <data name="sql_gen_err__unsupported_cast_as_between_types_2" xml:space="preserve">
+    <value>Generation of SQL-operator "CAST AS" for conversion from type [%1] to type [%2] is not supported.</value>
+  </data>
+  <data name="sql_gen_err__translation_of_member_not_supported_in_current_cn_dialect_2" xml:space="preserve">
+    <value>SQL-translation of member [%2] not supported by current database connection dialect [%1].</value>
+  </data>
+  <data name="sql_gen_err__decimal_precision_not_supported_in_current_cn_dialect_3" xml:space="preserve">
+    <value>Precision [%3] of SQL data type [%2] not supported by current database connection dialect [%1].</value>
+  </data>
+  <data name="sql_gen_err__definition_of_value_in_sql_not_supported__1" xml:space="preserve">
+    <value>Pass of value with type [%1] as text in SQL is not supported. Try to pass this value through parameter.</value>
+  </data>
+  <data name="sql_gen_err__not_supported_sql_operator__1" xml:space="preserve">
+    <value>Translating this query requires the SQL-operation [%1], which is not supported.</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_table_definition__1" xml:space="preserve">
+    <value>Failed to generate a definition of table [%1].</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_column_definition__2" xml:space="preserve">
+    <value>Failed to generate a definition of column [%1][%2].</value>
+  </data>
+  <data name="msql_gen_err__computed_column_not_supported__0" xml:space="preserve">
+    <value>Generation of SQL for computed column does not supported.</value>
+  </data>
+  <data name="msql_gen_err__cant_find_type_mapping_for_column__2" xml:space="preserve">
+    <value>Can't find type description (TypeMapping) for column [%1][%2].</value>
+  </data>
+  <data name="msql_gen_err__cant_find_type_mapping_for_default_value__1" xml:space="preserve">
+    <value>Can't find type description (TypeMapping) for default value with CLR-type [%1].</value>
+  </data>
+  <data name="msql_gen_err__detected_multiple_definition_of_default_value__0" xml:space="preserve">
+    <value>Detected multiple variants with definition of default value. Please use only one option.</value>
+  </data>
+  <data name="msql_gen_err__identity_column_cant_be_created_with_required_data_type__2" xml:space="preserve">
+    <value>Invalid IDENTITY-column datatype [clrType: %1][sqlType: %2].</value>
+  </data>
+  <data name="msql_gen_err__identity_column_cant_be_has_default_value__0" xml:space="preserve">
+    <value>It is not allowed to specify a DEFAULT value for an IDENTITY-column.</value>
+  </data>
+  <data name="msql_gen_err__identity_column_cant_be_nullable__0" xml:space="preserve">
+    <value>IDENTITY-column can't be nullable.</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_fk_definition__3" xml:space="preserve">
+    <value>Failed to generate a definition of foreign key [table: %1][fk: %2][foreign table: %3].</value>
+  </data>
+  <data name="msql_gen_err__bad_fk_definition__different_size_of_column_lists__2" xml:space="preserve">
+    <value>Different column count in lists of foreign key definition: %1 and %2.</value>
+  </data>
+  <data name="msql_gen_err__unknown_fk_referential_action__1" xml:space="preserve">
+    <value>Unknown identifier of foreign key referential action: %1.</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_create_sequence_statement__1" xml:space="preserve">
+    <value>Failed to generate CREATE SEQUENCE [%1] statement.</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_restart_sequence_statement__1" xml:space="preserve">
+    <value>Failed to generate ALTER SEQUENCE [%1] RESTART statement.</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_alter_sequence_statement__1" xml:space="preserve">
+    <value>Failed to generate ALTER SEQUENCE [%1] statement.</value>
+  </data>
+  <data name="msql_gen_err__overflow_in_calculation_of_adjusted_sequence_start_value__3" xml:space="preserve">
+    <value>Overflow when calculating the adjusted SEQUENCE [%1] initial value. User data - [startValue: %2][incrementBy: %3].</value>
+  </data>
+  <data name="msql_gen_err__unexpected_sequence_ClrType__3" xml:space="preserve">
+    <value>Unexpected clr type of sequence [%1]: %2. Expected clr type: %3.</value>
+  </data>
+  <data name="msql_gen_err__incorrect_sequence_start_value__4" xml:space="preserve">
+    <value>Invalid start value of sequence [%1]: %2. Minimal value: %3. Maximal value: %4.</value>
+  </data>
+  <data name="msql_gen_err__inconsistent_table_names_in_alter_column_operation__2" xml:space="preserve">
+    <value>Inconsistent table names in ALTER COLUMN operation. Old data table name: [%1]. New data table name: [%2].</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_alter_column_statement__3" xml:space="preserve">
+    <value>Failed to generate ALTER COLUMN [table: %1][new column: %2][old column: %3] statement.</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_table_creation_script__1" xml:space="preserve">
+    <value>Failed to generate script for creation of table [%1].</value>
+  </data>
+  <data name="msql_gen_err__column_data_uses_incorrect_table_name__4" xml:space="preserve">
+    <value>Incorrect table name in description of column [index: %1][name: %2]: [%3]. Expected table name [%4].</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_create_index_statement__2" xml:space="preserve">
+    <value>Failed to generate CREATE INDEX [name: %1][table: %2] statement.</value>
+  </data>
+  <data name="msql_gen_err__bad_index_definition__multiple_data__2" xml:space="preserve">
+    <value>Incorrect definition of index [name: %1][table: %2]. Definition contains multiple variants of data for indexing.</value>
+  </data>
+  <data name="msql_gen_err__bad_index_definition__no_data__2" xml:space="preserve">
+    <value>Incorrect definition of index [name: %1][table: %2]. No data for indexing.</value>
+  </data>
+  <data name="msql_gen_err__table_name_not_defined__0" xml:space="preserve">
+    <value>Table name not defined.</value>
+  </data>
+  <data name="type_mapping_err__cant_map_clr_type_to_provider_data_type_1" xml:space="preserve">
+    <value>Can't map CLR-type [%1] to provider datatype.</value>
+  </data>
+  <data name="type_mapping_err__cant_map_info_to_provider_data_type_2" xml:space="preserve">
+    <value>Can't map description [clrType: %1].[baseTypeName: "%2"] to provider datatype.</value>
+  </data>
+  <data name="type_mapping_err__unknown_StoreTypeName_1" xml:space="preserve">
+    <value>Unknown database datatype (StoreTypeName): [%1].</value>
+  </data>
+  <data name="type_mapping_err__unknown_StoreTypeName_2" xml:space="preserve">
+    <value>Unknown database datatype (StoreTypeName): [%1]. Linked column: [%2].</value>
+  </data>
+  <data name="type_mapping_err__unexpected_StoreTypeName_2" xml:space="preserve">
+    <value>Unexpected value of mappingInfo.StoreTypeName: [%1]. Expected name: [%2].</value>
+  </data>
+  <data name="type_mapping_err__unexpected_StoreTypeNameBase_2" xml:space="preserve">
+    <value>Unexpected value of mappingInfo.StoreTypeNameBase: [%1]. Expected name: [%2].</value>
+  </data>
+  <data name="type_mapping_err__unexpected_Size_1" xml:space="preserve">
+    <value>Unexpected value of mappingInfo.Size: %1.</value>
+  </data>
+  <data name="type_mapping_err__not_defined_Size_0" xml:space="preserve">
+    <value>mappingInfo.Size contains null.</value>
+  </data>
+  <data name="type_mapping_err__too_large_Size_2" xml:space="preserve">
+    <value>Unexpected value of mappingInfo.Size: %1. Max allowed value: %2.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_IsFixedLength_2" xml:space="preserve">
+    <value>Unexpected value of mappingInfo.IsFixedLength: %1. Expected value: %2.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_IsUnicode_2" xml:space="preserve">
+    <value>Unexpected value of mappingInfo.IsUnicode: %1. Expected value: %2.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_ClrType_2" xml:space="preserve">
+    <value>Unexpected value of mappingInfo.ClrType: %1. Expected type: %2.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_IsRowVersion_2" xml:space="preserve">
+    <value>Unexpected value of mappingInfo.IsRowVersion: %1. Expected value: %2.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_Precision_1" xml:space="preserve">
+    <value>Unexpected value of mappingInfo.Precision: %1.</value>
+  </data>
+  <data name="type_mapping_err__not_defined_Precision_0" xml:space="preserve">
+    <value>mappingInfo.Precision contains null.</value>
+  </data>
+  <data name="type_mapping_err__too_large_Precision_2" xml:space="preserve">
+    <value>Unexpected value of mappingInfo.Precision: %1. Max allowed value: %2.</value>
+  </data>
+  <data name="type_mapping_err__not_allowed_definition_of_Scale_without_Precision_1" xml:space="preserve">
+    <value>It is not allowed to definition the scale [%1] without precision.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_Scale_1" xml:space="preserve">
+    <value>Unexpected value of mappingInfo.Scale: %1.</value>
+  </data>
+  <data name="type_mapping_err__not_defined_Scale_0" xml:space="preserve">
+    <value>mappingInfo.Scale contains null.</value>
+  </data>
+  <data name="type_mapping_err__too_large_Scale_2" xml:space="preserve">
+    <value>Unexpected value of mappingInfo.Scale: %1. Max allowed value: %2.</value>
+  </data>
+  <data name="type_mapping_err__multiple_definition_of_type_property_3" xml:space="preserve">
+    <value>Multiple definition of property [%1] value in datatype description. One value is [%2]. Second value is [%3].</value>
+  </data>
+  <data name="type_mapping_err__cant_convert_TimeSpan_to_database_format__out_of_range__4" xml:space="preserve">
+    <value>Unable to convert TimeSpan value [%1] to format %2. Out of range - [%3 .. %4].</value>
+  </data>
+  <data name="type_mapping_err__cant_convert_database_value_to_TimeSpan__out_of_range__4" xml:space="preserve">
+    <value>Unable to convert database value [%1] with format %2 to TimeSpan. Out of range - [%3 .. %4].</value>
+  </data>
+  <data name="type_mapping_err__cn_dialect_does_not_support_usage_of_type_in_DDL_query_2" xml:space="preserve">
+    <value>Current connection dialect [%1] does not allow usage a datatype [%2] in DDL queries.</value>
+  </data>
+  <data name="type_mapping_err__failed_to_parse_datatype_length_1" xml:space="preserve">
+    <value>Failed to parse length of datatype [%1].</value>
+  </data>
+  <data name="type_mapping_err__failed_to_parse_datatype_precision_1" xml:space="preserve">
+    <value>Failed to parse precision of datatype [%1].</value>
+  </data>
+  <data name="type_mapping_err__failed_to_parse_datatype_scale_1" xml:space="preserve">
+    <value>Failed to parse scale of datatype [%1].</value>
+  </data>
+  <data name="type_mapping_err__too_large_length_of_datatype_1" xml:space="preserve">
+    <value>Too large length of datatype [%1].</value>
+  </data>
+  <data name="type_mapping_err__too_large_precision_of_datatype_1" xml:space="preserve">
+    <value>Too large precision of datatype [%1].</value>
+  </data>
+  <data name="type_mapping_err__too_large_scale_of_datatype_1" xml:space="preserve">
+    <value>Too large scale of datatype [%1].</value>
+  </data>
+  <data name="type_mapping_err__incompleted_datatype_definition_0" xml:space="preserve">
+    <value>Incompleted datatype definition.</value>
+  </data>
+  <data name="type_mapping_err__incompleted_datatype_definition_1" xml:space="preserve">
+    <value>Incompleted datatype definition [%1].</value>
+  </data>
+  <data name="type_mapping_err__bad_datatype_definition_1" xml:space="preserve">
+    <value>Bad datatype definition [%1].</value>
+  </data>
+  <data name="type_mapping_err__not_defined_charset_name_1" xml:space="preserve">
+    <value>In datatype definition [%1] not defined a character set name.</value>
+  </data>
+  <data name="type_mapping_err__not_defined_subtype_name_1" xml:space="preserve">
+    <value>In datatype definition [%1] not defined a subtype name.</value>
+  </data>
+  <data name="type_mapping_err__unknown_blob_subtype_1" xml:space="preserve">
+    <value>Unknown name of BLOB subtype: [%1].</value>
+  </data>
+  <data name="type_mapping_err__definition_of_blob_charset_allowed_only_for_subtype_text_0" xml:space="preserve">
+    <value>Definition of BLOB charset allowed only for subtype TEXT.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_data_at_end_of_datatype_definition_1" xml:space="preserve">
+    <value>Unexpected data at end of datatype definition [%1].</value>
+  </data>
+  <data name="schema_err__data_provider_not_support_req_restriction_2" xml:space="preserve">
+    <value>Data provider does not support restriction [%2] for schema [%1].</value>
+  </data>
+  <data name="schema_err__unknown_table_type__2" xml:space="preserve">
+    <value>Unknown table type [%1]: [%2].</value>
+  </data>
+  <data name="schema_err__unknown_proc_type__2" xml:space="preserve">
+    <value>Unknown procedure type [%1]: [%2].</value>
+  </data>
+  <data name="schema_err__failed_to_build_column_info_4" xml:space="preserve">
+    <value>Failed to build info of column [%1].[%2].[%3].[%4].</value>
+  </data>
+  <data name="schema_err__failed_to_build_parameter_info_4" xml:space="preserve">
+    <value>Failed to build info of parameter [%1].[%2].[%3].[%4].</value>
+  </data>
+  <data name="schema_err__failed_to_process_column_oledb_datatype_2" xml:space="preserve">
+    <value>Failed to process column datatype. OLEDB Type Code: %1. OLEDB Column Flags: %2.</value>
+  </data>
+  <data name="schema_err__failed_to_process_parameter_oledb_datatype_2" xml:space="preserve">
+    <value>Failed to process parameter datatype. OLEDB Type Code: %1. OLEDB Flags: %2.</value>
+  </data>
+  <data name="schema_err__provider_datatype_not_supported_1" xml:space="preserve">
+    <value>Provider datatype [%1] not supported.</value>
+  </data>
+  <data name="schema_err__unknown_parameter_oledb_type_1" xml:space="preserve">
+    <value>Unknown OLEDB type of parameter: %1.</value>
+  </data>
+  <data name="schema_err__unknown_data_type_1" xml:space="preserve">
+    <value>Unknown datatype: %1.</value>
+  </data>
+  <data name="local_eval_err__member_not_supported_2" xml:space="preserve">
+    <value>Local evaluation of member [%1].[%2] not supported.</value>
+  </data>
+  <data name="local_eval_err__unary_operator_not_supported_1" xml:space="preserve">
+    <value>Local evaluation of unary operation [%1] not supported.</value>
+  </data>
+  <data name="local_eval_err__unary_operator_not_supported_2" xml:space="preserve">
+    <value>Local evaluation of unary operation [%1] not supported. Linked value has type [%2].</value>
+  </data>
+  <data name="local_eval_err__binary_operator_not_supported_3" xml:space="preserve">
+    <value>Local evaluation of binary operation [%1] not supported. Left argument: [type: %2]. Right argument: [type: %3].</value>
+  </data>
+  <data name="local_eval_err__method_not_supported_1" xml:space="preserve">
+    <value>Local evaluation of method [%1] not supported.</value>
+  </data>
+  <data name="local_eval_err__unexpected_result_type_of_logical_expression_1" xml:space="preserve">
+    <value>Unexpected result type of logical expression: %1.</value>
+  </data>
+  <data name="local_eval_err__cant_remap_static_method_2" xml:space="preserve">
+    <value>Can't remap method [%1] to method with arguments [%2].</value>
+  </data>
+  <data name="local_eval_err__cant_remap_instance_method_3" xml:space="preserve">
+    <value>Can't remap method [%1] to method of class [%2] with arguments [%3].</value>
+  </data>
+  <data name="local_eval_err__ambiguous_remap_method_3" xml:space="preserve">
+    <value>Ambiguous selection of method remapping [%1] for new arguments [%2]. Possible options:%3.</value>
+  </data>
+  <data name="local_eval_err__cant_remap_object_construction_3" xml:space="preserve">
+    <value>Can't transform creation of object with type [%1] to creation of object with type [%2]. Constructor with arguments [%3] not found.</value>
+  </data>
+  <data name="local_eval_err__comparison_of_arrays_with_different_length_not_supported_2" xml:space="preserve">
+    <value>Local comparison of linear arrays with different length not supported. First array length: %1. Second array length: %2.</value>
+  </data>
+  <data name="local_eval_err__failed_to_compare_element_of_arrays_1" xml:space="preserve">
+    <value>Failed to compare element [%1] of arrays.</value>
+  </data>
+  <data name="local_eval_err__cant_convert_array_element_value_to_required_type_3" xml:space="preserve">
+    <value>Failed to convert array element value [index: %1] with type [%2] to type [%3].</value>
+  </data>
+  <data name="com_err__com_code_error_1" xml:space="preserve">
+    <value>The COM error code: %1.</value>
+  </data>
+  <data name="data_type_err__failed_to_build_data_type_sign_1" xml:space="preserve">
+    <value>Failed to build string with definition of data type [%1].</value>
+  </data>
+  <data name="cs_utf16_err__bad_sequence__2" xml:space="preserve">
+    <value>Bad UTF-16 symbols sequential. Offset [%2]. Check point [%1].</value>
+  </data>
+  <data name="bug_check__generic_error_3" xml:space="preserve">
+    <value>[BUG CHECK] Wrong state in check point [%1][%2]. Reason - %3.</value>
+  </data>
+  <data name="bug_check__deserialization__wrong_state_2" xml:space="preserve">
+    <value>[BUG CHECK] Wrong state of deserialized object [%1]. Check point: "%2".</value>
+  </data>
+  <data name="bug_check__deserialization__null_obj_ptr_2" xml:space="preserve">
+    <value>[BUG CHECK] Wrong state of deserialized object [%1]. Restored the null pointer to object [%2].</value>
+  </data>
+  <data name="bug_check__deserialization__null_item_ptr_3" xml:space="preserve">
+    <value>[BUG CHECK] Wrong state of deserialized object [%1]. Restored a null pointer in element [%3] of container [%2].</value>
+  </data>
+  <data name="bug_check__array_err__unexpected_dim_number_6" xml:space="preserve">
+    <value>[BUG CHECK] Unexpected dimension number of array [%1].[%2].[%3].[%4]: %5. Expected number: %6.</value>
+  </data>
+  <data name="bug_check__array_err__bad_sort_of_schema_9" xml:space="preserve">
+    <value>[BUG CHECK] Incorrect sort of schema [%1]. Previous element [%2].[%3].[%4].[%5]. Current element [%6].[%7].[%8].[%9].</value>
+  </data>
+  <data name="bug_check__array_err__bad_range_of_dimension_7" xml:space="preserve">
+    <value>[BUG CHECK] Incorrect range of dimension [%5] of array [%1].[%2].[%3].[%4]: %6..%7.</value>
+  </data>
+  <data name="bug_check__array_err__no_descr_4" xml:space="preserve">
+    <value>[BUG CHECK] No description for array [%1].[%2].[%3].[%4].</value>
+  </data>
+  <data name="bug_check__engine_svc_not_supported_1" xml:space="preserve">
+    <value>[BUG CHECK] Service [id: %1] is not supported by current connection.</value>
+  </data>
+  <data name="bug_check__engine_svc_not_supported_req_interface_2" xml:space="preserve">
+    <value>[BUG CHECK] Service [id: %1] is not supports the required interface [%2].</value>
+  </data>
+  <data name="bug_check__schema_contains_unexpected_row_count_4" xml:space="preserve">
+    <value>[BUG CHECK] Unexpected row count in schema [%3]: %4. Check point: [%1][%2].</value>
+  </data>
+  <data name="bug_check__incorrect_schema_restriction_number_5" xml:space="preserve">
+    <value>[BUG CHECK] Incorrect number of restriction [%4] of metadata schema [%3]: %5. Check point: [%1][%2].</value>
+  </data>
+  <data name="bug_check__unexpected_result_type_of_binary_operator_5" xml:space="preserve">
+    <value>[BUG CHECK] Unexpected result type of binary operator [%1]: %2. Expected base type: %3. Left argument type: %4. Right argument type: %5.</value>
+  </data>
+  <data name="bug_check__bind_to_type_method__not_found_4" xml:space="preserve">
+    <value>[BUG CHECK] Failed to bind to method [%1].[%2] with parameter list {%3}. BindingFlags: %4. Method not found.</value>
+  </data>
+  <data name="bug_check__bind_to_type_method__bad_return_type_6" xml:space="preserve">
+    <value>[BUG CHECK] Failed to bind to method [%1].[%2] with parameter list {%3}. BindingFlags: %4. Method returns %6 instead %5.</value>
+  </data>
+  <data name="bug_check__get_nested_type__not_found_3" xml:space="preserve">
+    <value>[BUG CHECK] Failed to get type of nested type [%1].[%2]. BindingFlags: %3. Type not found.</value>
+  </data>
+  <data name="bug_check__sql_enode__unsupported_arg_types__2" xml:space="preserve">
+    <value>[BUG CHECK] SQL Expression Node [%1]. Unsupported argument types {%2}.</value>
+  </data>
+</root>

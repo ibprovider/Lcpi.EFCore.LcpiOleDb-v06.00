@@ -1,0 +1,40 @@
+﻿////////////////////////////////////////////////////////////////////////////////
+//EF Core Provider for LCPI OLE DB.
+//                                      IBProvider and Contributors. 05.04.2021.
+using System;
+using System.Reflection;
+
+namespace Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D1.Expressions.Op2.Code{
+////////////////////////////////////////////////////////////////////////////////
+//using
+
+using T_ARG1
+ =System.Decimal;
+
+using T_ARG2
+ =System.Decimal;
+
+using T_RESULT
+ =System.Double;
+
+////////////////////////////////////////////////////////////////////////////////
+//class Op2_Code__Multiply___Decimal__Decimal
+
+static class Op2_Code__Multiply___Decimal__Decimal
+{
+ public static readonly System.Reflection.MethodInfo MethodInfo_V_V
+  =typeof(Op2_Code__Multiply___Decimal__Decimal)
+    .GetTypeInfo()
+    .GetDeclaredMethod(nameof(Exec_V_V));
+
+ //-----------------------------------------------------------------------
+ public static T_RESULT Exec_V_V(T_ARG1 a,T_ARG2 b)
+ {
+  return D0.Expressions.Op2.MasterCode.Op2_MasterCode__Multiply___Double__Double.Exec
+          ((double)a,
+           (double)b);
+ }//Exec_V_V
+};//class Op2_Code__Multiply___Decimal__Decimal
+
+////////////////////////////////////////////////////////////////////////////////
+}//namespace Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Query.Local.D1.Expressions.Op2.Code

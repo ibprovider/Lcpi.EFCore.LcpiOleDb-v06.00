@@ -1,0 +1,723 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="text__not_avail__tag_style" xml:space="preserve">
+    <value>&lt;не доступно&gt;</value>
+  </data>
+  <data name="common_err__argument_is_null__2" xml:space="preserve">
+    <value>Метод "%1". Аргумент "%2" содержит null.</value>
+  </data>
+  <data name="common_err__argument_is_not_null__2" xml:space="preserve">
+    <value>Метод "%1". Аргумент "%2" не содержит null [ожидается null].</value>
+  </data>
+  <data name="common_err__argument_is_empty__2" xml:space="preserve">
+    <value>Метод "%1". Аргумент "%2" не содержит данных.</value>
+  </data>
+  <data name="common_err__argument_is_negative__3" xml:space="preserve">
+    <value>Метод "%1". Аргумент "%2" содержит отрицательное значение [%3].</value>
+  </data>
+  <data name="common_err__bad_argument_type_4" xml:space="preserve">
+    <value>Метод "%1". Недопустимый тип значения аргумента "%2": %3. Ожидается значение с типом: %4.</value>
+  </data>
+  <data name="common_err__bad_argument_list_size_3" xml:space="preserve">
+    <value>Метод "%1". Некорректный размер списка в аргументе "%2": %3.</value>
+  </data>
+  <data name="common_err__bad_argument_list_size_4" xml:space="preserve">
+    <value>Метод "%1". Некорректный размер списка в аргументе "%2": %3. Ожидается список с размером: %4.</value>
+  </data>
+  <data name="common_err__object_was_disposed__1" xml:space="preserve">
+    <value>Доступ к ликвидированному объекту [%1] невозможен.</value>
+  </data>
+  <data name="common_err__object_was_disposed__cant_exec_method__2" xml:space="preserve">
+    <value>Вызов метода [%2] ликвидированного объекта [%1] невозможен.</value>
+  </data>
+  <data name="common_err__feature_not_supported__1" xml:space="preserve">
+    <value>Функциональность [%1] не поддерживается.</value>
+  </data>
+  <data name="common_err__method_not_impl__1" xml:space="preserve">
+    <value>Метод "%1" не реализован.</value>
+  </data>
+  <data name="common_err__method_not_impl__2" xml:space="preserve">
+    <value>Метод "%1" не реализован. Точка [%2].</value>
+  </data>
+  <data name="common_err__overflow_in_arithmetic_op1__3" xml:space="preserve">
+    <value>Переполнение при вычислении унарной арифметической операции [%1]. Аргумент: [%2] %3.</value>
+  </data>
+  <data name="common_err__overflow_in_arithmetic_op2__5" xml:space="preserve">
+    <value>Переполнение при вычислении бинарной арифметической операции [%1]. Левый аргумент: [%2] %3. Правый аргумент: [%4] %5.</value>
+  </data>
+  <data name="common_err__out_of_range_in_arithmetic_op2__5" xml:space="preserve">
+    <value>Результат арифметической операции [%1] выходит за допустимый диапазон. Левый аргумент: [%2] %3. Правый аргумент: [%4] %5.</value>
+  </data>
+  <data name="common_err__index_out_of_range__2" xml:space="preserve">
+    <value>Индекс элемента [%1] вне допустимого диапазона. Количество элементов: %2.</value>
+  </data>
+  <data name="common_err__empty_list_of_values__0" xml:space="preserve">
+    <value>Пустой список значений.</value>
+  </data>
+  <data name="common_err__divide_by_zero__0" xml:space="preserve">
+    <value>Деление на ноль.</value>
+  </data>
+  <data name="common_err__cant_alloc_new_array__overflow__2" xml:space="preserve">
+    <value>Ошибка создания массива. Слишком большое число элементов. Точка проверки [%1][%2].</value>
+  </data>
+  <data name="common_err__unk_column_name__2" xml:space="preserve">
+    <value>Таблица [%1] не содержит колонку с именем [%2].</value>
+  </data>
+  <data name="common_err__invalid_column_value__4" xml:space="preserve">
+    <value>Недопустимое значение колонки [индекс: %2][имя: %3] таблицы [%1]: %4.</value>
+  </data>
+  <data name="common_err__invalid_column_value_type__5" xml:space="preserve">
+    <value>Недопустимый тип значения колонки [индекс: %2][имя: %3] таблицы [%1]: %4. Ожидалось значение с типом: %5.</value>
+  </data>
+  <data name="common_err__no_connection_object__0" xml:space="preserve">
+    <value>Нет объект подключения к базе данных.</value>
+  </data>
+  <data name="common_err__unexpected_connection_object_type__2" xml:space="preserve">
+    <value>Некорректный тип объекта подключения к базе данных: [%1]. Ожидался объект с типом: [%2].</value>
+  </data>
+  <data name="common_err__unexpected_connection_state_1" xml:space="preserve">
+    <value>Неизвестное состояние объекта подключения: %1.</value>
+  </data>
+  <data name="common_err__failed_to_read_connection_properties_0" xml:space="preserve">
+    <value>Ошибка чтения свойств подключения.</value>
+  </data>
+  <data name="common_err__connection_object_contains_empty_connection_string_0" xml:space="preserve">
+    <value>Объект подключения содержит пустую строку подключения.</value>
+  </data>
+  <data name="common_err__no_source_for_load_connection_info_0" xml:space="preserve">
+    <value>Отсутствует источник для загрузки сведений о подключении.</value>
+  </data>
+  <data name="common_err__object_already_initialized_0" xml:space="preserve">
+    <value>Объект уже был инициализирован.</value>
+  </data>
+  <data name="common_err__extension_not_found_1" xml:space="preserve">
+    <value>Расширение [%1] не найдено.</value>
+  </data>
+  <data name="common_err__cant_work_with_uninitialized_object_1" xml:space="preserve">
+    <value>Не допускается вызов [%1] неинициализированного объекта.</value>
+  </data>
+  <data name="common_err__zero_symbol_in_string_literal_1" xml:space="preserve">
+    <value>Нулевой символ [позиция: %1] в текстовом значении.</value>
+  </data>
+  <data name="common_err__unknown_dbms_name_1" xml:space="preserve">
+    <value>Неизвестное имя сервера баз данных: [%1].</value>
+  </data>
+  <data name="common_err__unsupported_dbms_version_2" xml:space="preserve">
+    <value>Неподдерживаемая версия сервера баз данных [%1]: [%2].</value>
+  </data>
+  <data name="common_err__unsupported_connection_dialect_1" xml:space="preserve">
+    <value>Неподдерживаемый диалект подключения [%1].</value>
+  </data>
+  <data name="common_err__empty_object_name_0" xml:space="preserve">
+    <value>Пустое имя объекта.</value>
+  </data>
+  <data name="common_err__bad_symbol_in_unquoted_object_name_2" xml:space="preserve">
+    <value>Недопустимый символ в неквотированном имени объекта [позиция: %1, код символа: %2].</value>
+  </data>
+  <data name="common_err__bad_symbol_in_quoted_object_name_2" xml:space="preserve">
+    <value>Недопустимый символ в квотированном имени объекта [позиция: %1, код символа: %2].</value>
+  </data>
+  <data name="common_err__not_defined_cmd_parameter_prefix_0" xml:space="preserve">
+    <value>Не определен префикс именованных параметров.</value>
+  </data>
+  <data name="common_err__no_provider_configured_0" xml:space="preserve">
+    <value>Отсутствует конфигурация провайдера LcpiOleDb.</value>
+  </data>
+  <data name="common_err__multiple_provider_configured_0" xml:space="preserve">
+    <value>Несколько конфигураций провайдера LcpiOleDb.</value>
+  </data>
+  <data name="common_err__unsupported_datatypes_conversion_2" xml:space="preserve">
+    <value>Конвертирование значения из типа [%1] в тип [%2] не поддерживается.</value>
+  </data>
+  <data name="common_err__cant_convert_value_between_types_2" xml:space="preserve">
+    <value>Ошибка конвертирования значения из типа [%1] в тип [%2].</value>
+  </data>
+  <data name="common_err__target_property_not_accept_null_value_0" xml:space="preserve">
+    <value>Целевое свойство не допускает установку NULL-значений.</value>
+  </data>
+  <data name="common_err__failed_to_set_property_value_3" xml:space="preserve">
+    <value>Ошибка установки значения свойства [%1].[%2], привязанного к колонке [%3].</value>
+  </data>
+  <data name="common_err__unexpected_command_param_direction_2" xml:space="preserve">
+    <value>Неожиданное направление параметра команды [%1]: %2.</value>
+  </data>
+  <data name="common_err__no_command_param_value_1" xml:space="preserve">
+    <value>Не определено значение параметра команды [%1].</value>
+  </data>
+  <data name="common_err__direct_call_of_linq_method_not_allowed_1" xml:space="preserve">
+    <value>Непосредственный вызов метода [%1] не допускается. Вы можете его вызывать только через linq-выражения.</value>
+  </data>
+  <data name="common_err__failed_to_process_value_1" xml:space="preserve">
+    <value>Ошибка обработки значения [%1].</value>
+  </data>
+  <data name="common_err__overflow_in_number_scale_calculation_0" xml:space="preserve">
+    <value>Переполнение при вычислении масштаба числа.</value>
+  </data>
+  <data name="common_err__ConflictingRowValuesSensitive_6" xml:space="preserve">
+    <value>Экземпляры Entity типов '%1' и '%2' отображаются на одну и ту же запись с ключом %3, но имеют разные значения %4 / %5 для колонки '%6'.</value>
+  </data>
+  <data name="common_err__ConflictingRowValues_5" xml:space="preserve">
+    <value>Экземпляры Entity типов '%1' и '%2' отображаются на одну и ту же запись, но имеют разные значения свойств %3 / %4 для колонки '%5'. Настройте 'DbContextOptionsBuilder.EnableSensitiveDataLogging' для просмотра конфликтующих значений.</value>
+  </data>
+  <data name="common_err__ConflictingOriginalRowValuesSensitive_6" xml:space="preserve">
+    <value>Экземпляры Entity типов '%1' и '%2' отображаются на одну и ту же запись и туже запись с ключом %3, но имеют разные исходные значения %4 / %5 для колонки '%6'.</value>
+  </data>
+  <data name="common_err__ConflictingOriginalRowValues_5" xml:space="preserve">
+    <value>Экземпляры Entity типов '%1' и '%2' отображаются на одну и ту же запись, но имеют разные исходные значения %3 / %4 для колонки '%5'. Настройте 'DbContextOptionsBuilder.EnableSensitiveDataLogging' для просмотра конфликтующих значений.</value>
+  </data>
+  <data name="common_err__type_not_support_method_3" xml:space="preserve">
+    <value>Тип %1 не предоставляет метод %2 с аргументами (%3).</value>
+  </data>
+  <data name="common_err__cant_remap_normal_method_3" xml:space="preserve">
+    <value>Не получается отобразить метод [%1] на метод класса %2 c параметрами (%3).</value>
+  </data>
+  <data name="common_err__cant_remap_generic_method_4" xml:space="preserve">
+    <value>Не получается отобразить метод [%1] на метод класса %2 c параметрами &lt;%4&gt;(%3).</value>
+  </data>
+  <data name="common_err__bad_cmd_parameter_name_format_1" xml:space="preserve">
+    <value>Некорректный формат имени параметра команды: [%1].</value>
+  </data>
+  <data name="common_err__bad_cmd_parameter_name_format__incorrect_prefix_1" xml:space="preserve">
+    <value>Некорректный формат имени параметра команды, неправильный префикс: [%1].</value>
+  </data>
+  <data name="common_err__unknown_annotation__1" xml:space="preserve">
+    <value>Неизвестная аннотация [%1].</value>
+  </data>
+  <data name="common_err__annotation_has_unknown_value__2" xml:space="preserve">
+    <value>Аннотация [%1] имеет неизвестное значение: [%2].</value>
+  </data>
+  <data name="common_err__annotation_has_null_value__1" xml:space="preserve">
+    <value>Аннотация [%1] имеет null-значение.</value>
+  </data>
+  <data name="common_err__annotation_has_value_with_unexpected_type__3" xml:space="preserve">
+    <value>Аннотация [%1] имеет значение с неизвестным типом: [%2]. Ожидаемый тип: [%3].</value>
+  </data>
+  <data name="common_err__annotation_has_value_with_unexpected_type__2" xml:space="preserve">
+    <value>Аннотация [%1] имеет значение с неизвестным типом: [%2].</value>
+  </data>
+  <data name="common_err__multiple_definition_of_annotation__3" xml:space="preserve">
+    <value>Аннотация [%1] уже определена со значением [%2]. Новое значение: [%3].</value>
+  </data>
+  <data name="common_err__model_defines_incorrect_global_value_generation_strategy__1" xml:space="preserve">
+    <value>Модель определяет некорректную глобальную стратегию генерации значений [%1].</value>
+  </data>
+  <data name="common_err__property_with_datatype_is_not_compatible_with_value_generation_strategy__4" xml:space="preserve">
+    <value>Свойство [%3] с типом данных [%4] несовместимо со стратегией генерации значений [%1]. Свойство определено в типе %2.</value>
+  </data>
+  <data name="common_err__value_generation_strategy_cant_be_defined_at_model_level__1" xml:space="preserve">
+    <value>Стратегия генерации значений [%1] не может быть определена на уровне модели данных.</value>
+  </data>
+  <data name="common_err__entity_property_has_conflict_of_value_generation_strategies__4" xml:space="preserve">
+    <value>Свойство [%2] cущности (entity) [%1] определяет конфликтующие стратегии генерации значения: [%3] и [%4].</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_non_cyclic_sequence__1" xml:space="preserve">
+    <value>Firebird не поддерживает последовательности значений (SEQUENCE) с контролем зацикливания. Установите в определении последовательности [%1] значение свойства IsCyclic равным true.</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_configuration_of_sequence_bound_value__3" xml:space="preserve">
+    <value>Firebird не поддерживает конфигурирование свойства %1 у последовательнсти значений (SEQUENCE). Установите в определении последовательности [%2] значение свойства %1 равным NULL или %3.</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_drop_identity_attribute_from_column__0" xml:space="preserve">
+    <value>Firebird не поддерживает удаление атрибута IDENTITY у колонки таблицы.</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_add_identity_attribute_to_column__0" xml:space="preserve">
+    <value>Firebird не поддерживает добавления атрибута IDENTITY к колонке таблицы.</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_renaming_of_tables__0" xml:space="preserve">
+    <value>Firebird не поддерживает переименование таблиц.</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_renaming_of_sequences__0" xml:space="preserve">
+    <value>Firebird не поддерживает переименование последовательностей значений (SEQUENCES).</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_renaming_of_indexes__0" xml:space="preserve">
+    <value>Firebird не поддерживает переименование индексов.</value>
+  </data>
+  <data name="dbms_err__fb__firebird_does_not_support_schemas__0" xml:space="preserve">
+    <value>Firebird не поддерживает схемы.</value>
+  </data>
+  <data name="validation_err__failed_to_entity_validation_1" xml:space="preserve">
+    <value>Ошибка проверки cущности (entity) [%1].</value>
+  </data>
+  <data name="validation_err__failed_to_entity_property_validation_2" xml:space="preserve">
+    <value>Ошибка проверки свойства cущности (entity) [%1]::[%2].</value>
+  </data>
+  <data name="sql_translator_err__method_not_supported_1" xml:space="preserve">
+    <value>Ошибка трансляции в SQL. Метод %1 не поддерживается.</value>
+  </data>
+  <data name="sql_translator_err__member_not_supported_2" xml:space="preserve">
+    <value>Ошибка трансляции в SQL. Свойство [%1].[%2] не поддерживается.</value>
+  </data>
+  <data name="sql_translator_err__unsupported_binary_operator_type_1" xml:space="preserve">
+    <value>Ошибка трансляции в SQL. Неподдерживаемый тип бинарной операции: %1.</value>
+  </data>
+  <data name="sql_translator_err__unsupported_binary_operator_type_3" xml:space="preserve">
+    <value>Ошибка трансляции в SQL. Неподдерживаемый тип бинарной операции: %1. Тип левого аргумента: %2. Тип правого аргумента: %3.</value>
+  </data>
+  <data name="sql_translator_err__unsupported_unary_operator_type_1" xml:space="preserve">
+    <value>Ошибка трансляции в SQL. Неподдерживаемый тип унарной операции: %1.</value>
+  </data>
+  <data name="sql_translator_err__unsupported_unary_operator_type_3" xml:space="preserve">
+    <value>Ошибка трансляции в SQL. Неподдерживаемый тип унарной операции: %1. Тип аргумента: %2. Тип результата: %3.</value>
+  </data>
+  <data name="sql_translator_err__cant_present_unary_operation_as_SqlUnaryExpression_3" xml:space="preserve">
+    <value>SQL-трансляция унарной операции [%1][аргумент: %2][результат: %3] поддерживается, но не может быть представлена в виде класса SqlUnaryExpression.</value>
+  </data>
+  <data name="sql_translator_err__cant_present_binary_operation_as_SqlBinaryExpression_3" xml:space="preserve">
+    <value>SQL-трансляция бинарной операции [%1][left: %2][right: %3] поддерживается, но не может быть представлена в виде класса SqlBinaryExpression.</value>
+  </data>
+  <data name="sql_translator_err__cant_present_function_as_SqlFunctionExpression_1" xml:space="preserve">
+    <value>SQL-трансляция функции [%1] поддерживается, но не может быть представлена в виде класса SqlFunctionExpression.</value>
+  </data>
+  <data name="sql_gen_err__unsupported_cast_as_between_types_2" xml:space="preserve">
+    <value>Генерация SQL-оператора "CAST AS" для преобразования типа [%1] в тип [%2] не поддерживается.</value>
+  </data>
+  <data name="sql_gen_err__translation_of_member_not_supported_in_current_cn_dialect_2" xml:space="preserve">
+    <value>SQL-трансляция конструкции [%2] не поддерживается текущим диалектом подключения [%1] к базе данных.</value>
+  </data>
+  <data name="sql_gen_err__decimal_precision_not_supported_in_current_cn_dialect_3" xml:space="preserve">
+    <value>Точность [%3] SQL типа данных [%2] не поддерживается текущим диалектом подключения [%1] к базе данных.</value>
+  </data>
+  <data name="sql_gen_err__definition_of_value_in_sql_not_supported__1" xml:space="preserve">
+    <value>Передача значения с типом [%1] в тексте SQL запроса не поддерживается. Попробуйте передать это значение через параметр.</value>
+  </data>
+  <data name="sql_gen_err__not_supported_sql_operator__1" xml:space="preserve">
+    <value>Трансляция этого запроса требует SQL-оператор [%1], который не поддерживается.</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_table_definition__1" xml:space="preserve">
+    <value>Ошибка генерации определения таблицы [%1].</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_column_definition__2" xml:space="preserve">
+    <value>Ошибка генерации определения колонки [%1][%2].</value>
+  </data>
+  <data name="msql_gen_err__computed_column_not_supported__0" xml:space="preserve">
+    <value>Генерация SQL для вычисляемого столбца не поддерживается.</value>
+  </data>
+  <data name="msql_gen_err__cant_find_type_mapping_for_column__2" xml:space="preserve">
+    <value>Не найдено описание типа (TypeMapping) для колонки [%1][%2].</value>
+  </data>
+  <data name="msql_gen_err__cant_find_type_mapping_for_default_value__1" xml:space="preserve">
+    <value>Не найдено описание типа (TypeMapping) для значения по умолчанию с CLR-типом [%1].</value>
+  </data>
+  <data name="msql_gen_err__detected_multiple_definition_of_default_value__0" xml:space="preserve">
+    <value>Указано несколько вариантов с определением значения по умолчанию. Используйте только один.</value>
+  </data>
+  <data name="msql_gen_err__identity_column_cant_be_created_with_required_data_type__2" xml:space="preserve">
+    <value>Недопустимый тип данных IDENTITY-колонки [clrType: %1][sqlType: %2].</value>
+  </data>
+  <data name="msql_gen_err__identity_column_cant_be_has_default_value__0" xml:space="preserve">
+    <value>Недопускается указание DEFAULT значения у IDENTITY-колонки.</value>
+  </data>
+  <data name="msql_gen_err__identity_column_cant_be_nullable__0" xml:space="preserve">
+    <value>IDENTITY-колонка не может быть nullable.</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_fk_definition__3" xml:space="preserve">
+    <value>Ошибка генерации определения внешнего ключа [таблица: %1][fk: %2][внешняя таблица: %3].</value>
+  </data>
+  <data name="msql_gen_err__bad_fk_definition__different_size_of_column_lists__2" xml:space="preserve">
+    <value>Разное число колонок в списках определения внешнего ключа: %1 и %2.</value>
+  </data>
+  <data name="msql_gen_err__unknown_fk_referential_action__1" xml:space="preserve">
+    <value>Неизвестный идентификатор ссылочного правила внешнего ключа: %1.</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_create_sequence_statement__1" xml:space="preserve">
+    <value>Ошибка генерации запроса CREATE SEQUENCE [%1].</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_restart_sequence_statement__1" xml:space="preserve">
+    <value>Ошибка генерации запроса ALTER SEQUENCE [%1] RESTART.</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_alter_sequence_statement__1" xml:space="preserve">
+    <value>Ошибка генерации запроса ALTER SEQUENCE [%1].</value>
+  </data>
+  <data name="msql_gen_err__overflow_in_calculation_of_adjusted_sequence_start_value__3" xml:space="preserve">
+    <value>Переполнение в процессе вычисления откорректированного начального значения SEQUENCE [%1]. Пользовательские данные - [startValue: %2][incrementBy: %3].</value>
+  </data>
+  <data name="msql_gen_err__unexpected_sequence_ClrType__3" xml:space="preserve">
+    <value>Недопустимый clr тип последовательности (sequence) [%1]: %2. Ожидаемый clr тип: %3.</value>
+  </data>
+  <data name="msql_gen_err__incorrect_sequence_start_value__4" xml:space="preserve">
+    <value>Недопустимое начальное значение последовательности значение (SEQUENCE) [%1]: %2. Минимальное значение: %3. Максимальное значение: %4.</value>
+  </data>
+  <data name="msql_gen_err__inconsistent_table_names_in_alter_column_operation__2" xml:space="preserve">
+    <value>Несогласованные названия таблиц в операции ALTER COLUMN. Имя таблицы в старых данных: [%1]. Имя таблицы в новых данных: [%2].</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_alter_column_statement__3" xml:space="preserve">
+    <value>Ошибка генерации запроса ALTER COLUMN [table: %1][new column: %2][old column: %3].</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_table_creation_script__1" xml:space="preserve">
+    <value>Ошибка генерации скрипта для создания таблицы [%1].</value>
+  </data>
+  <data name="msql_gen_err__column_data_uses_incorrect_table_name__4" xml:space="preserve">
+    <value>Некорректное имя таблицы в описании колонки [индекс: %1][имя: %2]: [%3]. Ожидается имя таблицы [%4].</value>
+  </data>
+  <data name="msql_gen_err__failed_to_generate_create_index_statement__2" xml:space="preserve">
+    <value>Ошибка генерации запроса CREATE INDEX [имя: %1][таблица: %2].</value>
+  </data>
+  <data name="msql_gen_err__bad_index_definition__multiple_data__2" xml:space="preserve">
+    <value>Некорректное описание индекса [имя: %1][таблица: %2]. Указано несколько вариантов данных для индекcации.</value>
+  </data>
+  <data name="msql_gen_err__bad_index_definition__no_data__2" xml:space="preserve">
+    <value>Некорректное описание индекса [имя: %1][таблица: %2]. Не указаны данные для индекcации.</value>
+  </data>
+  <data name="msql_gen_err__table_name_not_defined__0" xml:space="preserve">
+    <value>Не определено имя таблицы.</value>
+  </data>
+  <data name="type_mapping_err__cant_map_clr_type_to_provider_data_type_1" xml:space="preserve">
+    <value>Невозможно отобразить CLR-тип [%1] на тип данных провайдера.</value>
+  </data>
+  <data name="type_mapping_err__cant_map_info_to_provider_data_type_2" xml:space="preserve">
+    <value>Невозможно отобразить описание [clrType: %1].[baseTypeName: "%2"] на тип данных провайдера.</value>
+  </data>
+  <data name="type_mapping_err__unknown_StoreTypeName_1" xml:space="preserve">
+    <value>Неизвестный тип данных БД (StoreTypeName): [%1].</value>
+  </data>
+  <data name="type_mapping_err__unknown_StoreTypeName_2" xml:space="preserve">
+    <value>Неизвестный тип данных БД (StoreTypeName): [%1]. Связанная колонка: [%2].</value>
+  </data>
+  <data name="type_mapping_err__unexpected_StoreTypeName_2" xml:space="preserve">
+    <value>Недопустимое значение mappingInfo.StoreTypeName: [%1]. Ожидалось имя: [%2].</value>
+  </data>
+  <data name="type_mapping_err__unexpected_StoreTypeNameBase_2" xml:space="preserve">
+    <value>Недопустимое значение mappingInfo.StoreTypeNameBase: [%1]. Ожидалось имя: [%2].</value>
+  </data>
+  <data name="type_mapping_err__unexpected_Size_1" xml:space="preserve">
+    <value>Недопустимое значение mappingInfo.Size: %1.</value>
+  </data>
+  <data name="type_mapping_err__not_defined_Size_0" xml:space="preserve">
+    <value>mappingInfo.Size содержит null.</value>
+  </data>
+  <data name="type_mapping_err__too_large_Size_2" xml:space="preserve">
+    <value>Недопустимое значение mappingInfo.Size: %1. Максимально допустимое значение: %2.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_IsFixedLength_2" xml:space="preserve">
+    <value>Недопустимое значение mappingInfo.IsFixedLength: %1. Ожидаемое значение: %2.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_IsUnicode_2" xml:space="preserve">
+    <value>Недопустимое значение mappingInfo.IsUnicode: %1. Ожидаемое значение: %2.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_ClrType_2" xml:space="preserve">
+    <value>Недопустимое значение mappingInfo.ClrType: %1. Ожидаемый тип: %2.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_IsRowVersion_2" xml:space="preserve">
+    <value>Недопустимое значение mappingInfo.IsRowVersion: %1. Ожидаемое значение: %2.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_Precision_1" xml:space="preserve">
+    <value>Недопустимое значение mappingInfo.Precision: %1.</value>
+  </data>
+  <data name="type_mapping_err__not_defined_Precision_0" xml:space="preserve">
+    <value>mappingInfo.Precision содержит null.</value>
+  </data>
+  <data name="type_mapping_err__too_large_Precision_2" xml:space="preserve">
+    <value>Недопустимое значение mappingInfo.Precision: %1. Максимально допустимое значение: %2.</value>
+  </data>
+  <data name="type_mapping_err__not_allowed_definition_of_Scale_without_Precision_1" xml:space="preserve">
+    <value>Не допускается указание масштаба [%1] без указания точности.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_Scale_1" xml:space="preserve">
+    <value>Недопустимое значение mappingInfo.Scale: %1.</value>
+  </data>
+  <data name="type_mapping_err__not_defined_Scale_0" xml:space="preserve">
+    <value>mappingInfo.Scale содержит null.</value>
+  </data>
+  <data name="type_mapping_err__too_large_Scale_2" xml:space="preserve">
+    <value>Недопустимое значение mappingInfo.Scale: %1. Максимально допустимое значение: %2.</value>
+  </data>
+  <data name="type_mapping_err__multiple_definition_of_type_property_3" xml:space="preserve">
+    <value>Многократное определение значения свойства [%1] в описании типа данных. Одно значение равно [%2]. Другое значение равно [%3].</value>
+  </data>
+  <data name="type_mapping_err__cant_convert_TimeSpan_to_database_format__out_of_range__4" xml:space="preserve">
+    <value>Невозможно привести TimeSpan значение [%1] к формату %2. Выход за пределы допустимого диапазона значений - [%3 .. %4].</value>
+  </data>
+  <data name="type_mapping_err__cant_convert_database_value_to_TimeSpan__out_of_range__4" xml:space="preserve">
+    <value>Невозможно привести значение [%1] с форматом хранения в базе данных %2 к TimeSpan. Выход за пределы допустимого диапазона значений - [%3 .. %4].</value>
+  </data>
+  <data name="type_mapping_err__cn_dialect_does_not_support_usage_of_type_in_DDL_query_2" xml:space="preserve">
+    <value>Текущий диалект подключения [%1] не разрешает использовать тип данных [%2] в DDL запросах.</value>
+  </data>
+  <data name="type_mapping_err__failed_to_parse_datatype_length_1" xml:space="preserve">
+    <value>Ошибка обработки длины типа данных [%1].</value>
+  </data>
+  <data name="type_mapping_err__failed_to_parse_datatype_precision_1" xml:space="preserve">
+    <value>Ошибка обработки точности типа данных [%1].</value>
+  </data>
+  <data name="type_mapping_err__failed_to_parse_datatype_scale_1" xml:space="preserve">
+    <value>Ошибка обработки масштаба типа данных [%1].</value>
+  </data>
+  <data name="type_mapping_err__too_large_length_of_datatype_1" xml:space="preserve">
+    <value>Слишком большая длина типа данных [%1].</value>
+  </data>
+  <data name="type_mapping_err__too_large_precision_of_datatype_1" xml:space="preserve">
+    <value>Слишком большая точность типа данных [%1].</value>
+  </data>
+  <data name="type_mapping_err__too_large_scale_of_datatype_1" xml:space="preserve">
+    <value>Слишком большой масштаб типа данных [%1].</value>
+  </data>
+  <data name="type_mapping_err__incompleted_datatype_definition_0" xml:space="preserve">
+    <value>Незавершенное описание типа данных.</value>
+  </data>
+  <data name="type_mapping_err__incompleted_datatype_definition_1" xml:space="preserve">
+    <value>Незавершенное описание типа данных [%1].</value>
+  </data>
+  <data name="type_mapping_err__bad_datatype_definition_1" xml:space="preserve">
+    <value>Некорректное описание типа данных [%1].</value>
+  </data>
+  <data name="type_mapping_err__not_defined_charset_name_1" xml:space="preserve">
+    <value>В описании типа данных [%1] не указано имя кодовой страницы.</value>
+  </data>
+  <data name="type_mapping_err__not_defined_subtype_name_1" xml:space="preserve">
+    <value>В описании типа данных [%1] не указано имя подтипа.</value>
+  </data>
+  <data name="type_mapping_err__unknown_blob_subtype_1" xml:space="preserve">
+    <value>Неизвестное имя подтипа блоба: [%1].</value>
+  </data>
+  <data name="type_mapping_err__definition_of_blob_charset_allowed_only_for_subtype_text_0" xml:space="preserve">
+    <value>Указание кодовой страницы BLOB допускается только для подтипа TEXT.</value>
+  </data>
+  <data name="type_mapping_err__unexpected_data_at_end_of_datatype_definition_1" xml:space="preserve">
+    <value>Неизвестные данные в конце определения типа данных [%1].</value>
+  </data>
+  <data name="schema_err__data_provider_not_support_req_restriction_2" xml:space="preserve">
+    <value>Провайдер данных не поддерживает ограничение [%2] для схемы [%1].</value>
+  </data>
+  <data name="schema_err__unknown_table_type__2" xml:space="preserve">
+    <value>Неизвестный тип таблицы [%1]: [%2].</value>
+  </data>
+  <data name="schema_err__unknown_proc_type__2" xml:space="preserve">
+    <value>Неизвестный тип процедуры [%1]: [%2].</value>
+  </data>
+  <data name="schema_err__failed_to_build_column_info_4" xml:space="preserve">
+    <value>Ошибка формирования описания колонки [%1].[%2].[%3].[%4].</value>
+  </data>
+  <data name="schema_err__failed_to_build_parameter_info_4" xml:space="preserve">
+    <value>Ошибка формирования описания параметра [%1].[%2].[%3].[%4].</value>
+  </data>
+  <data name="schema_err__failed_to_process_column_oledb_datatype_2" xml:space="preserve">
+    <value>Ошибка обработка типа данных колонки. OLEDB Type Code: %1. OLEDB Column Flags: %2.</value>
+  </data>
+  <data name="schema_err__failed_to_process_parameter_oledb_datatype_2" xml:space="preserve">
+    <value>Ошибка обработка типа данных параметра. OLEDB Type Code: %1. OLEDB Flags: %2.</value>
+  </data>
+  <data name="schema_err__provider_datatype_not_supported_1" xml:space="preserve">
+    <value>Тип данных [%1] провайдера не поддерживается.</value>
+  </data>
+  <data name="schema_err__unknown_parameter_oledb_type_1" xml:space="preserve">
+    <value>Неизвестный OLEDB тип параметра: %1.</value>
+  </data>
+  <data name="schema_err__unknown_data_type_1" xml:space="preserve">
+    <value>Неизвестный тип данных: %1.</value>
+  </data>
+  <data name="local_eval_err__member_not_supported_2" xml:space="preserve">
+    <value>Локальное вычисление свойства [%1].[%2] не поддерживается.</value>
+  </data>
+  <data name="local_eval_err__unary_operator_not_supported_1" xml:space="preserve">
+    <value>Локальное вычисление унарной операции [%1] не поддерживается.</value>
+  </data>
+  <data name="local_eval_err__unary_operator_not_supported_2" xml:space="preserve">
+    <value>Локальное вычисление унарной операции [%1] не поддерживается. Связанное значение имеет тип [%2].</value>
+  </data>
+  <data name="local_eval_err__binary_operator_not_supported_3" xml:space="preserve">
+    <value>Локальное вычисление бинарной операции [%1] не поддерживается. Левый аргумент: [тип: %2]. Правый аргумент: [тип: %3].</value>
+  </data>
+  <data name="local_eval_err__method_not_supported_1" xml:space="preserve">
+    <value>Локальное вычисление метода [%1] не поддерживается.</value>
+  </data>
+  <data name="local_eval_err__unexpected_result_type_of_logical_expression_1" xml:space="preserve">
+    <value>Неожиданный тип результата логического выражения: %1.</value>
+  </data>
+  <data name="local_eval_err__cant_remap_static_method_2" xml:space="preserve">
+    <value>Невозможно переназначить метод [%1] на метод с аргументами [%2].</value>
+  </data>
+  <data name="local_eval_err__cant_remap_instance_method_3" xml:space="preserve">
+    <value>Невозможно переназначить метод [%1] на метод класса [%2] с аргументами [%3].</value>
+  </data>
+  <data name="local_eval_err__ambiguous_remap_method_3" xml:space="preserve">
+    <value>Неоднозначный выбор переназначений метода [%1] для новых аргументов [%2]. Возможные варианты:%3.</value>
+  </data>
+  <data name="local_eval_err__cant_remap_object_construction_3" xml:space="preserve">
+    <value>Не удалось преобразовать создание объекта с типом [%1] в создание объекта с типом [%2]. Не найден конструктор с параметрами [%3].</value>
+  </data>
+  <data name="local_eval_err__comparison_of_arrays_with_different_length_not_supported_2" xml:space="preserve">
+    <value>Локальное сравнение линейных массивов с разной длиной не поддерживается. Длина первого массива: %1. Длина второго массива: %2.</value>
+  </data>
+  <data name="local_eval_err__failed_to_compare_element_of_arrays_1" xml:space="preserve">
+    <value>Ошибка сравнения элемента [%1] массивов.</value>
+  </data>
+  <data name="local_eval_err__cant_convert_array_element_value_to_required_type_3" xml:space="preserve">
+    <value>Ошибка приведения значения элемента массива [индекс: %1] с типом [%2] к типу [%3].</value>
+  </data>
+  <data name="com_err__com_code_error_1" xml:space="preserve">
+    <value>Код ошибки COM: %1.</value>
+  </data>
+  <data name="data_type_err__failed_to_build_data_type_sign_1" xml:space="preserve">
+    <value>Ошибка формирования строки с описанием типа данных [%1].</value>
+  </data>
+  <data name="cs_utf16_err__bad_sequence__2" xml:space="preserve">
+    <value>Некорректная последовательность UTF-16 символов. Смещение [%2]. Точка проверки [%1].</value>
+  </data>
+  <data name="bug_check__generic_error_3" xml:space="preserve">
+    <value>[BUG CHECK] Некорректное состояние в точке проверки [%1][%2]. Причина - %3.</value>
+  </data>
+  <data name="bug_check__deserialization__wrong_state_2" xml:space="preserve">
+    <value>[BUG CHECK] Некорректное состояние десериализированного объекта [%1]. Точка проверки: "%2".</value>
+  </data>
+  <data name="bug_check__deserialization__null_obj_ptr_2" xml:space="preserve">
+    <value>[BUG CHECK] Ошибка десериализации объекта [%1]. Восстановлен нулевой указатель на объект [%2].</value>
+  </data>
+  <data name="bug_check__deserialization__null_item_ptr_3" xml:space="preserve">
+    <value>[BUG CHECK] Ошибка десериализации объекта [%1]. Восстановлен нулевой указатель в элементе [%3] контейнера [%2].</value>
+  </data>
+  <data name="bug_check__array_err__unexpected_dim_number_6" xml:space="preserve">
+    <value>[BUG CHECK] Неожиданный номер размерности массива [%1].[%2].[%3].[%4]: %5. Ожидался номер: %6.</value>
+  </data>
+  <data name="bug_check__array_err__bad_sort_of_schema_9" xml:space="preserve">
+    <value>[BUG CHECK] Некорректная сортировка схемы [%1]. Предыдущий элемент [%2].[%3].[%4].[%5]. Текущий элемент [%6].[%7].[%8].[%9].</value>
+  </data>
+  <data name="bug_check__array_err__bad_range_of_dimension_7" xml:space="preserve">
+    <value>[BUG CHECK] Некорректный диапазон размерности [%5] массива [%1].[%2].[%3].[%4]: %6..%7.</value>
+  </data>
+  <data name="bug_check__array_err__no_descr_4" xml:space="preserve">
+    <value>[BUG CHECK] Отсутствует описание массива [%1].[%2].[%3].[%4].</value>
+  </data>
+  <data name="bug_check__engine_svc_not_supported_1" xml:space="preserve">
+    <value>[BUG CHECK] Сервис [id: %1] не поддерживается текущим подключением.</value>
+  </data>
+  <data name="bug_check__engine_svc_not_supported_req_interface_2" xml:space="preserve">
+    <value>[BUG CHECK] Сервис [id: %1] не поддерживает интерфейс [%2].</value>
+  </data>
+  <data name="bug_check__schema_contains_unexpected_row_count_4" xml:space="preserve">
+    <value>[BUG CHECK] Неожиданное количество строк в схеме [%3]: %4. Точка проверки: [%1][%2].</value>
+  </data>
+  <data name="bug_check__incorrect_schema_restriction_number_5" xml:space="preserve">
+    <value>[BUG CHECK] Некорректный номер ограничения [%4] схемы метаданных [%3]: %5. Точка проверки: [%1][%2].</value>
+  </data>
+  <data name="bug_check__unexpected_result_type_of_binary_operator_5" xml:space="preserve">
+    <value>[BUG CHECK] Неожиданный тип результата бинарной операции [%1]: %2. Ожидаемый базовый тип: %3. Тип левого аргумента: %4. Тип правого аргумента: %5.</value>
+  </data>
+  <data name="bug_check__bind_to_type_method__not_found_4" xml:space="preserve">
+    <value>[BUG CHECK] Ошибка привязки к методу [%1].[%2] со списком параметров {%3}. BindingFlags: %4. Метод не найден.</value>
+  </data>
+  <data name="bug_check__bind_to_type_method__bad_return_type_6" xml:space="preserve">
+    <value>[BUG CHECK] Ошибка привязки к методу [%1].[%2] со списком параметров {%3}. BindingFlags: %4. Метод возвращает %6 вместо %5.</value>
+  </data>
+  <data name="bug_check__get_nested_type__not_found_3" xml:space="preserve">
+    <value>[BUG CHECK] Ошибка получения описания вложенного типа [%1].[%2]. BindingFlags: %3. Тип не найден.</value>
+  </data>
+  <data name="bug_check__sql_enode__unsupported_arg_types__2" xml:space="preserve">
+    <value>[BUG CHECK] SQL Expression Node [%1]. Неподдерживаемые типы аргументов {%2}.</value>
+  </data>
+</root>
