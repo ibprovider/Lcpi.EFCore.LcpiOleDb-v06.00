@@ -8,8 +8,8 @@ Currently it allows you to interact with Firebird v3 via .NET O/RM from Microsof
 
 This provider **does not looks and feels** like any other Entity Framework Core provider.
 
-## Platform information
-1. NET6
+## Target platform
+1. NET6 (Windows)
 2. EF Core 6.0
 3. Firebird v3.0.8
 4. LCPI ADO.NET Provider for OLE DB
@@ -28,6 +28,8 @@ This provider **does not looks and feels** like any other Entity Framework Core 
 ## Example of usage
 
 ``` c#
+////////////////////////////////////////////////////////////////////////////////
+//Please use correct TargetPlatform: net6.0-windows
 ////////////////////////////////////////////////////////////////////////////////
 
 using Microsoft.EntityFrameworkCore;
