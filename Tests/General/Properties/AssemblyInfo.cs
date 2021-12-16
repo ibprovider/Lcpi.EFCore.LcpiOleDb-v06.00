@@ -10,12 +10,7 @@ using EFCore_LcpiOleDb_Tests.General;
 
 [assembly: AssemblyTitle(AssemblyInfoData.Title)]
 [assembly: AssemblyDescription(AssemblyInfoData.Descr)]
-[assembly: AssemblyConfiguration(AssemblyInfoData.Cfg)]
-
-[assembly: AssemblyProduct(AssemblyInfoData.Product)]
 
 [assembly: ComVisible(false)]
-
-[assembly: System.Runtime.Versioning.SupportedOSPlatform("windows")]
 
 ////////////////////////////////////////////////////////////////////////////////

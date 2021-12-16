@@ -1,0 +1,41 @@
+Reworking of version data
+
+[Source]
+
+[del] Version\ef_core__lcpi_oledb_v2.cs
+[del] Version\ef_core__lcpi_oledb_v2_code.cs
+[del] Version\ef_core__lcpi_oledb_v2_tests.cs
+
+Code\Provider\Properties\AssemblyInfo.cs
+ - [del] AssemblyConfiguration
+ - [del] AssemblyProduct
+ - [del] AssemblyInformationalVersion
+ - [del] System.Runtime.Versioning.SupportedOSPlatform
+
+work\Code\Provider\Properties\AssemblyInfoData.cs
+ - Title
+   - [del] usage of ProductState.NamePart
+
+ - [del] Product
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - GenerateAssemblyInfo=true
+
+ - [add] GenerateAssemblyTitleAttribute=false
+ - [add] GenerateAssemblyDescriptionAttribute=false
+
+ - [del] link: Properties\ef_core__lcpi_oledb_v2.cs
+ - [del] link: Properties\ef_core__lcpi_oledb_v2_code.cs
+
+Directory.Build.props
+ - [add] TargetFramework=net6.0-windows7.0
+ - [add] LangVersion=latest
+ 
+ - [add] PackageProjectUrl
+ - [add] PublishRepositoryUrl
+ - [add] Product
+ - [add] Copyright
+ - [add] Company
+ - [add] VersionPrefix
+ 
+ - [add] PackageReference "Microsoft.SourceLink.GitHub" Version="1.1.1"

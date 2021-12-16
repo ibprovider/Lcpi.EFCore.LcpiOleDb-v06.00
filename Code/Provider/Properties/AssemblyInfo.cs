@@ -12,17 +12,10 @@ using Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb;
 
 [assembly: AssemblyTitle(AssemblyInfoData.Title)]
 [assembly: AssemblyDescription(AssemblyInfoData.Descr)]
-[assembly: AssemblyConfiguration(AssemblyInfoData.Cfg)]
-
-[assembly: AssemblyProduct(AssemblyInfoData.Product)]
-
-[assembly: AssemblyInformationalVersion(ProductState.Version)]
 
 [assembly: ComVisible(false)]
 
 [assembly: DesignTimeProviderServices("Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Design.Internal.LcpiOleDb__DesignTimeServices")]
-
-[assembly: System.Runtime.Versioning.SupportedOSPlatform("windows")]
 
 ////////////////////////////////////////////////////////////////////////////////
 //Support for Tests

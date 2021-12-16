@@ -29,16 +29,13 @@ static class AssemblyInfoData
 
  //-----------------------------------------------------------------------
  public const string Title
-  =c_BaseDescr_Str+" "+c_BaseDescr_TargetPlatformPart+ProductState.NamePart+c_BaseDescr_CfgPart;
+  =c_BaseDescr_Str+" "+c_BaseDescr_TargetPlatformPart+c_BaseDescr_CfgPart;
 
  public const string Descr
   =Title;
 
  public const string Cfg
   =c_CfgName;
-
- public const string Product
-  =Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.AssemblyInfoData.Product;
 };//class AssemblyInfoData
 
 ////////////////////////////////////////////////////////////////////////////////
