@@ -29,7 +29,7 @@ This provider **does not looks and feels** like any other Entity Framework Core 
 
 ``` c#
 ////////////////////////////////////////////////////////////////////////////////
-//Please use correct TargetPlatform: net6.0-windows
+//Please use correct TargetPlatform: net6.0-windows7.0
 ////////////////////////////////////////////////////////////////////////////////
 
 using Microsoft.EntityFrameworkCore;
