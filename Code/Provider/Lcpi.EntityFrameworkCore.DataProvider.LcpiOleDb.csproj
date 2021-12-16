@@ -2,12 +2,13 @@
 
   <PropertyGroup>
     <EnableDefaultItems>false</EnableDefaultItems>
-    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <DisableImplicitNamespaceImports>true</DisableImplicitNamespaceImports>
   </PropertyGroup>
 
   <PropertyGroup>
-    <TargetFramework>net6.0-windows7.0</TargetFramework>
     <RootNamespace>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>bin\vs2022-net60.0-$(Configuration)\</OutputPath>
@@ -29,12 +30,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="..\..\Version\ef_core__lcpi_oledb_v2.cs">
-      <Link>Properties\ef_core__lcpi_oledb_v2.cs</Link>
-    </Compile>
-    <Compile Include="..\..\Version\ef_core__lcpi_oledb_v2_code.cs">
-      <Link>Properties\ef_core__lcpi_oledb_v2_code.cs</Link>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\AssemblyInfoData.cs" />
     <Compile Include="Resources\ResourceFileID.cs" />

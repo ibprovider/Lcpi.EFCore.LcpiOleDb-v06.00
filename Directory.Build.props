@@ -1,6 +1,27 @@
 <Project>
   <PropertyGroup>
+    <TargetFramework>net6.0-windows7.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+
+    <PackageProjectUrl>https://github.com/ibprovider/Lcpi.EFCore.LcpiOleDb/</PackageProjectUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Common/lcpi.net.code.keys.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
+
+  <PropertyGroup>
+    <Product>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb</Product>
+    <Copyright>Copyright © LCPI</Copyright>
+    <Company>LCPI</Company>
+
+    <VersionPrefix>6.0.1</VersionPrefix>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
 </Project>
