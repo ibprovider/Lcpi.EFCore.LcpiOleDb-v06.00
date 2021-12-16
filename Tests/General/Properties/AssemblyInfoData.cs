@@ -8,11 +8,9 @@ namespace EFCore_LcpiOleDb_Tests.General{
 
 static class AssemblyInfoData
 {
- private const string c_BaseDescr_Str="General Tests for EFCore LcpOleDb DataProvider";
+ private const string c_BaseDescr_Str="General Tests for EF Core LcpOleDb DataProvider";
 
-#if   BUILD_CONF__NET5_0_0
- private const string c_BaseDescr_TargetPlatformPart="[NET5.0.0]";
-#elif BUILD_CONF__NET6_0_0
+#if   BUILD_CONF__NET6_0_0
  private const string c_BaseDescr_TargetPlatformPart="[NET6.0.0]";
 #else
 # error "Unknown target platform!"
