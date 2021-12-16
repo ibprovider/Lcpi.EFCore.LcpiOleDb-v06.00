@@ -5,3 +5,27 @@ Correction of AssemblyInfoData - "EF Core" not "EFCore"
 Code\Provider\Properties\AssemblyInfoData.cs
  - c_BaseDescr_Str
    - "...  EF Core ...."
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Import of lcpi.net.code.keys.snk.
+
+MSDN: "Do not rely on strong names for security. They provide a unique identity only."
+
+https://docs.microsoft.com/en-us/dotnet/standard/assembly/strong-named
+
+Okay.
+
+[Source]
+
+[add] Directory.Build.props
+ - AssemblyOriginatorKeyFile -> Common/lcpi.net.code.keys.snk
+ - SignAssembly=true
+
+[add] Common\lcpi.net.code.keys.snk
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - [del] KeyContainerName
+
+Tests\General\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Tests.General.csproj
+ - [del] KeyContainerName

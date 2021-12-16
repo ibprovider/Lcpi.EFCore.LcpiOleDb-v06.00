@@ -12,7 +12,6 @@
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
     <OutputPath>bin\vs2022-net60.0-$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\vs2022-net60.0-$(Configuration)\</IntermediateOutputPath>
-    <KeyContainerName>lcpi.net.code.keys</KeyContainerName>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
