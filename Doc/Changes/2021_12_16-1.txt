@@ -1,0 +1,7 @@
+Correction of AssemblyInfoData - "EF Core" not "EFCore"
+
+[Source]
+
+Code\Provider\Properties\AssemblyInfoData.cs
+ - c_BaseDescr_Str
+   - "...  EF Core ...."

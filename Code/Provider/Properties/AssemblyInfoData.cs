@@ -8,7 +8,7 @@ namespace Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb{
 
 static class AssemblyInfoData
 {
- private const string c_BaseDescr_Str="LCPI EFCore DataProvider for LcpiOleDb";
+ private const string c_BaseDescr_Str="LCPI EF Core DataProvider for LcpiOleDb";
 
 #if   BUILD_CONF__NET5_0_0
  private const string c_BaseDescr_TargetPlatformPart="[NET5.0.0]";
