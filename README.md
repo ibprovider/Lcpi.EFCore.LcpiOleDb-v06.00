@@ -16,7 +16,7 @@ This provider **does not looks and feels** like any other Entity Framework Core 
 5. LCPI.IBProvider.5
  
 ## Key Features
-1. Supporting of database with 1 and 3 dialects.
+1. Supporting of databases with 1 and 3 dialects.
 2. Supporting of all FB3 datatypes, except arrays.
 3. Providing a local evaluation by server's rules.
 4. Supporting mapping wide set of c# functions to SQL.
