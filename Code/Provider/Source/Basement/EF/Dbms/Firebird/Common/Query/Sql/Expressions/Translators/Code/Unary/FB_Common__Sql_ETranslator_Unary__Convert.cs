@@ -70,6 +70,8 @@ sealed partial class FB_Common__Sql_ETranslator_Unary__Convert
 
   m_SSCodes.DEBUG__Complete();
 
+  m_DEBUG__IsCompleted=true;
+
   return this;
  }//DEBUG__Complete
 #endif
@@ -89,7 +91,7 @@ sealed partial class FB_Common__Sql_ETranslator_Unary__Convert
   Debug.Assert(!Object.ReferenceEquals(m_SSCodes,null));
 
 #if DEBUG
-  Debug.Assert(!m_DEBUG__IsCompleted);
+  Debug.Assert(m_DEBUG__IsCompleted);
 #endif
 
   //-------------------------------------------------------

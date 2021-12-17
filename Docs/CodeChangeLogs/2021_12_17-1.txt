@@ -112,3 +112,17 @@ Revision and normalization of Structure_ValueWithNull
 Code\Provider\Source\Structure\Structure_ValueWithNull.cs
  - public Structure_ValueWithNull<T> Reset()
    - replacing 'default<T>' to simple 'default'
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[BUG FIX] Mistake in DEBUG code of FB_Common__Sql_ETranslator_Unary__Convert
+
+[Source]
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\Common\Query\Sql\Expressions\Translators\Code\Unary\FB_Common__Sql_ETranslator_Unary__Convert.cs
+ - DEBUG__Complete
+   - [add] Setup m_DEBUG__IsCompleted to true
+
+ - Translate
+   - [BUG FIX] Incorrect DEBUG check of m_DEBUG__IsCompleted
+     - should expect (correct) TRUE, not (incorrect) FALSE!
