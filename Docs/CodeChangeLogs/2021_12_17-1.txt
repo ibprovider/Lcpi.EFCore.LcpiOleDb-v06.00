@@ -57,3 +57,12 @@ Code\Provider\Source-External\Microsoft\EntityFrameworkCode\EFCore.Relational\Qu
  - _lcpi_typeMappingForBool
  - _lcpi_expr_BOOL_FALSE
  - _lcpi_expr_BOOL_TRUE
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Usage readonly for data
+
+[Source]
+
+Code\Provider\Source\Core\Engines\Dbms\Firebird\Common\Mirror\Value\Converts\Helper\Convert_Helper__ParserPart__STRING_DATE___D1.cs
+ - sm_SeparatorRules

@@ -693,7 +693,7 @@ static class Convert_Helper__ParserPart__STRING_DATE___D1
   sm_Sep__minus_pt
    =new char[]{'-','.'};
 
- private static tagSeparatorRule[]
+ private static readonly tagSeparatorRule[]
   sm_SeparatorRules
    =new tagSeparatorRule[]
     {
