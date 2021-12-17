@@ -184,7 +184,7 @@ sealed partial class FB_Common__Sql_ETranslator_Unary__Convert
   m_SSCodes;
 
 #if DEBUG
-  private bool m_DEBUG__IsCompleted;
+ private bool m_DEBUG__IsCompleted;
 #endif
 };//class FB_Common__Sql_ETranslator_Unary__Convert
 
