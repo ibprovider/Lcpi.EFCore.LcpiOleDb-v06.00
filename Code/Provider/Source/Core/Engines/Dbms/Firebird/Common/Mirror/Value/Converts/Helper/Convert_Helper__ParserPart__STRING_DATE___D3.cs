@@ -686,8 +686,9 @@ static class Convert_Helper__ParserPart__STRING_DATE___D3
  private const int c_MonthNameMaxLength
   =9; //SEPTEMBER
 
- private static readonly tagMonthNames sm_MonthNames
-  =new tagMonthNames()
+ private static readonly tagMonthNames
+  sm_MonthNames
+   =new tagMonthNames()
     .Add("JANUARY"    , 1  )
     .Add("FEBRUARY"   , 2  )
     .Add("MARCH"      , 3  )
