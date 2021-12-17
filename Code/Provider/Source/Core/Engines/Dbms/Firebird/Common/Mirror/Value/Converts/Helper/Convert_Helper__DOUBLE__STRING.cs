@@ -73,16 +73,16 @@ static class Convert_Helper__DOUBLE__STRING
 
   Debug.Assert(!string.IsNullOrEmpty(r));
 
-  Debug.Assert(!r.Contains("E"));
+  Debug.Assert(!r.Contains('E'));
 
-  var iE=r.IndexOf("e");
+  var iE=r.IndexOf('e');
 
   if(iE>=0)
   {
    Debug.Assert(iE>=1);
    Debug.Assert(iE<r.Length);
 
-   var iP=r.IndexOf(".",0,iE);
+   var iP=r.IndexOf('.',0,iE);
 
    if(iP==-1)
    {
@@ -119,11 +119,13 @@ static class Convert_Helper__DOUBLE__STRING
    if(v<0)
     ++n;
 
-   if(!r.Contains("."))
-    r+='.';
+   if(!r.Contains('.'))
+    r+=".";
 
    if(r.Length<n)
     r=r+new string('0',n-r.Length);
+
+   Debug.Assert(!string.IsNullOrEmpty(r));
 
    return r;
   }//local

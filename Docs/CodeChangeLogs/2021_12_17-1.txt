@@ -66,3 +66,24 @@ Usage readonly for data
 
 Code\Provider\Source\Core\Engines\Dbms\Firebird\Common\Mirror\Value\Converts\Helper\Convert_Helper__ParserPart__STRING_DATE___D1.cs
  - sm_SeparatorRules
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision and normalization of Convert_Helper__DOUBLE__STRING
+
+[Source]
+
+Code\Provider\Source\Core\Engines\Dbms\Firebird\Common\Mirror\Value\Converts\Helper\Convert_Helper__DOUBLE__STRING.cs
+ - Exec
+   - The calls string.IndexOf, string.Contains:
+     - usage of Char instead String:
+        "E" -> 'E'
+        "e" -> 'e'
+        "." -> '.'
+
+   - replacing "string+=char" to string+=string:
+      r+='.' to r+="."
+
+      I think that string+=string is better than string+=(object)char
+
+  - Added debug check before exiting
