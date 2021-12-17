@@ -126,3 +126,55 @@ Code\Provider\Source\Basement\EF\Dbms\Firebird\Common\Query\Sql\Expressions\Tran
  - Translate
    - [BUG FIX] Incorrect DEBUG check of m_DEBUG__IsCompleted
      - should expect (correct) TRUE, not (incorrect) FALSE!
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Reworking projects files:
+ - Supporting of nuget package generation
+ - Correction of version (we always define all four parts)
+
+[Source]
+
+Directory.Build.props
+ - [add] LCPI_AssemblyPlatformSign=net6_0_0
+ - [add] LCPI_DefineConstants=BUILD_CONF__NET6_0_0;
+
+ - // ROLLBACK [PROBLEM WITH ALL GENERAL TESTS]: [add] DebugSymbols=true
+ - // ROLLBACK [PROBLEM WITH ALL GENERAL TESTS]: [add] DebugType=full
+
+ - [add] Authors=LCPI
+ - [add] PackageLicenseExpression=MIT
+
+ - VersionPrefix=6.0.1.1
+
+ - [add] Version=$(VersionPrefix)
+
+[add] Code\Directory.Build.props
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - OutputPath=bin\$(LCPI_AssemblyPlatformSign)-$(Configuration)\
+
+ - IntermediateOutputPath=obj\$(LCPI_AssemblyPlatformSign)-$(Configuration)\
+
+ - [add] PackageId=$(RootNamespace)
+
+ - [add] Description
+
+ - [add] PackageIcon
+
+ - [add] PackageReadmeFile
+
+ - [add] PackageTags
+
+ - DEBUG: AssemblyName=$(RootNamespace)-$(LCPI_AssemblyPlatformSign).debug
+ - DEBUG: DefineConstants=TRACE;$(LCPI_DefineConstants)
+
+ - RELEASE: AssemblyName=$(RootNamespace)-$(LCPI_AssemblyPlatformSign)
+ - RELEASE: DefineConstants=$(LCPI_DefineConstants)
+
+ - [add] Package\logo2-128x128.png
+ - [add] Package\readme.md
+
+[add] work\Code\Provider\Package\logo2-128x128.png
+[add] work\Code\Provider\Package\readme.md
+

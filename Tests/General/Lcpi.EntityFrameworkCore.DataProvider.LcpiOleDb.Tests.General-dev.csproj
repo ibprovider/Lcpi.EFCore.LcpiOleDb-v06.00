@@ -11,20 +11,20 @@
   <PropertyGroup>
     <RootNamespace>EFCore_LcpiOleDb_Tests.General</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <OutputPath>bin\vs2022-net60.0-$(Configuration)-dev\</OutputPath>
-    <IntermediateOutputPath>obj\vs2022-net60.0-$(Configuration)-dev\</IntermediateOutputPath>
+    <OutputPath>bin\$(LCPI_AssemblyPlatformSign)-$(Configuration)-dev\</OutputPath>
+    <IntermediateOutputPath>obj\$(LCPI_AssemblyPlatformSign)-$(Configuration)-dev\</IntermediateOutputPath>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <AssemblyName>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Tests.General-net6_0_0.debug</AssemblyName>
-    <DefineConstants>BUILD_CONF__NET6_0_0;TRACE;DEBUG</DefineConstants>
+    <DefineConstants>TRACE;$(LCPI_DefineConstants)</DefineConstants>
     <Optimize>false</Optimize>
     <NoWarn>1701;1702;EF1001</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <AssemblyName>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Tests.General-net6_0_0</AssemblyName>
-    <DefineConstants>BUILD_CONF__NET6_0_0</DefineConstants>
+    <DefineConstants>$(LCPI_DefineConstants)</DefineConstants>
     <Optimize>true</Optimize>
     <NoWarn>1701;1702;EF1001</NoWarn>
   </PropertyGroup>

@@ -11,20 +11,25 @@
   <PropertyGroup>
     <RootNamespace>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb</RootNamespace>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <OutputPath>bin\vs2022-net60.0-$(Configuration)\</OutputPath>
-    <IntermediateOutputPath>obj\vs2022-net60.0-$(Configuration)\</IntermediateOutputPath>
+    <OutputPath>bin\$(LCPI_AssemblyPlatformSign)-$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(LCPI_AssemblyPlatformSign)-$(Configuration)\</IntermediateOutputPath>
+    <PackageId>$(RootNamespace)</PackageId>
+    <Description>LCPI EF Core provider for LCPI ADO.NET Provider for OLE DB.</Description>
+    <PackageIcon>images\logo2-128x128.png</PackageIcon>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageTags>firebird;firebirdsql;adonet;ado.net;ibprovider;oledb;oledb.net;EntityFrameworkCore;entity-framework-core;efcore;EntityFramework;ef;orm;sql</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <AssemblyName>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb-net6_0_0.debug</AssemblyName>
-    <DefineConstants>BUILD_CONF__NET6_0_0;TRACE;DEBUG</DefineConstants>
+    <AssemblyName>$(RootNamespace)-$(LCPI_AssemblyPlatformSign).debug</AssemblyName>
+    <DefineConstants>TRACE;$(LCPI_DefineConstants)</DefineConstants>
     <Optimize>false</Optimize>
     <NoWarn>1701;1702;EF1001</NoWarn>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <AssemblyName>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb-net6_0_0</AssemblyName>
-    <DefineConstants>BUILD_CONF__NET6_0_0</DefineConstants>
+    <AssemblyName>$(RootNamespace)-$(LCPI_AssemblyPlatformSign)</AssemblyName>
+    <DefineConstants>$(LCPI_DefineConstants)</DefineConstants>
     <Optimize>true</Optimize>
     <NoWarn>1701;1702;EF1001</NoWarn>
   </PropertyGroup>
@@ -4439,6 +4444,17 @@
     <EmbeddedResource Include="Source\ErrorServices\ErrMessageID.resx" />
     <EmbeddedResource Include="Source\ErrorServices\ErrMessageID.ru.resx" />
     <EmbeddedResource Include="Source\ErrorServices\ErrSourceID.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Package\logo2-128x128.png">
+      <Pack>True</Pack>
+      <PackagePath>\images\logo2-128x128.png</PackagePath>
+    </None>
+    <None Include="Package\readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\readme.md</PackagePath>
+    </None>
   </ItemGroup>
 
   <ItemGroup>

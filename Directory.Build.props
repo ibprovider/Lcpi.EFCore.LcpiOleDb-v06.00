@@ -1,21 +1,46 @@
 <Project>
   <PropertyGroup>
     <TargetFramework>net6.0-windows7.0</TargetFramework>
-    <LangVersion>latest</LangVersion>
 
-    <PackageProjectUrl>https://github.com/ibprovider/Lcpi.EFCore.LcpiOleDb/</PackageProjectUrl>
-    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <LCPI_AssemblyPlatformSign>net6_0_0</LCPI_AssemblyPlatformSign>
 
+    <LCPI_DefineConstants>BUILD_CONF__NET6_0_0;</LCPI_DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup>
     <AssemblyOriginatorKeyFile>$(MSBuildThisFileDirectory)Common/lcpi.net.code.keys.snk</AssemblyOriginatorKeyFile>
     <SignAssembly>true</SignAssembly>
+
+    <LangVersion>latest</LangVersion>
+
+<!-- Produces the problems with compilation ALL general tests...
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+-->
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <PackageProjectUrl>https://github.com/ibprovider/Lcpi.EFCore.LcpiOleDb/</PackageProjectUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
   </PropertyGroup>
 
   <PropertyGroup>
     <Product>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb</Product>
     <Copyright>Copyright © LCPI</Copyright>
     <Company>LCPI</Company>
+    <Authors>LCPI</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
-    <VersionPrefix>6.0.1</VersionPrefix>
+    <PackageProjectUrl>https://www.ibprovider.com/eng/</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Version structure: EF_MAJOR.EF_MINOR.EF_PATCH.OUR_BUILD_NUMBER -->
+
+    <!-- ALWAYS DEFINE NOT ZERO OUR_BUILD_NUMBER (FOUR) PART! -->
+
+    <VersionPrefix>6.0.1.1</VersionPrefix>
+    <Version>$(VersionPrefix)</Version>
   </PropertyGroup>
 
   <ItemGroup>
