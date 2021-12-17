@@ -67,7 +67,7 @@ try
  
  using var tr=db.Database.BeginTransaction();
 
- var newRecord=new DatabaseServer{ Name=c_Dbms_Name, Description=c_Dbms_Descr};
+ var newRecord=new DatabaseServer{ Name=c_Dbms_Name, Description=c_Dbms_Descr };
  
  db.DatabaseServers!.Add(newRecord);
  
