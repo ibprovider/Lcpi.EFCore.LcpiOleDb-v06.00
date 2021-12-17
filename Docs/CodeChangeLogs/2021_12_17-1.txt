@@ -1,0 +1,12 @@
+Usage of const in c_ErrSrcID defintions
+
+[Source]
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Storage\FB_V03_0_0__TypeMappingSource__Base.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Storage\D1\FB_V03_0_0_D1__TypeMappingSource__Base.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Storage\D1\FB_V03_0_0_D1__TypeMappingSourceForDDL.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Storage\D2\FB_V03_0_0_D2__TypeMappingSource__Base.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Storage\D2\FB_V03_0_0_D2__TypeMappingSourceForDDL.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Storage\D3\FB_V03_0_0_D3__TypeMappingSource.cs
+ - private const ErrSourceID c_ErrSrcID
+   - it was: private static ErrSourceID ...

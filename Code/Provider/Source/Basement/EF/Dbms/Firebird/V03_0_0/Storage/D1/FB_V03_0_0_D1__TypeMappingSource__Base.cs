@@ -30,7 +30,7 @@ using T_FB_BLOB_SUBTYPE_ID
 abstract class FB_V03_0_0_D1__TypeMappingSource__Base
  :FB_V03_0_0__TypeMappingSource__Base
 {
- private static ErrSourceID
+ private const ErrSourceID
   c_ErrSrcID
    =ErrSourceID.FB_V03_0_0_D1__TypeMappingSource__Base;
 

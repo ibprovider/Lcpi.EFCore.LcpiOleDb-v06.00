@@ -34,7 +34,7 @@ using T_FB_DATATYPE_DESCR
 
 abstract class FB_V03_0_0__TypeMappingSource__Base:RelationalTypeMappingSource
 {
- private static ErrSourceID
+ private const ErrSourceID
   c_ErrSrcID
    =ErrSourceID.FB_V03_0_0__TypeMappingSource__Base;
 

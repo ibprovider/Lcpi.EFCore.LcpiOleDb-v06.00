@@ -13,7 +13,7 @@ namespace Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Fireb
 sealed class FB_V03_0_0_D1__TypeMappingSourceForDDL
  :FB_V03_0_0_D1__TypeMappingSource__Base
 {
- private static ErrSourceID
+ private const ErrSourceID
   c_ErrSrcID
    =ErrSourceID.FB_V03_0_0_D1__TypeMappingSourceForDDL;
 

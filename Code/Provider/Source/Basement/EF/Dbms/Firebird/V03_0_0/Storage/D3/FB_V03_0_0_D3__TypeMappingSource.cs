@@ -31,7 +31,7 @@ using T_FB_BLOB_SUBTYPE_ID
 sealed class FB_V03_0_0_D3__TypeMappingSource
  :FB_V03_0_0__TypeMappingSource__Base
 {
- private static ErrSourceID
+ private const ErrSourceID
   c_ErrSrcID
    =ErrSourceID.FB_V03_0_0_D3__TypeMappingSource;
 
