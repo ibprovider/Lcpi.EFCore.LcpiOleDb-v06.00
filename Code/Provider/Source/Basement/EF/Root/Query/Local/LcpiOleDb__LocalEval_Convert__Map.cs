@@ -102,7 +102,7 @@ sealed class LcpiOleDb__LocalEval_Convert__Map
  private sealed class tagLevel0:Dictionary<System.Type,tagLevel1>{};
 
  //private data ----------------------------------------------------------
- private tagLevel0 m_Items=new tagLevel0();
+ private readonly tagLevel0 m_Items=new tagLevel0();
 };//class LcpiOleDb__LocalEval_Convert__Map
 
 ////////////////////////////////////////////////////////////////////////////////

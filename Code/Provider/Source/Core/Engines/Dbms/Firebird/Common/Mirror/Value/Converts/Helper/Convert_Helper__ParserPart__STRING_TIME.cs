@@ -322,7 +322,7 @@ static class Convert_Helper__ParserPart__STRING_TIME
  };//struct tagSeparatorRule
 
  //private data ----------------------------------------------------------
- private static tagSeparatorRule[]
+ private static readonly tagSeparatorRule[]
   sm_SeparatorRules
    =new tagSeparatorRule[]
     {

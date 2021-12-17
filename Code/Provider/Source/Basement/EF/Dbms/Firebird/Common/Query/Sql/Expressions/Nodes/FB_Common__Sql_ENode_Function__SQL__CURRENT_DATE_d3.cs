@@ -261,7 +261,7 @@ sealed class FB_Common__Sql_ENode_Function__SQL__CURRENT_DATE_d3
 #endif
 
  //private data ----------------------------------------------------------
- private static SqlExpression
+ private static readonly SqlExpression
   sm_Instance
    =new FB_Common__Sql_ENode_Function__SQL__CURRENT_DATE_d3();
 };//class FB_Common__Sql_ENode_Function__SQL__CURRENT_DATE_d3

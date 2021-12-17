@@ -103,7 +103,7 @@ sealed class Common_EngineSvc__CommandParamereterNameBuilder__Error_NoPrefix
  }//ExtractInvariantParameterName
 
  //-----------------------------------------------------------------------
- private static EngineSvc__CommandParameterNameBuilder
+ private static readonly EngineSvc__CommandParameterNameBuilder
   sm_Instance
    =new Common_EngineSvc__CommandParamereterNameBuilder__Error_NoPrefix();
 };//class Common_EngineSvc__CommandParamereterNameBuilder__Error_NoPrefix

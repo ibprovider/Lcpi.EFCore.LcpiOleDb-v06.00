@@ -40,10 +40,10 @@ namespace Lcpi.EXT.Microsoft.EntityFrameworkCore.Query
         private bool _canCache;
 
         //----------------------------------------------------------------
-        private RelationalTypeMapping _lcpi_typeMappingForBool;
+        private readonly RelationalTypeMapping _lcpi_typeMappingForBool;
 
-        private SqlExpression _lcpi_expr_BOOL_FALSE;
-        private SqlExpression _lcpi_expr_BOOL_TRUE;
+        private readonly SqlExpression _lcpi_expr_BOOL_FALSE;
+        private readonly SqlExpression _lcpi_expr_BOOL_TRUE;
 
         //----------------------------------------------------------------
         protected enum LCPI__TransformationRule

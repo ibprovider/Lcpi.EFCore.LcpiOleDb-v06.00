@@ -667,11 +667,11 @@ static class Convert_Helper__ParserPart__STRING_DATE___D3
  };//class tagMonthNames
 
  //private data ----------------------------------------------------------
- private static char[]
+ private static readonly char[]
   sm_Sep__minus_pt
    =new char[]{'-','.'};
 
- private static tagSeparatorRule[]
+ private static readonly tagSeparatorRule[]
   sm_SeparatorRules
    =new tagSeparatorRule[]
     {
@@ -686,7 +686,7 @@ static class Convert_Helper__ParserPart__STRING_DATE___D3
  private const int c_MonthNameMaxLength
   =9; //SEPTEMBER
 
- private static tagMonthNames sm_MonthNames
+ private static readonly tagMonthNames sm_MonthNames
   =new tagMonthNames()
     .Add("JANUARY"    , 1  )
     .Add("FEBRUARY"   , 2  )

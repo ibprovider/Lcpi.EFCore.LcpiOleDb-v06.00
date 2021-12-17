@@ -156,7 +156,7 @@ sealed class LcpiOleDb__LocalEval_Op2__Map
  private sealed class tagLevel0:Dictionary<LcpiOleDb__ExpressionType,tagLevel1>{};
 
  //private data ----------------------------------------------------------
- private tagLevel0 m_Items=new tagLevel0();
+ private readonly tagLevel0 m_Items=new tagLevel0();
 };//class LcpiOleDb__LocalEval_Op2__Map
 
 ////////////////////////////////////////////////////////////////////////////////

@@ -261,7 +261,7 @@ sealed class FB_Common__Sql_ENode_Function__SQL__RAND
 #endif
 
  //private data ----------------------------------------------------------
- private static SqlExpression
+ private static readonly SqlExpression
   sm_Instance
    =new FB_Common__Sql_ENode_Function__SQL__RAND();
 };//class FB_Common__Sql_ENode_Function__SQL__RAND

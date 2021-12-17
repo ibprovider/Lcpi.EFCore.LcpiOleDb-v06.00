@@ -10,3 +10,50 @@ Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Storage\D2\FB_V03_0_0_D2_
 Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Storage\D3\FB_V03_0_0_D3__TypeMappingSource.cs
  - private const ErrSourceID c_ErrSrcID
    - it was: private static ErrSourceID ...
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Usage readonly for data
+
+[Source]
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\Common\Query\Sql\Expressions\Nodes\FB_Common__Sql_ENode_Function__SQL__CURRENT_DATE_d3.cs
+ - sm_Instance
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\Common\Query\Sql\Expressions\Nodes\FB_Common__Sql_ENode_Function__SQL__CURRENT_TIMESTAMP.cs
+ - sm_Instance
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\Common\Query\Sql\Expressions\Nodes\FB_Common__Sql_ENode_Function__SQL__RAND.cs
+ - sm_Instance
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\LcpiOleDb__LocalEval_Convert__Map.cs
+ - m_Items
+
+Code\Provider\Source\Basement\EF\Root\Query\ExpressionVisitors\LcpiOleDb__FromSqlParameterExpandingExpressionVisitor.cs
+ - m_parametersValues
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\LcpiOleDb__LocalEval_Op1__Map.cs
+ - m_Items
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\LcpiOleDb__LocalEval_Op2__Map.cs
+ - m_Items
+
+Code\Provider\Source\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__Error_NoPrefix.cs
+ - sm_Instance
+
+Code\Provider\Source\Core\Engines\Dbms\Firebird\Common\Mirror\Value\Converts\Helper\Convert_Helper__ParserPart__STRING_DATE___D1.cs
+ - sm_Sep__minus_pt
+ - sm_MonthNames
+
+Code\Provider\Source\Core\Engines\Dbms\Firebird\Common\Mirror\Value\Converts\Helper\Convert_Helper__ParserPart__STRING_DATE___D3.cs
+ - sm_Sep__minus_pt
+ - sm_SeparatorRules
+ - sm_MonthNames
+
+Code\Provider\Source\Core\Engines\Dbms\Firebird\Common\Mirror\Value\Converts\Helper\Convert_Helper__ParserPart__STRING_TIME.cs
+ - sm_SeparatorRules
+
+Code\Provider\Source-External\Microsoft\EntityFrameworkCode\EFCore.Relational\Query\SqlNullabilityProcessor.cs
+ - _lcpi_typeMappingForBool
+ - _lcpi_expr_BOOL_FALSE
+ - _lcpi_expr_BOOL_TRUE

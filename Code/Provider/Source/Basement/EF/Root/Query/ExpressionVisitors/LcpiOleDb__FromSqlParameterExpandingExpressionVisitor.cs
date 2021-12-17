@@ -265,7 +265,8 @@ sealed class LcpiOleDb__FromSqlParameterExpandingExpressionVisitor
   m_EngineSvc__CommandParameterNameBuilder; //Not null
 
  //-----------------------------------------------------------------------
- private IReadOnlyDictionary<string, object> m_parametersValues;
+ private readonly IReadOnlyDictionary<string, object>
+  m_parametersValues;
 
  private bool m_canCache;
 };//class LcpiOleDb__FromSqlParameterExpandingExpressionVisitor
