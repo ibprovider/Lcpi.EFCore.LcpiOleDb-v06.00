@@ -87,3 +87,18 @@ Code\Provider\Source\Core\Engines\Dbms\Firebird\Common\Mirror\Value\Converts\Hel
       I think that string+=string is better than string+=(object)char
 
   - Added debug check before exiting
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision and normalization of Structure_ADP
+ - Using String.Contains(Char) instead String.Contains(String)
+
+[Source]
+
+work\Code\Provider\Source\Structure\Structure_ADP.cs
+ - public static bool StrHasFloatValueAttrs(float v,string s)
+ - public static bool StrHasDoubleValueAttrs(double v,string s)
+   - Using String.Contains(Char) instead String.Contains(String)
+     - "E" -> 'E'
+     - "e" -> 'e'
+     - "." -> '.'

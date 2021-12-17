@@ -164,13 +164,13 @@ static class Structure_ADP
 
   Debug.Assert(!string.IsNullOrEmpty(s));
 
-  if(s.Contains("E"))
+  if(s.Contains('E'))
    return true;
 
-  if(s.Contains("e"))
+  if(s.Contains('e'))
    return true;
 
-  if(s.Contains("."))
+  if(s.Contains('.'))
    return true;
 
   if(float.IsNaN(v))
@@ -189,13 +189,13 @@ static class Structure_ADP
 
   Debug.Assert(!string.IsNullOrEmpty(s));
 
-  if(s.Contains("E"))
+  if(s.Contains('E'))
    return true;
 
-  if(s.Contains("e"))
+  if(s.Contains('e'))
    return true;
 
-  if(s.Contains("."))
+  if(s.Contains('.'))
    return true;
 
   if(double.IsNaN(v))
