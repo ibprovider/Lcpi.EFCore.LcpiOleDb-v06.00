@@ -38,7 +38,7 @@ struct Structure_ValueWithNull<T>
  //-----------------------------------------------------------------------
  public Structure_ValueWithNull<T> Reset()
  {
-  m_Value=default(T);
+  m_Value=default;
 
   m_HasValue=false;
 

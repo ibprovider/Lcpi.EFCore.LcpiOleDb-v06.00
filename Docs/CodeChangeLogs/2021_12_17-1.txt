@@ -102,3 +102,13 @@ work\Code\Provider\Source\Structure\Structure_ADP.cs
      - "E" -> 'E'
      - "e" -> 'e'
      - "." -> '.'
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Revision and normalization of Structure_ValueWithNull
+
+[Source]
+
+Code\Provider\Source\Structure\Structure_ValueWithNull.cs
+ - public Structure_ValueWithNull<T> Reset()
+   - replacing 'default<T>' to simple 'default'
