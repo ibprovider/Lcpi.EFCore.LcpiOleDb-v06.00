@@ -91,3 +91,13 @@ Correction provider project file
 Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
  - PackageReference "Microsoft.EntityFrameworkCore.Relational"
    - [add] PrivateAssets="none"
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[BUG FIX] Force creation of $(NuspecOutputAbsolutePath) folder
+
+[Source]
+
+Code\BuildHelpers.msbuild
+ - LCPI_TARGET__PreparePackageReleaseNotesFromFile
+   - [add] MakeDir $(NuspecOutputAbsolutePath)

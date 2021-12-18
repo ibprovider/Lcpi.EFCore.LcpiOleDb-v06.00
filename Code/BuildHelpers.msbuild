@@ -220,6 +220,8 @@
     <LCPI_AggregatedNuspecDataFilePath>$(NuspecOutputAbsolutePath)$(PackageId).$(Version).AGGREGATED_DATA</LCPI_AggregatedNuspecDataFilePath>
   </PropertyGroup>
 
+  <MakeDir Directories="$(NuspecOutputAbsolutePath)"/>
+
   <!--
     LCPI_TASK__GenerateFile do not touch exists file with SAME aggregated data.
   -->
