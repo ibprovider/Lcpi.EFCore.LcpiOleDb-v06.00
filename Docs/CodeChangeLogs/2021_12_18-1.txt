@@ -6,10 +6,21 @@ Correction of data for nuget package
 
 Directory.Build.props
  - Authors: IBProvider;Contributors
- 
+
 Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
  - PackageReadmeFile=README.md (UPPER case)
- 
+
  - "Package\README.md" -> "\README.md"
 
 [renaming] Code\Provider\Package\README.md (UPPER case)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Correction of description in nuget package
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - Description
+    - "EF" -> "Entity Framework"
+    - "LCPI ADO.NET Provider for OLE DB" (put into brackets)

@@ -14,7 +14,7 @@
     <OutputPath>bin\$(LCPI_AssemblyPlatformSign)-$(Configuration)\</OutputPath>
     <IntermediateOutputPath>obj\$(LCPI_AssemblyPlatformSign)-$(Configuration)\</IntermediateOutputPath>
     <PackageId>$(RootNamespace)</PackageId>
-    <Description>LCPI EF Core provider for LCPI ADO.NET Provider for OLE DB.</Description>
+    <Description>LCPI Entity Framework Core provider for «LCPI ADO.NET Provider for OLE DB».</Description>
     <PackageIcon>images\logo2-128x128.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>firebird;firebirdsql;adonet;ado.net;ibprovider;oledb;oledb.net;EntityFrameworkCore;entity-framework-core;efcore;EntityFramework;ef;orm;sql</PackageTags>
