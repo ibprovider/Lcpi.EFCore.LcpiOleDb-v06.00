@@ -80,3 +80,14 @@ Code\BuildHelpers.msbuild
  - LCPI_TARGET__PreparePackageReleaseNotesFromFile
    - [del] Message about NuspecOutputAbsolutePath
    - [del] (Incorrect) Message about LCPI_TASK__BuildAggregatedNuspecData
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Correction provider project file
+ - Microsoft.EntityFrameworkCore.Relational: PrivateAssets="none"
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - PackageReference "Microsoft.EntityFrameworkCore.Relational"
+   - [add] PrivateAssets="none"
