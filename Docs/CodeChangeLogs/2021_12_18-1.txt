@@ -115,3 +115,15 @@ Building from command line.
 [add] Build\build-release.cmd
 [add] Build\helper-build.cmd
 [add] Build\helper-clean.cmd
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Explicit references to all EFCore assemblies.
+
+Just for avoid ANY problems.
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - [add] PackageReference: Microsoft.EntityFrameworkCore Version="[6.0.1]"
+ - [add] PackageReference: Microsoft.EntityFrameworkCore.Abstractions Version="[6.0.1]"
