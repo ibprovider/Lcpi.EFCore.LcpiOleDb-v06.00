@@ -124,7 +124,7 @@ GC.WaitForPendingFinalizers();
 
 ////////////////////////////////////////////////////////////////////////////////
 
-class MyDbContext:DbContext
+sealed class MyDbContext:DbContext
 {
  private const string c_CnStr
   ="provider=LCPI.IBProvider.5;"
@@ -146,7 +146,7 @@ class MyDbContext:DbContext
 ////////////////////////////////////////////////////////////////////////////////
 
 [Table("DBMS")]
-public class DatabaseServer
+sealed class DatabaseServer
 {
  [Key]
  public long ID { get; set; }
