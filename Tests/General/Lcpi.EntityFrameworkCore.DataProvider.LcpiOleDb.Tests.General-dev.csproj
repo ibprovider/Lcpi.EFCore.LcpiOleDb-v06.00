@@ -34,8 +34,9 @@
     <Compile Include="Properties\AssemblyInfoData.cs" />
     <Compile Include="Source\CheckErrors.cs" />
     <Compile Include="Source\Research\CSharp\TestSet_001__CallOfPrivateMethod.cs" />
-    <Compile Include="Source\Research\CSharp\TestSet_004__TimeOnly.cs" />
     <Compile Include="Source\Research\CSharp\TestSet_003__Decimal.cs" />
+    <Compile Include="Source\Research\CSharp\TestSet_004__TimeOnly.cs" />
+    <Compile Include="Source\Research\CSharp\TestSet_005__Modulo.cs" />
     <Compile Include="Source\TestBaseDbContext.cs" />
     <Compile Include="Source\TestLogger.cs" />
     <Compile Include="Source\TestLoggerFactory.cs" />
