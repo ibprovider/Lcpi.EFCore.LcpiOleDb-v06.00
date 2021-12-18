@@ -101,3 +101,17 @@ Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
 Code\BuildHelpers.msbuild
  - LCPI_TARGET__PreparePackageReleaseNotesFromFile
    - [add] MakeDir $(NuspecOutputAbsolutePath)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Building from command line.
+
+[Source]
+
+.gitignore
+ - [add] _Output
+
+[add] Build\build-dev.cmd
+[add] Build\build-release.cmd
+[add] Build\helper-build.cmd
+[add] Build\helper-clean.cmd

@@ -1,0 +1,1 @@
+call %~dp0\helper-build.cmd Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.sln
