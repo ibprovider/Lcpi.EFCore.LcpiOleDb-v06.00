@@ -181,7 +181,7 @@
 
      using(var s=new System.IO.StreamWriter(File,false))
      {
-      Log.LogMessage(MessageImportance.High,"Rebuild the \""+File+"\"");
+      Log.LogMessage(MessageImportance.High,"Rebuild the \"{0}\"",File);
 
       s.Write(new_data);
 
@@ -198,8 +198,6 @@
 
 <Target Name="LCPI_TARGET__PreparePackageReleaseNotesFromFile" BeforeTargets="GenerateNuspec">
   <Message Importance="High" Text="Hello from LCPI_TARGET__PreparePackageReleaseNotesFromFile!" />
-
-  <Message Importance="High" Text="NuspecOutputAbsolutePath: $(NuspecOutputAbsolutePath)" />
 
   <Error Text="Property VersionPrefix not defined!" Condition="'$(VersionPrefix)' == ''" />
 
@@ -221,8 +219,6 @@
   <PropertyGroup>
     <LCPI_AggregatedNuspecDataFilePath>$(NuspecOutputAbsolutePath)$(PackageId).$(Version).AGGREGATED_DATA</LCPI_AggregatedNuspecDataFilePath>
   </PropertyGroup>
-
-  <Message Importance="High" Text="LCPI_TASK__BuildAggregatedNuspecData: $(LCPI_TASK__BuildAggregatedNuspecData)" />
 
   <!--
     LCPI_TASK__GenerateFile do not touch exists file with SAME aggregated data.

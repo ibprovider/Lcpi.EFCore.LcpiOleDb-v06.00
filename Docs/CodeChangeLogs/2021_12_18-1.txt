@@ -66,3 +66,17 @@ Including release notes into nuget package.
 
 Code\Directory.Build.props
  - [add] Import "BuildHelpers.msbuild"
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Correction of BuildHelpers.msbuild.
+
+[Source]
+
+Code\BuildHelpers.msbuild
+ - LCPI_TASK__GenerateFile
+   - Improving call of Log.LogMessage
+
+ - LCPI_TARGET__PreparePackageReleaseNotesFromFile
+   - [del] Message about NuspecOutputAbsolutePath
+   - [del] (Incorrect) Message about LCPI_TASK__BuildAggregatedNuspecData
