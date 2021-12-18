@@ -53,3 +53,16 @@ Code\Provider\Package\README.md
  - [add] target info
  - [add] examples
  - [add] links
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Including release notes into nuget package.
+
+[Source]
+
+[add] Code\Provider\Package\ReleaseNotes\releaseNotes_06.00.01.00001.txt
+
+[add] work\Code\BuildHelpers.msbuild
+
+Code\Directory.Build.props
+ - [add] Import "BuildHelpers.msbuild"

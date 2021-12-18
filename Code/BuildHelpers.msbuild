@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+<!-- ********************************************************************************************************************* -->
+
+<UsingTask TaskName="LCPI_TASK__ReadReleaseNotes"
+           TaskFactory="CodeTaskFactory"
+           AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >
+  <ParameterGroup>
+    <ReleaseVersionStr    ParameterType="System.String" Required="true" />
+    <ReleaseNotesFilePath ParameterType="System.String" Output="true" />
+    <ReleaseNotes         ParameterType="System.String" Output="true" />
+  </ParameterGroup>
+  <Task>
+    <Using Namespace="System"/>
+    <Using Namespace="System.IO"/>
+    <Code Type="Fragment" Language="cs">
+<![CDATA[
+   if(object.ReferenceEquals(ReleaseVersionStr,null))
+    throw new ArgumentNullException("ReleaseVersionStr");
+
+   if(ReleaseVersionStr.Length==0)
+    throw new ArgumentException("Empty argument [ReleaseVersionStr] value", "ReleaseVersionStr");
+
+   var iReleaseVersionStrSeparator
+    =ReleaseVersionStr.IndexOf('-');
+
+   string releaseVersionStr_Main=null;
+   string releaseVersionStr_Suffix=null;
+
+   for(;;)
+   {
+    if(iReleaseVersionStrSeparator<-1)
+    {
+     throw new InvalidOperationException("Unexpected iReleaseVersionStrSeparator: "+iReleaseVersionStrSeparator);
+    }
+
+    if(iReleaseVersionStrSeparator==-1)
+    {
+     releaseVersionStr_Main=ReleaseVersionStr;
+     break;
+    }
+
+    if(iReleaseVersionStrSeparator==0)
+    {
+     throw new InvalidOperationException
+      (string.Format
+        ("Wrong format of ReleaseVersionStr: [{0}]",
+         ReleaseVersionStr));
+    }//if
+
+    if(iReleaseVersionStrSeparator<ReleaseVersionStr.Length)
+    {
+     releaseVersionStr_Main   =ReleaseVersionStr.Substring(0,iReleaseVersionStrSeparator);
+     releaseVersionStr_Suffix =ReleaseVersionStr.Substring(iReleaseVersionStrSeparator);
+
+     break;
+    }//if
+
+    throw new InvalidOperationException
+     (string.Format
+       ("BAD iReleaseVersionStrSeparator: {0}. ReleaseVersionStr.Length: {1}.",
+        iReleaseVersionStrSeparator,
+        ReleaseVersionStr.Length));
+   }//for[ever]
+
+   var releaseVersionStrParts=releaseVersionStr_Main.Split(new char[]{'.'});
+
+   if(releaseVersionStrParts.Length!=4)
+   {
+    throw new InvalidOperationException
+      (string.Format("Incorrect version's main part format: \"{0}\"",
+       releaseVersionStr_Main));
+   }//if
+
+   var version_MainPart1=System.Int32.Parse(releaseVersionStrParts[0]);
+   var version_MainPart2=System.Int32.Parse(releaseVersionStrParts[1]);
+   var version_MainPart3=System.Int32.Parse(releaseVersionStrParts[2]);
+   var version_MainPart4=System.Int32.Parse(releaseVersionStrParts[3]);
+
+   //
+   // Building of name of file with releaseNotes xx.xx.xx.xxxxxx
+   //
+   var relNotesFileName
+    =string.Format
+      ("releaseNotes_{0:D2}.{1:D2}.{2:D2}.{3:D5}{4}.txt",
+       version_MainPart1,
+       version_MainPart2,
+       version_MainPart3,
+       version_MainPart4,
+       releaseVersionStr_Suffix);
+
+   this.Log.LogMessage
+    (MessageImportance.High,
+     "Release Notes File Name: \"{0}\"",
+     relNotesFileName);
+
+   var relNotesFilePath
+    ="Package\\ReleaseNotes\\"+relNotesFileName;
+
+   if(!File.Exists(relNotesFilePath))
+   {
+    this.Log.LogWarning("File With Release Notes Not Found: \"{0}\"",relNotesFilePath);
+
+    ReleaseNotes=null;
+
+    ReleaseNotesFilePath=null;
+   }//if
+   else
+   {
+    using(var s=new System.IO.StreamReader(relNotesFilePath,false))
+    {
+     ReleaseNotes=s.ReadToEnd();
+
+     s.Close();
+
+     ReleaseNotesFilePath=relNotesFilePath;
+    }//using s
+
+    // this.Log.LogMessage
+    //  (MessageImportance.High,
+    //   "Release Notes:\n{0}",
+    //   ReleaseNotes);
+   }//else
+]]>
+    </Code>
+  </Task>
+</UsingTask>
+
+
+<!-- ********************************************************************************************************************* -->
+
+<UsingTask TaskName="LCPI_TASK__BuildAggregatedNuspecData"
+           TaskFactory="CodeTaskFactory"
+           AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll" >
+  <ParameterGroup>
+    <SRC_ReleaseNotes      ParameterType="System.String" Required="false" /> <!-- OPTIONAL -->
+    <RESULT_AggregatedData ParameterType="System.String" Output="true" />
+  </ParameterGroup>
+  <Task>
+    <Using Namespace="System"/>
+    <Using Namespace="System.Text"/>
+    <Code Type="Fragment" Language="cs">
+<![CDATA[
+   var sb=new StringBuilder();
+
+   sb.AppendLine("-------------------------- ReleaseNotes");
+   sb.AppendLine(SRC_ReleaseNotes);
+
+   RESULT_AggregatedData=sb.ToString();
+]]>
+    </Code>
+  </Task>
+</UsingTask>
+
+<!-- ********************************************************************************************************************* -->
+
+<UsingTask TaskName="LCPI_TASK__GenerateFile" TaskFactory="CodeTaskFactory" AssemblyFile="$(MSBuildToolsPath)\Microsoft.Build.Tasks.v4.0.dll">
+  <ParameterGroup>
+    <File ParameterType="System.String" Required="true" />
+    <Text ParameterType="System.String" Required="true" />
+  </ParameterGroup>
+  <Task>
+    <Code Type="Fragment" Language="cs"><![CDATA[
+    for(;;)
+    {
+     var new_data=Text;
+
+     if((new System.IO.FileInfo(File)).Exists)
+     {
+      using(var x=new System.IO.StreamReader(File,false))
+      {
+       string cur_data=x.ReadToEnd();
+
+       x.Close();
+
+       if(cur_data==new_data)
+        break;
+      }
+     }
+
+     using(var s=new System.IO.StreamWriter(File,false))
+     {
+      Log.LogMessage(MessageImportance.High,"Rebuild the \""+File+"\"");
+
+      s.Write(new_data);
+
+      s.Close();
+     }
+
+     break;
+    }//for[ever]
+]]></Code>
+  </Task>
+</UsingTask>
+
+<!-- ********************************************************************************************************************* -->
+
+<Target Name="LCPI_TARGET__PreparePackageReleaseNotesFromFile" BeforeTargets="GenerateNuspec">
+  <Message Importance="High" Text="Hello from LCPI_TARGET__PreparePackageReleaseNotesFromFile!" />
+
+  <Message Importance="High" Text="NuspecOutputAbsolutePath: $(NuspecOutputAbsolutePath)" />
+
+  <Error Text="Property VersionPrefix not defined!" Condition="'$(VersionPrefix)' == ''" />
+
+  <LCPI_TASK__ReadReleaseNotes ReleaseVersionStr="$(VersionPrefix)" >
+    <Output TaskParameter="ReleaseNotes"         PropertyName="PackageReleaseNotes"/>
+    <Output TaskParameter="ReleaseNotesFilePath" PropertyName="LCPI_PackageReleaseNotesFilePath"/>
+  </LCPI_TASK__ReadReleaseNotes>
+
+  <LCPI_TASK__BuildAggregatedNuspecData
+         SRC_ReleaseNotes="$(PackageReleaseNotes)" >
+
+    <Output TaskParameter="RESULT_AggregatedData" PropertyName="LCPI_AggregatedNuspecData"/>
+  </LCPI_TASK__BuildAggregatedNuspecData>
+
+  <!--
+    Building intermediate file with aggregated data for .nuspec file.
+  -->
+
+  <PropertyGroup>
+    <LCPI_AggregatedNuspecDataFilePath>$(NuspecOutputAbsolutePath)$(PackageId).$(Version).AGGREGATED_DATA</LCPI_AggregatedNuspecDataFilePath>
+  </PropertyGroup>
+
+  <Message Importance="High" Text="LCPI_TASK__BuildAggregatedNuspecData: $(LCPI_TASK__BuildAggregatedNuspecData)" />
+
+  <!--
+    LCPI_TASK__GenerateFile do not touch exists file with SAME aggregated data.
+  -->
+
+  <LCPI_TASK__GenerateFile
+     File="$(LCPI_AggregatedNuspecDataFilePath)"
+     Text="$(LCPI_AggregatedNuspecData)">
+  </LCPI_TASK__GenerateFile>
+
+  <!--
+    Pointing of file with AGGREGATED DATA as INPUT FILE For 'GenerateNuspec' task
+
+    MSBuild compare TIMESTAMP of LCPI_AggregatedNuspecDataFilePath and .nuspec file and make decision about recreation
+  -->
+
+  <ItemGroup>
+    <NuGetPackInput Include="$(LCPI_AggregatedNuspecDataFilePath)" />
+  </ItemGroup>
+</Target>
+
+<!-- ********************************************************************************************************************* -->
+</Project>
