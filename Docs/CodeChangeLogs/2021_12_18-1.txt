@@ -42,3 +42,14 @@ Thanks for understanding :)
 Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
  - lcpi.data.oledb -> Version="[1.25.2.4577]"
  - Microsoft.EntityFrameworkCore.Relational -> Version="[6.0.1]"
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Updating readme of nuget package
+
+[Source]
+
+Code\Provider\Package\README.md
+ - [add] target info
+ - [add] examples
+ - [add] links
