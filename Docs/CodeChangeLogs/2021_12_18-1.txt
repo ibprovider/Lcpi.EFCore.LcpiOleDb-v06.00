@@ -24,3 +24,21 @@ Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
  - Description
     - "EF" -> "Entity Framework"
     - "LCPI ADO.NET Provider for OLE DB" (put into brackets)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+ATTENTION: Exact versions of linked packages.
+
+For avoid any problems with external packages, while we define their EXACT versions:
+ - lcpi.data.oledb: 1.25.2.4577
+ - Microsoft.EntityFrameworkCore.Relational: 6.0.1
+
+In the future, we can relax these restrictions.
+
+Thanks for understanding :)
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - lcpi.data.oledb -> Version="[1.25.2.4577]"
+ - Microsoft.EntityFrameworkCore.Relational -> Version="[6.0.1]"

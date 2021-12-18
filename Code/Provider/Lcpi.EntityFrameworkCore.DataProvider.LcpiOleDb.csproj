@@ -4458,9 +4458,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="lcpi.data.oledb" Version="1.25.2.4577" />
+    <PackageReference Include="lcpi.data.oledb" Version="[1.25.2.4577]" />
 
     <!-- TODO: [2021-12-16] Define PrivateAssets="none" like EFCORE.PG -->
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="[6.0.1]" />
   </ItemGroup>
 </Project>
