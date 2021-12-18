@@ -28,7 +28,7 @@
     <Product>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb</Product>
     <Copyright>Copyright © LCPI</Copyright>
     <Company>LCPI</Company>
-    <Authors>LCPI</Authors>
+    <Authors>IBProvider;Contributors</Authors>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
 
     <PackageProjectUrl>https://www.ibprovider.com/eng/</PackageProjectUrl>

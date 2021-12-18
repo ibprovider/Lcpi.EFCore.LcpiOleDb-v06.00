@@ -16,7 +16,7 @@
     <PackageId>$(RootNamespace)</PackageId>
     <Description>LCPI EF Core provider for LCPI ADO.NET Provider for OLE DB.</Description>
     <PackageIcon>images\logo2-128x128.png</PackageIcon>
-    <PackageReadmeFile>readme.md</PackageReadmeFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageTags>firebird;firebirdsql;adonet;ado.net;ibprovider;oledb;oledb.net;EntityFrameworkCore;entity-framework-core;efcore;EntityFramework;ef;orm;sql</PackageTags>
   </PropertyGroup>
 
@@ -4451,9 +4451,9 @@
       <Pack>True</Pack>
       <PackagePath>\images\logo2-128x128.png</PackagePath>
     </None>
-    <None Include="Package\readme.md">
+    <None Include="Package\README.md">
       <Pack>True</Pack>
-      <PackagePath>\readme.md</PackagePath>
+      <PackagePath>\README.md</PackagePath>
     </None>
   </ItemGroup>
 
