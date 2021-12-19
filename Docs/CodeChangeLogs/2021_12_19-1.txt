@@ -1,0 +1,21 @@
+Final strategy for version numerating
+ - {EFCoreVersion}.{100*OurReleaseMajorNumber+OurReleasePatchNumber}
+
+[Source]
+
+[rename] Code\Provider\Package\ReleaseNotes\releaseNotes_06.00.01.00100.txt
+
+Directory.Build.props
+ - [add] LCPI_EFCoreVersion_Major=6
+ - [add] LCPI_EFCoreVersion_Minor=0
+ - [add] LCPI_EFCoreVersion_Patch=1
+ - [add] LCPI_EFCoreVersion
+
+ - [add] LCPI_EFCoreProviderReleaseNumber_Major
+ - [add] LCPI_EFCoreProviderReleaseNumber_Patch
+ - [add] LCPI_EFCoreProviderReleaseNumber
+
+ - VersionPrefix = LCPI_EFCoreVersion + LCPI_EFCoreProviderReleaseNumber
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - Usage $(LCPI_EFCoreVersion) instead direct number (6.0.1)

@@ -4461,8 +4461,8 @@
     <PackageReference Include="lcpi.data.oledb" Version="[1.25.2.4577]" />
 
     <!-- Define PrivateAssets="none" like EFCORE.PG -->
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="[6.0.1]" PrivateAssets="none" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="[6.0.1]" PrivateAssets="none" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="[6.0.1]" PrivateAssets="none" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="[$(LCPI_EFCoreVersion)]" PrivateAssets="none" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="[$(LCPI_EFCoreVersion)]" PrivateAssets="none" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Abstractions" Version="[$(LCPI_EFCoreVersion)]" PrivateAssets="none" />
   </ItemGroup>
 </Project>

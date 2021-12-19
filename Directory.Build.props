@@ -1,4 +1,50 @@
 <Project>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- VERSION DATA                                                       -->
+
+  <!--
+    Structure of version: EF_MAJOR.EF_MINOR.EF_PATCH.(100*OUR_MAJOR_NUMBER+OUR_PATCH_NUMBER)
+
+    Where
+
+    EF_MAJOR.EF_MINOR.EF_PATCH - version of EF Core
+
+    OUR_MAJOR_NUMBER - number of our release for this EF Core version (>=1)
+
+    OUR_PATCH_NUMBER - number of our subrelease (hotfix) [0..99)
+  
+    When we release new version, we should increment OUR_MAJOR_NUMBER.
+  -->
+
+  <PropertyGroup>
+    <LCPI_EFCoreVersion_Major>6</LCPI_EFCoreVersion_Major>
+    <LCPI_EFCoreVersion_Minor>0</LCPI_EFCoreVersion_Minor>
+    <LCPI_EFCoreVersion_Patch>1</LCPI_EFCoreVersion_Patch>
+
+    <!-- Final version or EFCore -->
+    <LCPI_EFCoreVersion>$(LCPI_EFCoreVersion_Major).$(LCPI_EFCoreVersion_Minor).$(LCPI_EFCoreVersion_Patch)</LCPI_EFCoreVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- MAJOR part of OUR release number. Value MUST be >=1 -->
+    <LCPI_EFCoreProviderReleaseNumber_Major>1</LCPI_EFCoreProviderReleaseNumber_Major>
+
+    <!-- PATCH part of our release number. Value: 0..99 -->
+    <LCPI_EFCoreProviderReleaseNumber_Patch>0</LCPI_EFCoreProviderReleaseNumber_Patch>
+
+    <!-- Final number of OUR release -->
+    <LCPI_EFCoreProviderReleaseNumber>$([System.Decimal]::Add($([System.Decimal]::Multiply(100,$(LCPI_EFCoreProviderReleaseNumber_Major))),$(LCPI_EFCoreProviderReleaseNumber_Patch)))</LCPI_EFCoreProviderReleaseNumber>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <VersionPrefix>$(LCPI_EFCoreVersion).$(LCPI_EFCoreProviderReleaseNumber)</VersionPrefix>
+
+    <Version>$(VersionPrefix)</Version>
+  </PropertyGroup>
+
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- BUILD CONFIGURATION                                                -->
+
   <PropertyGroup>
     <TargetFramework>net6.0-windows7.0</TargetFramework>
 
@@ -19,6 +65,9 @@
 -->
   </PropertyGroup>
 
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+  <!-- COMMON DATA FOR BINARIES AND PACKAGES                              -->
+
   <PropertyGroup>
     <PackageProjectUrl>https://github.com/ibprovider/Lcpi.EFCore.LcpiOleDb/</PackageProjectUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
@@ -34,17 +83,7 @@
     <PackageProjectUrl>https://www.ibprovider.com/eng/</PackageProjectUrl>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <!-- Version structure: EF_MAJOR.EF_MINOR.EF_PATCH.OUR_BUILD_NUMBER -->
-
-    <!-- ALWAYS DEFINE NOT ZERO OUR_BUILD_NUMBER (FOUR) PART! -->
-
-    <!-- INCREMENT OUR_BUILD_NUMBER FOR EACH NEW RELEASE! -->
-
-    <VersionPrefix>6.0.1.1</VersionPrefix>
-
-    <Version>$(VersionPrefix)</Version>
-  </PropertyGroup>
+  <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
