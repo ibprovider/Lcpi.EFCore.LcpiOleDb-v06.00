@@ -19,3 +19,14 @@ Directory.Build.props
 
 Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
  - Usage $(LCPI_EFCoreVersion) instead direct number (6.0.1)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Improving content of _Output directory
+ - moving (s)nupkg, not copying
+
+[Source]
+
+Build\helper-build.cmd
+ - Processing (S)NUPGS packages
+   - they are now moved rather than copied

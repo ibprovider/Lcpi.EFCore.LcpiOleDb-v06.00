@@ -52,12 +52,12 @@ msbuild %CURRENT_SOLUTION_FILE% /t:pack /p:Configuration=Release /p:Platform="An
 @MKDIR %OUTPUT_DIR__MY%\nuget
 @IF NOT %ERRORLEVEL% == 0 GOTO :ERROR
 
-@ECHO "Copy NUPKG packages into %OUTPUT_DIR__MY%nuget"
-FOR /R %OUTPUT_DIR__MY%binaries %%a IN (.) DO @IF EXIST %%a\*.nupkg @COPY %%a\*.nupkg %OUTPUT_DIR__MY%nuget\
+@ECHO "Moving NUPKG packages into %OUTPUT_DIR__MY%nuget"
+FOR /R %OUTPUT_DIR__MY%binaries %%a IN (.) DO @IF EXIST %%a\*.nupkg @MOVE %%a\*.nupkg %OUTPUT_DIR__MY%nuget\
 @IF NOT %ERRORLEVEL% == 0 GOTO :ERROR
 
-@ECHO "Copy SNUPKG packages into %OUTPUT_DIR__MY%nuget"
-@FOR /R %OUTPUT_DIR__MY%binaries %%a IN (.) DO @IF EXIST %%a\*.snupkg @COPY %%a\*.snupkg %OUTPUT_DIR__MY%nuget\
+@ECHO "Moving SNUPKG packages into %OUTPUT_DIR__MY%nuget"
+@FOR /R %OUTPUT_DIR__MY%binaries %%a IN (.) DO @IF EXIST %%a\*.snupkg @MOVE %%a\*.snupkg %OUTPUT_DIR__MY%nuget\
 @IF NOT %ERRORLEVEL% == 0 GOTO :ERROR
 
 @rem ------------------------------------------- DONE
