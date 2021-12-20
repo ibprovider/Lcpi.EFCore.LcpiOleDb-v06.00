@@ -1,0 +1,9 @@
+Removing information about home repository.
+ - SourceLink works fine without this information. Thank you, guys.
+
+Verified assemblies and (s)nupkg files. Looks ok.
+
+[Source]
+
+Directory.Build.props
+ - [del] PackageProjectUrl

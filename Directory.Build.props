@@ -69,7 +69,6 @@
   <!-- COMMON DATA FOR BINARIES AND PACKAGES                              -->
 
   <PropertyGroup>
-    <PackageProjectUrl>https://github.com/ibprovider/Lcpi.EFCore.LcpiOleDb/</PackageProjectUrl>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
   </PropertyGroup>
 
