@@ -84,7 +84,7 @@ try
   Console.WriteLine("{0}. {1}",nRec, r.ServerName);
  }//foreach r
 
- if(nRec==0)
+ if(nRec!=1)
   throw new ApplicationException("Oh sh...");
  
  //---------------------------- DELETE

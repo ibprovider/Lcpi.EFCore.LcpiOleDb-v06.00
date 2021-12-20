@@ -18,3 +18,15 @@ Code\Provider\Package\README.md
  - Changing title (define version)
  - Usage full name of EFCore
  - Improving info about IBProvider version
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Correction package's readme example.
+
+[Source]
+
+Code\Provider\Package\README.md
+ - replacing
+     if(nRec==0)
+   to
+     if(nRec!=1)
