@@ -1,8 +1,8 @@
-# EF Core Provider for «LCPI ADO.NET Provider for OLE DB»
+# EF Core Provider for «LCPI ADO.NET Provider for OLE DB» v6.0
 
 Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb is an open source EF Core provider for «LCPI ADO.NET Provider for OLE DB».
 
-Currently it allows you to interact with Firebird v3 via .NET O/RM from Microsoft.
+Currently it allows you to interact with Firebird v3 via Microsoft Entity Framework Core v6.0.
 
 ## Attention
 
@@ -10,10 +10,10 @@ This provider **does not looks and feels** like any other Entity Framework Core 
 
 ## Target platform
 1. NET6 (Windows)
-2. EF Core 6.0
+2. Entity Framework Core v6.0
 3. Firebird v3.0.8
 4. LCPI ADO.NET Provider for OLE DB
-5. LCPI.IBProvider.5
+5. LCPI.IBProvider v5
 
 ## Example of usage
 

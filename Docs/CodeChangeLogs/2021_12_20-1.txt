@@ -7,3 +7,14 @@ Verified assemblies and (s)nupkg files. Looks ok.
 
 Directory.Build.props
  - [del] PackageProjectUrl
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Correction package's readme.
+
+[Source]
+
+Code\Provider\Package\README.md
+ - Changing title (define version)
+ - Usage full name of EFCore
+ - Improving info about IBProvider version
