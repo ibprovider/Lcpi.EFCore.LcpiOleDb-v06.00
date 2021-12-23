@@ -59,10 +59,8 @@
 
     <LangVersion>latest</LangVersion>
 
-<!-- Produces the problems with compilation ALL general tests...
     <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
--->
+    <DebugType>portable</DebugType>
   </PropertyGroup>
 
   <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

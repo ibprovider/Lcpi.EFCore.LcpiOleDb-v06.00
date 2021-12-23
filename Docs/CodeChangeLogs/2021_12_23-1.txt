@@ -13,3 +13,17 @@ Increasing of our version number to 6.0.1.{2.00}.
 
 Directory.Build.props
  - LCPI_EFCoreProviderReleaseNumber_Major=2
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Portable PDB.
+
+Fixing a problem with snuget package.
+
+[Source]
+
+Directory.Build.props
+ - [add] DebugSymbols=true
+ - [add] DebugType=portable
+
+[add] Code\Provider\Package\ReleaseNotes\releaseNotes_06.00.01.00200.txt
