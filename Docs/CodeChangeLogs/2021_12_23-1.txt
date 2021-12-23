@@ -4,3 +4,12 @@ Correction of English in readme files
 
 --
 "London is the capital of Great Britain" :)
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Increasing of our version number to 6.0.1.{2.00}.
+
+[Source]
+
+Directory.Build.props
+ - LCPI_EFCoreProviderReleaseNumber_Major=2
