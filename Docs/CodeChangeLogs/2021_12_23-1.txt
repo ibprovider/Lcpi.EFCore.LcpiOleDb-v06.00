@@ -27,3 +27,12 @@ Directory.Build.props
  - [add] DebugType=portable
 
 [add] Code\Provider\Package\ReleaseNotes\releaseNotes_06.00.01.00200.txt
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Mistake in package readme.
+
+[Source]
+
+Code\Provider\Package\README.md
+ - mistake in markup tag

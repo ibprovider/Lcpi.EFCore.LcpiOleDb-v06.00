@@ -6,7 +6,7 @@ Currently it allows you to interact with Firebird v3 via Microsoft Entity Framew
 
 ## Attention
 
-This provider **doesn't look and doesn't feel* like any other Entity Framework Core provider.
+This provider **doesn't look and doesn't feel** like any other Entity Framework Core provider.
 
 ## Target platform
 1. NET6 (Windows)
