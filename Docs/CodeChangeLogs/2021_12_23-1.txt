@@ -1,0 +1,6 @@
+Correction of English in readme files
+
+"doesn't look and doesn't fell"
+
+--
+"London is the capital of Great Britain" :)
