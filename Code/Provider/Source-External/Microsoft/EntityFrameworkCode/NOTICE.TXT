@@ -1,1 +1,1 @@
-This folder contains the direct modified copy of part Microsoft EntityFrameworkCore project (https://github.com/dotnet/efcore).
+This folder contains the modified part of Microsoft EntityFrameworkCore project (https://github.com/dotnet/efcore).
