@@ -906,7 +906,7 @@ static partial class FB_DataTypeParser
  //-----------------------------------------------------------------------
  private delegate void tagDataTypeParserFunc(ref tagResultData resultData);
 
- private class tagDataTypeParserDescr
+ private sealed class tagDataTypeParserDescr
  {
   public readonly IReadOnlyList<string>  DataTypeNameParts;
   public readonly FB_Common__DataTypeID  DataTypeID;

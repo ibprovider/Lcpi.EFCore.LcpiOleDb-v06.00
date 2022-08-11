@@ -1,0 +1,7 @@
+Mix. Sealed class.
+
+[Source]
+
+Code\Provider\Source\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser.cs
+ - tagDataTypeParserDescr
+   - changed to sealed class
