@@ -157,7 +157,7 @@ public static class TestSet__T004__param
 
         CheckErrors.CheckErrorRecord__common_err__unsupported_datatypes_conversion_2
          (TestUtils.GetRecord(e2,0),
-          CheckErrors.c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeSpan,
+          CheckErrors.c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_Code__Object__NULLABLE_VALUE,
           "System.String",
           "Nullable<System.TimeSpan>");
        }//catch
@@ -254,7 +254,7 @@ public static class TestSet__T004__param
 
        CheckErrors.CheckErrorRecord__common_err__unsupported_datatypes_conversion_2
         (TestUtils.GetRecord(e2,0),
-         CheckErrors.c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeSpan,
+         CheckErrors.c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_Code__Object__NULLABLE_VALUE,
          "System.String",
          "Nullable<System.TimeSpan>");
       }//catch

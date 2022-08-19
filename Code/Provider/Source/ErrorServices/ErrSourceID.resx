@@ -312,47 +312,8 @@
   <data name="Root_Query_Local_Expressions__Method_MasterCode__Object__ToString" xml:space="preserve">
     <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Methods.MasterCode.Method_MasterCode__Object__ToString</value>
   </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableBoolean" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableBoolean</value>
-  </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableGuid" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableGuid</value>
-  </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableDateOnly" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableDateOnly</value>
-  </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableDateTime" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableDateTime</value>
-  </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeOnly" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableTimeOnly</value>
-  </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeSpan" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableTimeSpan</value>
-  </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableByte" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableByte</value>
-  </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableSByte" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableSByte</value>
-  </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableInt16" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableInt16</value>
-  </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableInt32" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableInt32</value>
-  </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableInt64" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableInt64</value>
-  </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableDecimal" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableDecimal</value>
-  </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableSingle" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableSingle</value>
-  </data>
-  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NullableDouble" xml:space="preserve">
-    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableDouble</value>
+  <data name="Root_Query_Local_Expressions__Cvt_Code__Object__NULLABLE_VALUE" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NULLABLE_VALUE</value>
   </data>
   <data name="Root_Query_Local_Expressions__Cvt_Code__Object__String" xml:space="preserve">
     <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__String</value>

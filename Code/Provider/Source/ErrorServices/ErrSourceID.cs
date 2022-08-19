@@ -149,33 +149,7 @@ enum ErrSourceID
  Root_Query_Local_Expressions__Method_MasterCode__Object__ToString,
 
 //-----------------------------------------
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableBoolean,
-
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableGuid,
-
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableDateOnly,
-
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableDateTime,
-
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeOnly,
-
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeSpan,
-
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableByte,
-
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableSByte,
-
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableInt16,
-
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableInt32,
-
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableInt64,
-
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableDecimal,
-
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableSingle,
-
- Root_Query_Local_Expressions__Cvt_Code__Object__NullableDouble,
+ Root_Query_Local_Expressions__Cvt_Code__Object__NULLABLE_VALUE,
 
  Root_Query_Local_Expressions__Cvt_Code__Object__String,
 

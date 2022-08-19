@@ -350,8 +350,8 @@ static class CheckErrors
  public const string c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_MasterCode__Single__Decimal
   ="Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Single__Decimal";
 
- public const string c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeSpan
-  ="Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableTimeSpan";
+ public const string c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_Code__Object__NULLABLE_VALUE
+  ="Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NULLABLE_VALUE";
 
  public const string c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_Code__Object__String
   ="Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__String";
