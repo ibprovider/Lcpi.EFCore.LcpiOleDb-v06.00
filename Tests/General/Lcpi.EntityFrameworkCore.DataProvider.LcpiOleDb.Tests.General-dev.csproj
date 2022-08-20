@@ -314,6 +314,7 @@
     <Compile Include="Source\Unit\Extensions\LcpiOleDb__Extensions__Type\TestsFor__Extension__UnwrapMappingClrType.cs" />
     <Compile Include="Source\Unit\Structure\Structure_CS_UTF16\TestsFor__GetCharCount.cs" />
     <Compile Include="Source\Unit\Structure\Structure_CS_UTF16\TestsFor__IsSingleUnicodeChar.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ExpressionUtils\TestsFor__RemoveConvertToObject.cs" />
     <Compile Include="Source\Unit\Structure\Structure_MemberId\TestsFor__Create_ClassMember.cs" />
     <Compile Include="Source\Unit\Structure\Structure_MemberId\TestsFor__Create_ObjectMember.cs" />
     <Compile Include="Source\Unit\Structure\Structure_MemberId\TestsFor__Equals__id.cs" />
