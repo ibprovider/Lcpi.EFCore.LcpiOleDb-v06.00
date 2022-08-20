@@ -11,6 +11,12 @@ using LOCAL_EVAL__Op2__ETranslator__Std__Simple
 using LOCAL_EVAL__Op2__ETranslator__Std__Simple__Descr
  =Root.Query.Local.LcpiOleDb__LocalEval_Op2__Descr<Root.Query.Local.Expressions.Op2.Translators.Std.ETranslator__Std__Simple>;
 
+using LOCAL_EVAL__Op2__ETranslator__Std__WithOpCtx
+ =Root.Query.Local.Expressions.Op2.Translators.Std.ETranslator__Std__WithOpCtx;
+
+using LOCAL_EVAL__Op2__ETranslator__Std__WithOpCtx__Descr
+ =Root.Query.Local.LcpiOleDb__LocalEval_Op2__Descr<Root.Query.Local.Expressions.Op2.Translators.Std.ETranslator__Std__WithOpCtx>;
+
 ////////////////////////////////////////////////////////////////////////////////
 //class ETranslators__NotEqual__NullableBoolean
 
@@ -21,6 +27,12 @@ static class ETranslators__NotEqual__NullableBoolean
    =new LOCAL_EVAL__Op2__ETranslator__Std__Simple__Descr
      (new LOCAL_EVAL__Op2__ETranslator__Std__Simple(Code.Op2_Code__NotEqual___NullableBoolean__Boolean.MethodInfo_V_V),
       Code.Op2_Code__NotEqual___NullableBoolean__Boolean.Instance);
+
+ public static readonly LOCAL_EVAL__Op2__ETranslator__Std__WithOpCtx__Descr
+  sm_Instance__String
+   =new LOCAL_EVAL__Op2__ETranslator__Std__WithOpCtx__Descr
+     (new LOCAL_EVAL__Op2__ETranslator__Std__WithOpCtx(Code.Op2_Code__NotEqual___NullableBoolean__String.MethodInfo_V_V),
+      Code.Op2_Code__NotEqual___NullableBoolean__String.Instance);
 
  //-------------------------------------------------------- NULLABLE
  public static readonly LOCAL_EVAL__Op2__ETranslator__Std__Simple__Descr
