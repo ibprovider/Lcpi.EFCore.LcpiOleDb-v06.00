@@ -270,3 +270,14 @@ Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\In
 
  - [add] sm_Instance__NullableTimeOnly
     - Op2_Code__Equal___String__NullableTimeOnly
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+BUG FIX. Correction of project file.
+
+Forgot to add Convert_Code__Object__NULLABLE_VALUE.cs.
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - [BUG FIX] [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NULLABLE_VALUE.cs

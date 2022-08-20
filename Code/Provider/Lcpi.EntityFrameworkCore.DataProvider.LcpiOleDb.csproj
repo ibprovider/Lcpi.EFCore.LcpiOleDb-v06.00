@@ -1933,6 +1933,7 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableSingle.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableTimeOnly.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableTimeSpan.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NULLABLE_VALUE.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\SByte\Convert_Code__SByte__Byte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\SByte\Convert_Code__SByte__Decimal.cs" />
