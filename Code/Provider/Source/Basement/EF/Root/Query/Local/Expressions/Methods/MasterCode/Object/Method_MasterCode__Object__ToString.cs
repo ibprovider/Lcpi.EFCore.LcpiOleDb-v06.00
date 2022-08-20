@@ -30,7 +30,7 @@ static class Method_MasterCode__Object__ToString
 
   //--------------------------
   const string c_bugcheck_src
-   ="Method_MasterCode__Object__ToString::Helper__ToStr";
+   ="Method_MasterCode__Object__ToString::Exec";
 
   //--------------------------
   if(Object.ReferenceEquals(value,null))

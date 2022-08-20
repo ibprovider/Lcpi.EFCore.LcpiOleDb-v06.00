@@ -1,0 +1,7 @@
+BUG FIX. Wrong c_bug_check in Method_MasterCode__Object__ToString.Exec
+
+[Source]
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Methods\MasterCode\Object\Method_MasterCode__Object__ToString.cs
+ - Method_MasterCode__Object__ToString.Exec
+   - A correction of c_bugcheck_src
