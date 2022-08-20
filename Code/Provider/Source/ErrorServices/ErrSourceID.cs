@@ -130,6 +130,8 @@ enum ErrSourceID
 
  Root_Query_Local_Expressions__Op2_MasterCode__NotEqual___Array1_generic__Array1_generic,
 
+ Root_Query_Local_Expressions__Op2_ETranslator__Std__Concat_obj,
+
  //-----------------------------------------
  Root_Query_Local_Expressions__Method_Code__IEnumerableByte__First,
 

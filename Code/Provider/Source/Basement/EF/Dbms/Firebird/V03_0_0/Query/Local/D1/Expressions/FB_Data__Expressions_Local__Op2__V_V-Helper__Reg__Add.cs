@@ -39,6 +39,8 @@ static partial class FB_Data__Expressions_Local__Op2__V_V
   Map
    .Reg(LcpiOleDb__ExpressionType.Add)
 
+   /*CONCAT defined below*/
+
    .Add(FB3_D0_ETRS.ETranslators__Add__DateTime.sm_Instance__TimeSpan)
    .Add(FB3_D0_ETRS.ETranslators__Add__DateTime.sm_Instance__NullableTimeSpan)
 
@@ -154,13 +156,54 @@ static partial class FB_Data__Expressions_Local__Op2__V_V
    /*string*/
    .Add(Common_ETRS.ETranslators__Concat__String.sm_Instance__String)
 
-   .Add_Concat(Structure_TypeCache.TypeOf__System_String,Structure_TypeCache.TypeOf__System_Object)
-
    /*object*/
-   .Add_Concat(Structure_TypeCache.TypeOf__System_Object,Structure_TypeCache.TypeOf__System_String)
 
    /*END*/
    ;
+
+  /*ADD AS CONCAT*/
+  System.Type[]
+   validTypesForAddWithString
+    ={
+      Structure_TypeCache.TypeOf__System_Object,
+
+      Structure_TypeCache.TypeOf__System_Boolean,
+      Structure_TypeCache.TypeOf__System_Decimal,
+      Structure_TypeCache.TypeOf__System_Double,
+      Structure_TypeCache.TypeOf__System_Byte,
+      Structure_TypeCache.TypeOf__System_Int16,
+      Structure_TypeCache.TypeOf__System_Int32,
+      Structure_TypeCache.TypeOf__System_Int64,
+      Structure_TypeCache.TypeOf__System_Single,
+      Structure_TypeCache.TypeOf__System_DateTime,
+      Structure_TypeCache.TypeOf__System_DateOnly,
+      Structure_TypeCache.TypeOf__System_TimeOnly,
+
+      Structure_TypeCache.TypeOf__System_NullableBoolean,
+      Structure_TypeCache.TypeOf__System_NullableDecimal,
+      Structure_TypeCache.TypeOf__System_NullableDouble,
+      Structure_TypeCache.TypeOf__System_NullableByte,
+      Structure_TypeCache.TypeOf__System_NullableInt16,
+      Structure_TypeCache.TypeOf__System_NullableInt32,
+      Structure_TypeCache.TypeOf__System_NullableInt64,
+      Structure_TypeCache.TypeOf__System_NullableSingle,
+      Structure_TypeCache.TypeOf__System_NullableDateTime,
+      Structure_TypeCache.TypeOf__System_NullableDateOnly,
+      Structure_TypeCache.TypeOf__System_NullableTimeOnly,
+     };//validTypesForAddWithString
+
+  foreach(var argType in validTypesForAddWithString)
+  {
+   Map
+    .Reg(LcpiOleDb__ExpressionType.Add)
+
+    .Add_Concat(argType,Structure_TypeCache.TypeOf__System_String)
+
+    .Add_Concat(Structure_TypeCache.TypeOf__System_String,argType)
+    
+   /*END*/
+   ;
+  }//foreach
 
   return Map;
  }//Helper__Reg__Add

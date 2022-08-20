@@ -36,20 +36,47 @@ static partial class FB_Data__Expressions_Local__Op2__V_V
  {
   Debug.Assert(!Object.ReferenceEquals(Map,null));
 
-  Map
-   .Reg(LcpiOleDb__ExpressionType.Concat)
+  System.Type[]
+   supportedArgTypes
+    ={
+      Structure_TypeCache.TypeOf__System_Object,
+      Structure_TypeCache.TypeOf__System_String,
+      Structure_TypeCache.TypeOf__System_Boolean,
+      Structure_TypeCache.TypeOf__System_Decimal,
+      Structure_TypeCache.TypeOf__System_Double,
+      Structure_TypeCache.TypeOf__System_Byte,
+      Structure_TypeCache.TypeOf__System_Int16,
+      Structure_TypeCache.TypeOf__System_Int32,
+      Structure_TypeCache.TypeOf__System_Int64,
+      Structure_TypeCache.TypeOf__System_Single,
+      Structure_TypeCache.TypeOf__System_DateTime,
+      Structure_TypeCache.TypeOf__System_DateOnly,
+      Structure_TypeCache.TypeOf__System_TimeOnly,
+      Structure_TypeCache.TypeOf__System_NullableBoolean,
+      Structure_TypeCache.TypeOf__System_NullableDecimal,
+      Structure_TypeCache.TypeOf__System_NullableDouble,
+      Structure_TypeCache.TypeOf__System_NullableByte,
+      Structure_TypeCache.TypeOf__System_NullableInt16,
+      Structure_TypeCache.TypeOf__System_NullableInt32,
+      Structure_TypeCache.TypeOf__System_NullableInt64,
+      Structure_TypeCache.TypeOf__System_NullableSingle,
+      Structure_TypeCache.TypeOf__System_NullableDateTime,
+      Structure_TypeCache.TypeOf__System_NullableDateOnly,
+      Structure_TypeCache.TypeOf__System_NullableTimeOnly,
+     };//supportedArgTypes
 
-   /*string*/
-   .Add_Concat(Structure_TypeCache.TypeOf__System_String     ,Structure_TypeCache.TypeOf__System_Object)
+  foreach(var leftType in supportedArgTypes)
+  {
+   foreach(var rightType in supportedArgTypes)
+   {
+    Map
+    .Reg(LcpiOleDb__ExpressionType.Concat)
+    .Add_Concat(leftType,rightType)
 
-   .Add(Common_ETRS.ETranslators__Concat__String.sm_Instance__String)
-
-   /*object*/
-   .Add_Concat(Structure_TypeCache.TypeOf__System_Object     ,Structure_TypeCache.TypeOf__System_Object)
-   .Add_Concat(Structure_TypeCache.TypeOf__System_Object     ,Structure_TypeCache.TypeOf__System_String)
-
-   /*END*/
-   ;
+    /*END*/
+    ;
+   }//for rightType
+  }//for leftType
 
   return Map;
  }//Helper__Reg__Concat

@@ -419,3 +419,45 @@ Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translato
 Code\Provider\Source\ErrorServices\ErrSourceID.cs
 Code\Provider\Source\ErrorServices\ErrSourceID.resx
  - [add] Root_Query_Local_Expressions__Cvt_Code__NULLABLE_VALUE__CLASS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Rework of local CONCAT-operation.
+
+ - Explicit definition of all valid concatenations
+ - We will remove a conversion of CONCAT-arguments to object. This will provide and save an original type of argument.
+ - Always work with String-version of CONCAT. A forced conversion of arguments to String will be used.
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - [del] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Concat\Object\Op2_Code__Concat___Object__Object.cs
+
+ - [add] Source\Structure\Structure_ExpressionUtils.cs
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D1\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__Add.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D1\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__Concat.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D3\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__Add.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D3\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__Concat.cs
+ - define all valid concatenations with string
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Methods\Translators\String\ETranslator__String__std__Concat__obj1.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Methods\Translators\String\ETranslator__String__std__Concat__obj2.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Methods\Translators\String\ETranslator__String__std__Concat__obj3.cs
+ - public override Expression Translate(in tagOpData opData)
+   - All the arguments pass through Structure_ExpressionUtils.RemoveConvertToObject
+
+[del] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Concat\Object\Op2_Code__Concat___Object__Object.cs
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Std\ETranslator__Std__Concat_obj.cs
+ - [add] c_ErrSrcID
+ - public override Expression Translate(in tagOpData opData)
+   - All the arguments pass through Helper__CvtToString
+
+   - works with Code.Op2_Code__Concat___String__String
+
+ - [add] Helper__CvtToString
+
+Code\Provider\Source\ErrorServices\ErrSourceID.cs
+Code\Provider\Source\ErrorServices\ErrSourceID.resx
+ - [add] Root_Query_Local_Expressions__Op2_ETranslator__Std__Concat_obj

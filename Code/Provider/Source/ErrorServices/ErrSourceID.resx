@@ -288,6 +288,9 @@
   <data name="Root_Query_Local_Expressions__Op2_MasterCode__NotEqual___Array1_generic__Array1_generic" xml:space="preserve">
     <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op2.MasterCode.Op2_MasterCode__NotEqual___Array1_generic__Array1_generic</value>
   </data>
+  <data name="Root_Query_Local_Expressions__Op2_ETranslator__Std__Concat_obj" xml:space="preserve">
+    <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Op2.Translators.Std.ETranslator__Std__Concat_obj</value>
+  </data>
   <data name="Root_Query_Local_Expressions__Method_Code__IEnumerableByte__First" xml:space="preserve">
     <value>Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Methods.Code.Method_Code__IEnumerableByte__First</value>
   </data>
