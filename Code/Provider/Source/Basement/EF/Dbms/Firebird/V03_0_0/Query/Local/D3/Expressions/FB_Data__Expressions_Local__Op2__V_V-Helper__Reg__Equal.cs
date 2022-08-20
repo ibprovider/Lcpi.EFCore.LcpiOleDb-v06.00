@@ -361,6 +361,10 @@ static partial class FB_Data__Expressions_Local__Op2__V_V
    .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__DateTime)
    .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__String)
    .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__TimeOnly)
+   .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableBoolean)
+   .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableDateOnly)
+   .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableDateTime)
+   .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableTimeOnly)
 
    .Add(FB3_D0_ETRS.ETranslators__Equal__TimeOnly.sm_Instance__TimeOnly)
    .Add(Common_ETRS.ETranslators__Equal__TimeOnly.sm_Instance__String)
