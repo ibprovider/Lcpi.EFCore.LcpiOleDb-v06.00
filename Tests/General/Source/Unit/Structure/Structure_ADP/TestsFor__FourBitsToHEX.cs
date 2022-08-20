@@ -24,7 +24,7 @@ public static class TestsFor__FourBitsToHEX
     (sm_HEX[i],
      xEFCore.Structure.Structure_ADP.FourBitsToHEX(i));
   }//foreach ch
- }//Test_01__yes
+ }//Test_01
 };//class TestsFor__FourBitsToHEX
 
 ////////////////////////////////////////////////////////////////////////////////
