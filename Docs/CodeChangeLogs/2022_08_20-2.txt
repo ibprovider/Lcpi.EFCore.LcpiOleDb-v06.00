@@ -1,0 +1,6 @@
+Update to EFCore 3.0.8
+
+[Source]
+
+Directory.Build.props
+ - LCPI_EFCoreVersion_Patch=8
