@@ -28,10 +28,11 @@ using Structure_ADP
 
 static class Op2_Code__NotEqual___NullableTimeOnly__NullableTimeOnly
 {
- public static readonly System.Reflection.MethodInfo MethodInfo_V_V
-  =typeof(Op2_Code__NotEqual___NullableTimeOnly__NullableTimeOnly)
-    .GetTypeInfo()
-    .GetDeclaredMethod(nameof(Exec_V_V));
+ public static readonly System.Reflection.MethodInfo
+  MethodInfo_V_V
+   =typeof(Op2_Code__NotEqual___NullableTimeOnly__NullableTimeOnly)
+     .GetTypeInfo()
+     .GetDeclaredMethod(nameof(Exec_V_V));
 
  //-----------------------------------------------------------------------
  private static T_RESULT Exec_V_V(T_ARG1 a,T_ARG2 b)
