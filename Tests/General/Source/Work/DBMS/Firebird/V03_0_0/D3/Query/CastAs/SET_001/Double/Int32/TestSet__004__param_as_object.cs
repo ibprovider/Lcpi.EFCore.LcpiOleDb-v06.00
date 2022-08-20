@@ -109,7 +109,7 @@ public static class TestSet__004__param_as_object
       (new TestSqlTemplate()
         .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
         .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__Exec_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
+        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__p_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
 
      Assert.AreEqual
       (1,
@@ -173,7 +173,7 @@ public static class TestSet__004__param_as_object
       (new TestSqlTemplate()
         .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
         .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__Exec_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
+        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__p_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
 
      Assert.AreEqual
       (1,
@@ -237,7 +237,7 @@ public static class TestSet__004__param_as_object
       (new TestSqlTemplate()
         .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
         .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__Exec_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
+        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__p_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
 
      Assert.AreEqual
       (1,
@@ -301,7 +301,7 @@ public static class TestSet__004__param_as_object
       (new TestSqlTemplate()
         .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
         .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__Exec_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
+        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__p_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
 
      Assert.AreEqual
       (1,
@@ -365,7 +365,7 @@ public static class TestSet__004__param_as_object
       (new TestSqlTemplate()
         .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
         .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__Exec_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
+        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__p_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
 
      Assert.AreEqual
       (1,
@@ -429,7 +429,7 @@ public static class TestSet__004__param_as_object
       (new TestSqlTemplate()
         .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
         .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__Exec_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
+        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__p_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
 
      Assert.AreEqual
       (1,
@@ -493,7 +493,7 @@ public static class TestSet__004__param_as_object
       (new TestSqlTemplate()
         .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
         .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__Exec_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
+        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__p_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
 
      Assert.AreEqual
       (1,
@@ -557,7 +557,7 @@ public static class TestSet__004__param_as_object
       (new TestSqlTemplate()
         .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
         .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__Exec_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
+        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__p_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
 
      Assert.AreEqual
       (1,
@@ -621,7 +621,7 @@ public static class TestSet__004__param_as_object
       (new TestSqlTemplate()
         .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
         .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__Exec_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
+        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__p_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
 
      Assert.AreEqual
       (1,
@@ -685,7 +685,7 @@ public static class TestSet__004__param_as_object
       (new TestSqlTemplate()
         .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
         .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__Exec_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
+        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__p_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
 
      Assert.AreEqual
       (1,
@@ -749,7 +749,7 @@ public static class TestSet__004__param_as_object
       (new TestSqlTemplate()
         .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
         .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__Exec_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
+        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__p_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
 
      Assert.AreEqual
       (1,
@@ -813,7 +813,7 @@ public static class TestSet__004__param_as_object
       (new TestSqlTemplate()
         .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
         .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__Exec_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
+        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__p_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
 
      Assert.AreEqual
       (1,
@@ -877,7 +877,7 @@ public static class TestSet__004__param_as_object
       (new TestSqlTemplate()
         .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
         .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__Exec_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
+        .T("WHERE (CAST(TRUNC(").N("t",c_NameOf__COL_SOURCE).T(") AS "+c_NameOf__TARGET_SQL_TYPE+") = ").P_I4("__p_0").T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
 
      Assert.AreEqual
       (1,
