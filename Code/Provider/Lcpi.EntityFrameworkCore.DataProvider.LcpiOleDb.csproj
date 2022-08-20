@@ -2726,6 +2726,7 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\Int64\Op2_Code__Equal___Int64__Single.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableBoolean\Op2_Code__Equal___NullableBoolean__Boolean.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableBoolean\Op2_Code__Equal___NullableBoolean__NullableBoolean.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableBoolean\Op2_Code__Equal___NullableBoolean__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableByte\Op2_Code__Equal___NullableByte__Byte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableByte\Op2_Code__Equal___NullableByte__Decimal.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableByte\Op2_Code__Equal___NullableByte__Double.cs" />
@@ -2744,6 +2745,8 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableByte\Op2_Code__Equal___NullableByte__Single.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableDateOnly\Op2_Code__Equal___NullableDateOnly__DateOnly.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableDateOnly\Op2_Code__Equal___NullableDateOnly__NullableDateOnly.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableDateOnly\Op2_Code__Equal___NullableDateOnly__String.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableDateTime\Op2_Code__Equal___NullableDateTime__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableDecimal\Op2_Code__Equal___NullableDecimal__Byte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableDecimal\Op2_Code__Equal___NullableDecimal__Decimal.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableDecimal\Op2_Code__Equal___NullableDecimal__Double.cs" />
@@ -2858,6 +2861,7 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableSingle\Op2_Code__Equal___NullableSingle__NullableSingle.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableSingle\Op2_Code__Equal___NullableSingle__SByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableSingle\Op2_Code__Equal___NullableSingle__Single.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableTimeOnly\Op2_Code__Equal___NullableTimeOnly__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\Object\Op2_Code__Equal___Object__Object.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\Op2_MasterResults__Equal.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\SByte\Op2_Code__Equal___SByte__Byte.cs" />
@@ -4073,6 +4077,7 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableBoolean.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableDateOnly.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableDateTime.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableDecimal.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableDouble.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableGuid.cs" />
@@ -4081,6 +4086,7 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableInt64.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableSByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableSingle.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableTimeOnly.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__Object.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__SByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__Single.cs" />
