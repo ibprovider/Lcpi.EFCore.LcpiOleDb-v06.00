@@ -25,7 +25,8 @@ static class ETranslators__Equal__NullableTimeOnly
  public static readonly LOCAL_EVAL__Op2__ETranslator__Std__Simple__Descr
   sm_Instance__NullableTimeOnly
    =new LOCAL_EVAL__Op2__ETranslator__Std__Simple__Descr
-     (new LOCAL_EVAL__Op2__ETranslator__Std__Simple(Code.Op2_Code__Equal___NullableTimeOnly__NullableTimeOnly.MethodInfo_V_V));
+     (new LOCAL_EVAL__Op2__ETranslator__Std__Simple(Code.Op2_Code__Equal___NullableTimeOnly__NullableTimeOnly.MethodInfo_V_V),
+      Code.Op2_Code__Equal___NullableTimeOnly__NullableTimeOnly.Instance);
 };//class ETranslators__Equal__NullableTimeOnly
 
 ////////////////////////////////////////////////////////////////////////////////

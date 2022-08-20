@@ -21,13 +21,32 @@ using T_RESULT
 ////////////////////////////////////////////////////////////////////////////////
 //class Op2_Code__NotEqual___NullableDateTime__NullableDateTime
 
-static class Op2_Code__NotEqual___NullableDateTime__NullableDateTime
+sealed class Op2_Code__NotEqual___NullableDateTime__NullableDateTime
+ :Core.Core_Op2<T_ARG1,T_ARG2,T_RESULT>
 {
+ public static readonly Op2_Code__NotEqual___NullableDateTime__NullableDateTime
+  Instance
+   =new Op2_Code__NotEqual___NullableDateTime__NullableDateTime();
+
+ //-----------------------------------------------------------------------
  public static readonly System.Reflection.MethodInfo
   MethodInfo_V_V
    =typeof(Op2_Code__NotEqual___NullableDateTime__NullableDateTime)
      .GetTypeInfo()
      .GetDeclaredMethod(nameof(Exec_V_V));
+
+ //Interface -------------------------------------------------------------
+ public void Exec(Core.Core_OperationCtx opCtx,
+                  T_ARG1                 a,
+                  T_ARG2                 b,
+                  out T_RESULT           result)
+ {
+  Debug.Assert(!Object.ReferenceEquals(opCtx,null));
+
+  result=Exec_V_V(a,b);
+
+  return;
+ }//Exec - T_ARG1, T_ARG2
 
  //-----------------------------------------------------------------------
  private static T_RESULT Exec_V_V(T_ARG1 a,T_ARG2 b)

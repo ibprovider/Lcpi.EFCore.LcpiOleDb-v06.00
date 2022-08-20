@@ -5,3 +5,33 @@ BUG FIX. Wrong c_bug_check in Method_MasterCode__Object__ToString.Exec
 Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Methods\MasterCode\Object\Method_MasterCode__Object__ToString.cs
  - Method_MasterCode__Object__ToString.Exec
    - A correction of c_bugcheck_src
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Implementation of Core.Core_Op2<T_ARG1,T_ARG2,T_RESULT> in some of op2-classes
+ - Op2_Code__Equal___NullableTimeOnly__NullableTimeOnly
+ - Op2_Code__NotEqual___NullableDateTime__NullableDateTime
+ - Op2_Code__NotEqual___NullableTimeOnly__NullableTimeOnly
+
+Preparing for the next changes in code.
+
+[Source]
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D0\Expressions\Op2\Code\Equal\NullableTimeOnly\Op2_Code__Equal___NullableTimeOnly__NullableTimeOnly.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D0\Expressions\Op2\Code\NotEqual\NullableDateTime\Op2_Code__NotEqual___NullableDateTime__NullableDateTime.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D0\Expressions\Op2\Code\NotEqual\NullableTimeOnly\Op2_Code__NotEqual___NullableTimeOnly__NullableTimeOnly.cs
+ - implementation of Core.Core_Op2<T_ARG1,T_ARG2,T_RESULT>
+   - [add] static Instance
+   - [add] ublic void Exec(...)
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D0\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableTimeOnly.cs
+ - sm_Instance__NullableTimeOnly
+   - [reg] Code.Op2_Code__Equal___NullableTimeOnly__NullableTimeOnly.Instance
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D0\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__NullableDateTime.cs
+ - sm_Instance__NullableDateTime
+   - [reg] Code.Op2_Code__NotEqual___NullableDateTime__NullableDateTime.Instance
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D0\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__NullableTimeOnly.cs
+ - sm_Instance__NullableTimeOnly
+   - [reg] Code.Op2_Code__NotEqual___NullableTimeOnly__NullableTimeOnly.Instance
