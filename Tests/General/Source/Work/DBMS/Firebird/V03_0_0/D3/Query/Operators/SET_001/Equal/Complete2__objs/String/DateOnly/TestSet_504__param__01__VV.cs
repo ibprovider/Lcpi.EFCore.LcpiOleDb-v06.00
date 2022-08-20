@@ -11,6 +11,8 @@ using NUnit.Framework;
 
 using xdb=lcpi.data.oledb;
 
+using structure_lib=lcpi.lib.structure;
+
 namespace EFCore_LcpiOleDb_Tests.General.Work.DBMS.Firebird.V03_0_0.D3.Query.Operators.SET_001.Equal.Complete2__objs.String.DateOnly{
 ////////////////////////////////////////////////////////////////////////////////
 
