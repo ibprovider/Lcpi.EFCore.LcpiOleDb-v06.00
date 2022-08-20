@@ -461,3 +461,18 @@ Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\St
 Code\Provider\Source\ErrorServices\ErrSourceID.cs
 Code\Provider\Source\ErrorServices\ErrSourceID.resx
  - [add] Root_Query_Local_Expressions__Op2_ETranslator__Std__Concat_obj
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[ATTENTION] LocalEval: ignore conversion to object. Like to SQL translation.
+
+This will resolve a problem with losing of values types.
+
+Correction of test will be committed later.
+
+[Source]
+
+work\Code\Provider\Source\Basement\EF\Root\Query\Local\Svcs\LcpiOleDb__LocalSvc__PrepareForLocalEvaluation.cs
+ - Helper__CanRemoveConvert
+   - if(unaryExpression.Type==Structure.Structure_TypeCache.TypeOf__System_Object)
+      - return true.
