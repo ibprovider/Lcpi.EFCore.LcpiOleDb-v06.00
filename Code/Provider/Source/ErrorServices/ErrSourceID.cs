@@ -149,6 +149,8 @@ enum ErrSourceID
  Root_Query_Local_Expressions__Method_MasterCode__Object__ToString,
 
  //-----------------------------------------
+ Root_Query_Local_Expressions__Cvt_Code__NULLABLE_VALUE__CLASS,
+
  Root_Query_Local_Expressions__Cvt_Code__Object__NULLABLE_VALUE,
 
  Root_Query_Local_Expressions__Cvt_Code__Object__String,

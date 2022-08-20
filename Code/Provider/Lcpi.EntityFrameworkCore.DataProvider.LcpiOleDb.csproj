@@ -1772,6 +1772,7 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Byte\Convert_Code__Byte__SByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Byte\Convert_Code__Byte__Single.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Byte\Convert_Code__Byte__String.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Convert_Code__NULLABLE_VALUE__CLASS.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\DateOnly\Convert_Code__DateOnly__NullableDateOnly.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\DateOnly\Convert_Code__DateOnly__Object.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\DateTime\Convert_Code__DateTime__NullableDateTime.cs" />
@@ -1854,6 +1855,7 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Int64\Convert_Code__Int64__Single.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Int64\Convert_Code__Int64__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableBoolean\Convert_Code__NullableBoolean__Object.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableBoolean\Convert_Code__NullableBoolean__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableByte\Convert_Code__NullableByte__NullableByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableByte\Convert_Code__NullableByte__NullableDecimal.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableByte\Convert_Code__NullableByte__NullableDouble.cs" />
@@ -1863,9 +1865,13 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableByte\Convert_Code__NullableByte__NullableSByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableByte\Convert_Code__NullableByte__NullableSingle.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableByte\Convert_Code__NullableByte__Object.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableByte\Convert_Code__NullableByte__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDateOnly\Convert_Code__NullableDateOnly__Object.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDateOnly\Convert_Code__NullableDateOnly__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDateTime\Convert_Code__NullableDateTime__Object.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDateTime\Convert_Code__NullableDateTime__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDecimal\Convert_Code__NullableDecimal__Object.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDecimal\Convert_Code__NullableDecimal__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDouble\Convert_Code__NullableDouble__NullableByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDouble\Convert_Code__NullableDouble__NullableDecimal.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDouble\Convert_Code__NullableDouble__NullableInt16.cs" />
@@ -1874,7 +1880,9 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDouble\Convert_Code__NullableDouble__NullableSByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDouble\Convert_Code__NullableDouble__NullableSingle.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDouble\Convert_Code__NullableDouble__Object.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDouble\Convert_Code__NullableDouble__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableGuid\Convert_Code__NullableGuid__Object.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableGuid\Convert_Code__NullableGuid__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt16\Convert_Code__NullableInt16__NullableByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt16\Convert_Code__NullableInt16__NullableDecimal.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt16\Convert_Code__NullableInt16__NullableDouble.cs" />
@@ -1883,6 +1891,7 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt16\Convert_Code__NullableInt16__NullableSByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt16\Convert_Code__NullableInt16__NullableSingle.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt16\Convert_Code__NullableInt16__Object.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt16\Convert_Code__NullableInt16__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt32\Convert_Code__NullableInt32__NullableByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt32\Convert_Code__NullableInt32__NullableDecimal.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt32\Convert_Code__NullableInt32__NullableDouble.cs" />
@@ -1891,6 +1900,7 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt32\Convert_Code__NullableInt32__NullableSByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt32\Convert_Code__NullableInt32__NullableSingle.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt32\Convert_Code__NullableInt32__Object.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt32\Convert_Code__NullableInt32__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt64\Convert_Code__NullableInt64__NullableByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt64\Convert_Code__NullableInt64__NullableDecimal.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt64\Convert_Code__NullableInt64__NullableDouble.cs" />
@@ -1899,6 +1909,7 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt64\Convert_Code__NullableInt64__NullableSByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt64\Convert_Code__NullableInt64__NullableSingle.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt64\Convert_Code__NullableInt64__Object.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt64\Convert_Code__NullableInt64__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSByte\Convert_Code__NullableSByte__NullableByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSByte\Convert_Code__NullableSByte__NullableDecimal.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSByte\Convert_Code__NullableSByte__NullableDouble.cs" />
@@ -1908,6 +1919,7 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSByte\Convert_Code__NullableSByte__NullableSByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSByte\Convert_Code__NullableSByte__NullableSingle.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSByte\Convert_Code__NullableSByte__Object.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSByte\Convert_Code__NullableSByte__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSingle\Convert_Code__NullableSingle__NullableByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSingle\Convert_Code__NullableSingle__NullableDecimal.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSingle\Convert_Code__NullableSingle__NullableDouble.cs" />
@@ -1916,7 +1928,9 @@
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSingle\Convert_Code__NullableSingle__NullableInt64.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSingle\Convert_Code__NullableSingle__NullableSByte.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSingle\Convert_Code__NullableSingle__Object.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSingle\Convert_Code__NullableSingle__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableTimeOnly\Convert_Code__NullableTimeOnly__Object.cs" />
+    <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableTimeOnly\Convert_Code__NullableTimeOnly__String.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableTimeSpan\Convert_Code__NullableTimeSpan__Object.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__Array1_Char.cs" />
     <Compile Include="Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableBoolean.cs" />

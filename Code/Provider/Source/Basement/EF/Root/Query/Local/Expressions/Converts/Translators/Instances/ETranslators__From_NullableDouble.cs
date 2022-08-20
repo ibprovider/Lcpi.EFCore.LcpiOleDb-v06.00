@@ -11,6 +11,9 @@ using LOCAL_EVAL__Convert__Descr
 using LOCAL_EVAL__Convert__ETranslator__STD__SIMPLE
  =Root.Query.Local.Expressions.Converts.Translators.Std.ETranslator__Std__Simple;
 
+using LOCAL_EVAL__Convert__ETranslator__STD__WITH_CVT_CTX
+ =Translators.Std.ETranslator__Std__WithCvtCtx;
+
 ////////////////////////////////////////////////////////////////////////////////
 //class ETranslators__From_NullableDouble
 
@@ -20,6 +23,12 @@ static class ETranslators__From_NullableDouble
   sm_TO__Object
    =new LOCAL_EVAL__Convert__Descr
      (new LOCAL_EVAL__Convert__ETranslator__STD__SIMPLE(Code.Convert_Code__NullableDouble__Object.MethodInfo),
+      null);
+
+ public static readonly LOCAL_EVAL__Convert__Descr
+  sm_TO__String
+   =new LOCAL_EVAL__Convert__Descr
+     (new LOCAL_EVAL__Convert__ETranslator__STD__WITH_CVT_CTX(Code.Convert_Code__NullableDouble__String.MethodInfo),
       null);
 
  //-------------------------------------------------------- NULLABLE

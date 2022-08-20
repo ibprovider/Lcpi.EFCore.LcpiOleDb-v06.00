@@ -215,10 +215,13 @@ static class FB_Data__Expressions_Local__Converts
           .Add(Common_ETRS.ETranslators__From_TimeSpan.sm_TO__NullableTimeSpan)
 
           .Add(Common_ETRS.ETranslators__From_NullableBoolean.sm_TO__Object)
+          .Add(Common_ETRS.ETranslators__From_NullableBoolean.sm_TO__String)
 
           .Add(Common_ETRS.ETranslators__From_NullableGuid.sm_TO__Object)
+          .Add(Common_ETRS.ETranslators__From_NullableGuid.sm_TO__String)
 
           .Add(Common_ETRS.ETranslators__From_NullableByte.sm_TO__Object)
+          .Add(Common_ETRS.ETranslators__From_NullableByte.sm_TO__String)
           .Add(Common_ETRS.ETranslators__From_NullableByte.sm_TO__NullableByte)
           .Add(Common_ETRS.ETranslators__From_NullableByte.sm_TO__NullableDecimal)
           .Add(Common_ETRS.ETranslators__From_NullableByte.sm_TO__NullableDouble)
@@ -229,6 +232,7 @@ static class FB_Data__Expressions_Local__Converts
           .Add(Common_ETRS.ETranslators__From_NullableByte.sm_TO__NullableSingle)
 
           .Add(Common_ETRS.ETranslators__From_NullableSByte.sm_TO__Object)
+          .Add(Common_ETRS.ETranslators__From_NullableSByte.sm_TO__String)
           .Add(Common_ETRS.ETranslators__From_NullableSByte.sm_TO__NullableByte)
           .Add(Common_ETRS.ETranslators__From_NullableSByte.sm_TO__NullableDecimal)
           .Add(Common_ETRS.ETranslators__From_NullableSByte.sm_TO__NullableDouble)
@@ -239,6 +243,7 @@ static class FB_Data__Expressions_Local__Converts
           .Add(Common_ETRS.ETranslators__From_NullableSByte.sm_TO__NullableSingle)
 
           .Add(Common_ETRS.ETranslators__From_NullableInt16.sm_TO__Object)
+          .Add(Common_ETRS.ETranslators__From_NullableInt16.sm_TO__String)
           .Add(Common_ETRS.ETranslators__From_NullableInt16.sm_TO__NullableByte)
           .Add(Common_ETRS.ETranslators__From_NullableInt16.sm_TO__NullableDecimal)
           .Add(Common_ETRS.ETranslators__From_NullableInt16.sm_TO__NullableDouble)
@@ -248,6 +253,7 @@ static class FB_Data__Expressions_Local__Converts
           .Add(Common_ETRS.ETranslators__From_NullableInt16.sm_TO__NullableSingle)
 
           .Add(Common_ETRS.ETranslators__From_NullableInt32.sm_TO__Object)
+          .Add(Common_ETRS.ETranslators__From_NullableInt32.sm_TO__String)
           .Add(Common_ETRS.ETranslators__From_NullableInt32.sm_TO__NullableByte)
           .Add(Common_ETRS.ETranslators__From_NullableInt32.sm_TO__NullableSByte)
           .Add(Common_ETRS.ETranslators__From_NullableInt32.sm_TO__NullableInt16)
@@ -257,6 +263,7 @@ static class FB_Data__Expressions_Local__Converts
           .Add(Common_ETRS.ETranslators__From_NullableInt32.sm_TO__NullableDouble)
 
           .Add(Common_ETRS.ETranslators__From_NullableInt64.sm_TO__Object)
+          .Add(Common_ETRS.ETranslators__From_NullableInt64.sm_TO__String)
           .Add(Common_ETRS.ETranslators__From_NullableInt64.sm_TO__NullableByte)
           .Add(Common_ETRS.ETranslators__From_NullableInt64.sm_TO__NullableDecimal)
           .Add(Common_ETRS.ETranslators__From_NullableInt64.sm_TO__NullableDouble)
@@ -266,6 +273,7 @@ static class FB_Data__Expressions_Local__Converts
           .Add(Common_ETRS.ETranslators__From_NullableInt64.sm_TO__NullableSingle)
 
           .Add(Common_ETRS.ETranslators__From_NullableSingle.sm_TO__Object)
+          .Add(Common_ETRS.ETranslators__From_NullableSingle.sm_TO__String)
           .Add(Common_ETRS.ETranslators__From_NullableSingle.sm_TO__NullableByte)
           .Add(Common_ETRS.ETranslators__From_NullableSingle.sm_TO__NullableDecimal)
           .Add(Common_ETRS.ETranslators__From_NullableSingle.sm_TO__NullableDouble)
@@ -275,6 +283,7 @@ static class FB_Data__Expressions_Local__Converts
           .Add(Common_ETRS.ETranslators__From_NullableSingle.sm_TO__NullableSByte)
 
           .Add(Common_ETRS.ETranslators__From_NullableDouble.sm_TO__Object)
+          .Add(Common_ETRS.ETranslators__From_NullableDouble.sm_TO__String)
           .Add(Common_ETRS.ETranslators__From_NullableDouble.sm_TO__NullableByte)
           .Add(Common_ETRS.ETranslators__From_NullableDouble.sm_TO__NullableDecimal)
           .Add(Common_ETRS.ETranslators__From_NullableDouble.sm_TO__NullableInt16)
@@ -284,12 +293,16 @@ static class FB_Data__Expressions_Local__Converts
           .Add(Common_ETRS.ETranslators__From_NullableDouble.sm_TO__NullableSingle)
 
           .Add(Common_ETRS.ETranslators__From_NullableDecimal.sm_TO__Object)
+          .Add(Common_ETRS.ETranslators__From_NullableDecimal.sm_TO__String)
 
           .Add(Common_ETRS.ETranslators__From_NullableDateOnly.sm_TO__Object)
+          .Add(Common_ETRS.ETranslators__From_NullableDateOnly.sm_TO__String)
 
           .Add(Common_ETRS.ETranslators__From_NullableDateTime.sm_TO__Object)
+          .Add(Common_ETRS.ETranslators__From_NullableDateTime.sm_TO__String)
 
           .Add(Common_ETRS.ETranslators__From_NullableTimeOnly.sm_TO__Object)
+          .Add(Common_ETRS.ETranslators__From_NullableTimeOnly.sm_TO__String)
 
           .Add(Common_ETRS.ETranslators__From_NullableTimeSpan.sm_TO__Object)
 

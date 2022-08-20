@@ -281,3 +281,141 @@ Forgot to add Convert_Code__Object__NULLABLE_VALUE.cs.
 
 Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
  - [BUG FIX] [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NULLABLE_VALUE.cs
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+New local converters from NullableValue to String.
+
+List:
+ - Convert_Code__NullableBoolean__String
+ - Convert_Code__NullableByte__String
+ - Convert_Code__NullableDateOnly__String
+ - Convert_Code__NullableDateTime__String
+ - Convert_Code__NullableDecimal__String
+ - Convert_Code__NullableDouble__String
+ - Convert_Code__NullableGuid__String
+ - Convert_Code__NullableInt16__String
+ - Convert_Code__NullableInt32__String
+ - Convert_Code__NullableInt64__String
+ - Convert_Code__NullableSByte__String
+ - Convert_Code__NullableSingle__String
+ - Convert_Code__NullableTimeOnly__String
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Convert_Code__NULLABLE_VALUE__CLASS.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableBoolean\Convert_Code__NullableBoolean__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableByte\Convert_Code__NullableByte__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDateOnly\Convert_Code__NullableDateOnly__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDateTime\Convert_Code__NullableDateTime__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDecimal\Convert_Code__NullableDecimal__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDouble\Convert_Code__NullableDouble__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableGuid\Convert_Code__NullableGuid__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt16\Convert_Code__NullableInt16__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt32\Convert_Code__NullableInt32__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt64\Convert_Code__NullableInt64__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSByte\Convert_Code__NullableSByte__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSingle\Convert_Code__NullableSingle__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableTimeOnly\Convert_Code__NullableTimeOnly__String.cs
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D1\Expressions\FB_Data__Expressions_Local__Converts.cs
+ - [add] Common_ETRS.ETranslators__From_NullableBoolean.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableGuid.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableByte.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableSByte.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableInt16.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableInt32.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableInt64.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableSingle.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDouble.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDecimal.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDateOnly.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDateTime.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableTimeOnly.sm_TO__String
+
+work\Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D3\Expressions\FB_Data__Expressions_Local__Converts.cs
+ - [add] Common_ETRS.ETranslators__From_NullableBoolean.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableGuid.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableByte.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableSByte.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableInt16.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableInt32.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableInt64.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableSingle.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDouble.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDecimal.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDateOnly.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDateTime.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableTimeOnly.sm_TO__String
+
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Convert_Code__NULLABLE_VALUE__CLASS.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableBoolean\Convert_Code__NullableBoolean__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableByte\Convert_Code__NullableByte__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDateOnly\Convert_Code__NullableDateOnly__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDateTime\Convert_Code__NullableDateTime__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDecimal\Convert_Code__NullableDecimal__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDouble\Convert_Code__NullableDouble__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableGuid\Convert_Code__NullableGuid__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt16\Convert_Code__NullableInt16__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt32\Convert_Code__NullableInt32__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt64\Convert_Code__NullableInt64__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSByte\Convert_Code__NullableSByte__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSingle\Convert_Code__NullableSingle__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableTimeOnly\Convert_Code__NullableTimeOnly__String.cs
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableBoolean.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableBoolean__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableByte.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableByte__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableDateOnly.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableDateOnly__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableDateTime.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableDateTime__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableDecimal.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableDecimal__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableDouble.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableDouble__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableGuid.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableGuid__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableInt16.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableInt16__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableInt32.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableInt32__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableInt64.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableInt64__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableSByte.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableSByte__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableSingle.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableSingle__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableTimeOnly.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableTimeOnly__String.MethodInfo
+
+Code\Provider\Source\ErrorServices\ErrSourceID.cs
+Code\Provider\Source\ErrorServices\ErrSourceID.resx
+ - [add] Root_Query_Local_Expressions__Cvt_Code__NULLABLE_VALUE__CLASS
