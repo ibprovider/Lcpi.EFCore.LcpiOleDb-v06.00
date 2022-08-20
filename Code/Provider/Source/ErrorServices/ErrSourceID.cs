@@ -143,12 +143,12 @@ enum ErrSourceID
 
  Root_Query_Local_Expressions__Method_Code__String__Substring___nullableStartIndex__nullableLength,
 
-//-----------------------------------------
+//------------------------------------------
  Root_Query_Local_Expressions__Method_MasterCode__IEnumerable_generic__Contains,
 
  Root_Query_Local_Expressions__Method_MasterCode__Object__ToString,
 
-//-----------------------------------------
+ //-----------------------------------------
  Root_Query_Local_Expressions__Cvt_Code__Object__NULLABLE_VALUE,
 
  Root_Query_Local_Expressions__Cvt_Code__Object__String,
