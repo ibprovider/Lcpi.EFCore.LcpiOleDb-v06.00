@@ -222,6 +222,61 @@ public static class TestSet_504__param__01__VV
 
      var recs=db.testTable.Where(r => ((object)vv1) /*OP{*/ == /*}OP*/ ((object)(T_DATA2)(System.Object)vv2__null_obj));
 
+     try
+     {
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
+
+      TestServices.ThrowWeWaitError();
+     }
+     catch(InvalidOperationException e)
+     {
+      CheckErrors.PrintException_OK(e);
+
+      Assert.IsNotNull(e.InnerException);
+
+      Assert.IsInstanceOf<structure_lib.exceptions.t_invalid_operation_exception>(e.InnerException);
+
+      var e2=(structure_lib.exceptions.t_invalid_operation_exception)e.InnerException;
+
+      Assert.AreEqual
+       (TestUtils.GetRecordCount(e2),
+        1);
+
+      CheckErrors.CheckErrorRecord__common_err__cant_convert_value_between_types_2
+       (TestUtils.GetRecord(e2,0),
+        CheckErrors.c_src__Core_Engines_Dbms_FB_Common_Mirror__Convert_Code__STRING__TYPE_DATE,
+        lcpi.lib.com.HResultCode.DB_E_CANTCONVERTVALUE,
+        typeof(System.String),
+        typeof(System.DateOnly));
+     }//catch
+    }//using db
+
+    tr.Commit();
+   }//using tr
+  }//using cn
+ }//Test_ZA02VN
+
+ //-----------------------------------------------------------------------
+ [Test]
+ public static void Test_ZA02VN__OK()
+ {
+  using(var cn=LocalCnHelper.CreateCn())
+  {
+   cn.Open();
+
+   using(var tr=cn.BeginTransaction())
+   {
+    //insert new record in external transaction
+    using(var db=new MyContext(tr))
+    {
+     T_DATA1 vv1="11.05.2021";
+     object  vv2__null_obj=null;
+
+     var recs=db.testTable.Where(r => ((object)vv1) /*OP{*/ == /*}OP*/ ((object)(T_DATA2)(System.Object)vv2__null_obj));
+
      foreach(var r in recs)
      {
       TestServices.ThrowSelectedRow();
@@ -237,7 +292,7 @@ public static class TestSet_504__param__01__VV
     tr.Commit();
    }//using tr
   }//using cn
- }//Test_ZA02VN
+ }//Test_ZA02VN__OK
 
  //-----------------------------------------------------------------------
  [Test]
