@@ -65,3 +65,15 @@ Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\In
 Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__NullableDateOnly.cs
  - sm_Instance__NullableDateOnly
    - [reg] Code.Op2_Code__NotEqual___NullableDateOnly__NullableDateOnly.Instance
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+A registration of Code.Op2_Code__Equal___NullableDateOnly__NullableDateOnly.Instance
+
+This class has already provided Instance, we had forgotten to register it.
+
+[Source]
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableDateOnly.cs
+ - sm_Instance__NullableDateOnly
+   - [reg] Code.Op2_Code__Equal___NullableDateOnly__NullableDateOnly.Instance
