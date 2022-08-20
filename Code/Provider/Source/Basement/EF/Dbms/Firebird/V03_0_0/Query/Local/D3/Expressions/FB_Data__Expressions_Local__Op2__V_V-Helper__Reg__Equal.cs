@@ -163,6 +163,7 @@ static partial class FB_Data__Expressions_Local__Op2__V_V
    .Add(Common_ETRS.ETranslators__Equal__Int64.sm_Instance__NullableSingle)
 
    .Add(Common_ETRS.ETranslators__Equal__NullableBoolean.sm_Instance__Boolean)
+   .Add(Common_ETRS.ETranslators__Equal__NullableBoolean.sm_Instance__String)
    .Add(Common_ETRS.ETranslators__Equal__NullableBoolean.sm_Instance__NullableBoolean)
 
    .Add(Common_ETRS.ETranslators__Equal__NullableByte.sm_Instance__Byte)
@@ -183,9 +184,11 @@ static partial class FB_Data__Expressions_Local__Op2__V_V
    .Add(Common_ETRS.ETranslators__Equal__NullableByte.sm_Instance__NullableSingle)
 
    .Add(Common_ETRS.ETranslators__Equal__NullableDateOnly.sm_Instance__DateOnly)
+   .Add(Common_ETRS.ETranslators__Equal__NullableDateOnly.sm_Instance__String)
    .Add(Common_ETRS.ETranslators__Equal__NullableDateOnly.sm_Instance__NullableDateOnly)
 
    .Add(FB3_D0_ETRS.ETranslators__Equal__NullableDateTime.sm_Instance__DateTime)
+   .Add(Common_ETRS.ETranslators__Equal__NullableDateTime.sm_Instance__String)
    .Add(FB3_D0_ETRS.ETranslators__Equal__NullableDateTime.sm_Instance__NullableDateTime)
 
    .Add(Common_ETRS.ETranslators__Equal__NullableDecimal.sm_Instance__Byte)
@@ -311,6 +314,7 @@ static partial class FB_Data__Expressions_Local__Op2__V_V
    .Add(Common_ETRS.ETranslators__Equal__NullableSingle.sm_Instance__NullableSingle)
 
    .Add(FB3_D0_ETRS.ETranslators__Equal__NullableTimeOnly.sm_Instance__TimeOnly)
+   .Add(Common_ETRS.ETranslators__Equal__NullableTimeOnly.sm_Instance__String)
    .Add(FB3_D0_ETRS.ETranslators__Equal__NullableTimeOnly.sm_Instance__NullableTimeOnly)
 
    .Add(FB3_D0_ETRS.ETranslators__Equal__NullableTimeSpan.sm_Instance__TimeSpan)
@@ -357,6 +361,10 @@ static partial class FB_Data__Expressions_Local__Op2__V_V
    .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__DateTime)
    .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__String)
    .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__TimeOnly)
+   .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableBoolean)
+   .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableDateOnly)
+   .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableDateTime)
+   .Add(Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableTimeOnly)
 
    .Add(FB3_D0_ETRS.ETranslators__Equal__TimeOnly.sm_Instance__TimeOnly)
    .Add(Common_ETRS.ETranslators__Equal__TimeOnly.sm_Instance__String)

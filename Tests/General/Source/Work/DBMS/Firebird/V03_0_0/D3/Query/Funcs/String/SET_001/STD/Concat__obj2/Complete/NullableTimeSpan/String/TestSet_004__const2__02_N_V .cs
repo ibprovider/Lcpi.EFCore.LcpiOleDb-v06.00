@@ -11,6 +11,8 @@ using NUnit.Framework;
 
 using xdb=lcpi.data.oledb;
 
+using xEFCore=Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb;
+
 using structure_lib=lcpi.lib.structure;
 
 namespace EFCore_LcpiOleDb_Tests.General.Work.DBMS.Firebird.V03_0_0.D3.Query.Funcs.String.SET_001.STD.Concat__obj2.Complete.NullableTimeSpan.String{
@@ -64,6 +66,10 @@ public static class TestSet_004__const2__02_N_V
   //
   //  Will be fixed in future :-)
   //
+  // [2022-08-20]
+  //
+  //  Fixed.
+  //
 
   using(var cn=LocalCnHelper.CreateCn())
   {
@@ -85,31 +91,19 @@ public static class TestSet_004__const2__02_N_V
 
       TestServices.ThrowWeWaitError();
      }
-     catch(InvalidOperationException e)
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
      {
-      CheckErrors.PrintException_OK
-       (e);
-
-      Assert.NotNull
-       (e.InnerException);
-
-      Assert.IsInstanceOf<structure_lib.exceptions.t_invalid_operation_exception>
-       (e.InnerException);
-
-      var e2
-       =(structure_lib.exceptions.t_invalid_operation_exception)e.InnerException;
-
-      Assert.NotNull
-       (e2);
-
+      CheckErrors.PrintException_OK(e);
+   
       Assert.AreEqual
        (1,
-        TestUtils.GetRecordCount(e2));
-
-      CheckErrors.CheckErrorRecord__common_err__unsupported_datatypes_conversion_2
-       (TestUtils.GetRecord(e2,0),
-        CheckErrors.c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Method_MasterCode__Object__ToString,
-        "System.TimeSpan",
+        TestUtils.GetRecordCount(e));
+   
+      CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalEval_Services__Extensions,
+        xEFCore.LcpiOleDb__ExpressionType.Concat,
+        "Nullable<System.TimeSpan>",
         "System.String");
      }//catch
     }//using db

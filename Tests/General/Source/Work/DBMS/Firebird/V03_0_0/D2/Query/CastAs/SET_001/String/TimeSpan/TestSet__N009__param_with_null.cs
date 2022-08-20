@@ -10,6 +10,8 @@ using NUnit.Framework;
 
 using xdb=lcpi.data.oledb;
 
+using structure_lib=lcpi.lib.structure;
+
 namespace EFCore_LcpiOleDb_Tests.General.Work.DBMS.Firebird.V03_0_0.D2.Query.CastAs.SET_001.String.TimeSpan{
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -71,41 +73,34 @@ public static class TestSet__N009__param_with_null
 
      var recs=db.testTable.Where(r => (T_TARGET_VALUE)(object)vv==r.COL_TARGET && r.TEST_ID==testID);
 
-     int nRecs=0;
-
-     foreach(var r in recs)
+     try
      {
-      Assert.AreEqual
-       (0,
-        nRecs);
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-      ++nRecs;
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
 
-      Assert.IsTrue
-       (r.TEST_ID.HasValue);
-
-      Assert.AreEqual
-       (testID,
-        r.TEST_ID.Value);
-
-      Assert.AreEqual
-       (null,
-        r.COL_SOURCE);
+      Assert.IsNull
+       (e.InnerException);
 
       Assert.AreEqual
-       (null,
-        r.COL_TARGET);
-     }//foreach r
+       (1,
+        TestUtils.GetRecordCount(e));
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("t","TEST_ID").T(", ").N("t",c_NameOf__COL_SOURCE).T(", ").N("t",c_NameOf__COL_TARGET).EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("t").EOL()
-        .T("WHERE (").N("t",c_NameOf__COL_TARGET).IS_NULL().T(") AND (").N("t","TEST_ID").T(" = ").P_ID("__testID_1").T(")"));
-
-     Assert.AreEqual
-      (1,
-       nRecs);
+      CheckErrors.CheckErrorRecord__BugCheck__LocalEvalErr__unsupported_conversion
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__Basement_EF_Root_Query_Local_Expressions_Unary_Translators_ETranslator__Convert,
+        "ETranslator__Convert::Translate",
+        "#002",
+        "System.String",
+        "Nullable<System.TimeSpan>");
+     }//catch
     }//using db
 
     tr.Rollback();

@@ -350,10 +350,7 @@ sealed partial class LcpiOleDb__LocalSvc__PrepareForLocalEvaluation
    //Remove convert to object
 
    //Result of SQL Translator
-   //return true;
-
-   //Our decision at current time
-   return false;
+   return true;
   }//if
 
   var innerType=unaryExpression.Operand.Type.Extension__GetUnderlyingValueType();
@@ -363,10 +360,10 @@ sealed partial class LcpiOleDb__LocalSvc__PrepareForLocalEvaluation
   //
   // SQL Translator rule:
   //
-  // if(innerType==convertedType)
-  // {
-  //  return true;
-  // }//if
+  if(innerType==convertedType)
+  {
+   return true;
+  }//if
 
   if(convertedType==Structure_TypeCache.TypeOf__System_Enum)
   {

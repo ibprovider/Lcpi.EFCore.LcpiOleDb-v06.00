@@ -15,6 +15,9 @@ using Structure_MethodIdCache
 using Structure_MethodInfoCache
  =Structure.Structure_MethodInfoCache;
 
+using Structure_ExpressionUtils
+ =Structure.Structure_ExpressionUtils;
+
 using Root.Query.Local.Extensions.LcpiOleDb__LocalEval_Services__Extensions;
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -69,10 +72,32 @@ sealed class ETranslator__String__std__Concat__obj3
   Debug.Assert(!Object.ReferenceEquals(node_Arg2.Type,null));
 
   //----------------------------------------
+  var expr0
+   =Structure_ExpressionUtils.RemoveConvertToObject
+     (node_Arg0);
+
+  Debug.Assert(!Object.ReferenceEquals(expr0,null));
+  Debug.Assert(!Object.ReferenceEquals(expr0.Type,null));
+
+  var expr1
+   =Structure_ExpressionUtils.RemoveConvertToObject
+     (node_Arg1);
+
+  Debug.Assert(!Object.ReferenceEquals(expr1,null));
+  Debug.Assert(!Object.ReferenceEquals(expr1.Type,null));
+
+  var expr2
+   =Structure_ExpressionUtils.RemoveConvertToObject
+     (node_Arg2);
+
+  Debug.Assert(!Object.ReferenceEquals(expr2,null));
+  Debug.Assert(!Object.ReferenceEquals(expr2.Type,null));
+
+  //----------------------------------------
   var r1
    =opData.ExpressionServices.Extension__MakeBinary__Concat__Throw
-    (node_Arg0,
-     node_Arg1);
+    (expr0,
+     expr1);
 
   Debug.Assert(!Object.ReferenceEquals(r1,null));
 
@@ -80,7 +105,7 @@ sealed class ETranslator__String__std__Concat__obj3
   var r2
    =opData.ExpressionServices.Extension__MakeBinary__Concat__Throw
     (r1,
-     node_Arg2);
+     expr2);
 
   Debug.Assert(!Object.ReferenceEquals(r2,null));
 

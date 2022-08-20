@@ -1,0 +1,40 @@
+Moving to generic class Convert_Code__Object__NULLABLE_VALUE
+
+[Source]
+
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NULLABLE_VALUE.cs
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableSingle.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableInt64.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableTimeSpan.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableSByte.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableDateTime.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableTimeOnly.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableGuid.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableBoolean.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableInt32.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableDouble.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableInt16.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableByte.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableDecimal.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NullableDateOnly.cs
+ - [use] Code.Convert_Code__Object__NULLABLE_VALUE
+
+Code\Provider\Source\ErrorServices\ErrSourceID.cs
+Code\Provider\Source\ErrorServices\ErrSourceID.resx
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableBoolean
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableGuid
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableDateOnly
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableDateTime
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeOnly
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeSpan
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableByte
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableSByte
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableInt16
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableInt32
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableInt64
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableDecimal
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableSingle
+ - [del] Root_Query_Local_Expressions__Cvt_Code__Object__NullableDouble
+
+ - [add] Root_Query_Local_Expressions__Cvt_Code__Object__NULLABLE_VALUE

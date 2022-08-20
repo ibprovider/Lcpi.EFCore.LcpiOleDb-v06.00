@@ -11,6 +11,8 @@ using NUnit.Framework;
 
 using xdb=lcpi.data.oledb;
 
+using structure_lib=lcpi.lib.structure;
+
 namespace EFCore_LcpiOleDb_Tests.General.Work.DBMS.Firebird.V03_0_0.D3.Query.Operators.SET_002__AS_STR.Subtract.Complete.NullableTimeSpan.NullableTimeSpan{
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -65,33 +67,34 @@ public static class TestSet_6VN00__param
 
      var recs=db.testTable.Where(r => (string)(object)(vv1-vv2)==null);
 
-     int nRecs=0;
-
-     foreach(var r in recs)
+     try
      {
-      Assert.AreEqual
-       (0,
-        nRecs);
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-      ++nRecs;
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
 
-      Assert.IsTrue
-       (r.TEST_ID.HasValue);
+      Assert.IsNull
+       (e.InnerException);
 
       Assert.AreEqual
        (1,
-        r.TEST_ID.Value);
-     }//foreach r
+        TestUtils.GetRecordCount(e));
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("d","ID").EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("d").EOL()
-        .T("WHERE ").P_BOOL("__Exec_V_V_0"));
-
-     Assert.AreEqual
-      (1,
-       nRecs);
+      CheckErrors.CheckErrorRecord__BugCheck__LocalEvalErr__unsupported_conversion
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__Basement_EF_Root_Query_Local_Expressions_Unary_Translators_ETranslator__Convert,
+        "ETranslator__Convert::Translate",
+        "#002",
+        "Nullable<System.TimeSpan>",
+        "System.String");
+     }//catch
     }//using db
 
     tr.Commit();

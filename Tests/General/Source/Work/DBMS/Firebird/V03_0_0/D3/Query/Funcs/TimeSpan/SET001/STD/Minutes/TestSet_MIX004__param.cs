@@ -73,25 +73,22 @@ public static class TestSet_MIX004__param
 
       TestServices.ThrowWeWaitError();
      }
-     catch(InvalidOperationException e)
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
      {
       CheckErrors.PrintException_OK(e);
 
-      Assert.IsNotNull
+      Assert.IsNull
        (e.InnerException);
-
-      Assert.IsInstanceOf<structure_lib.exceptions.t_invalid_operation_exception>
-       (e.InnerException);
-
-      var e2=(structure_lib.exceptions.t_invalid_operation_exception)(e.InnerException);
 
       Assert.AreEqual
        (1,
-        TestUtils.GetRecordCount(e2));
+        TestUtils.GetRecordCount(e));
 
-      CheckErrors.CheckErrorRecord__common_err__unsupported_datatypes_conversion_2
-       (TestUtils.GetRecord(e2,0),
-        CheckErrors.c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeSpan,
+      CheckErrors.CheckErrorRecord__BugCheck__LocalEvalErr__unsupported_conversion
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__Basement_EF_Root_Query_Local_Expressions_Unary_Translators_ETranslator__Convert,
+        "ETranslator__Convert::Translate",
+        "#002",
         "System.String",
         "Nullable<System.TimeSpan>");
      }//catch
@@ -119,16 +116,34 @@ public static class TestSet_MIX004__param
 
      var recs=db.testTable.Where(r => ((T_TEST)(object)vv_src).Minutes==12);
 
-     foreach(var r in recs)
+     try
      {
-      TestServices.ThrowSelectedRow();
-     }//foreach r
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("d","ID").EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("d").EOL()
-        .T("WHERE ").P_BOOL("__Exec_V_V_0"));
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
+
+      Assert.IsNull
+       (e.InnerException);
+
+      Assert.AreEqual
+       (1,
+        TestUtils.GetRecordCount(e));
+
+      CheckErrors.CheckErrorRecord__BugCheck__LocalEvalErr__unsupported_conversion
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__Basement_EF_Root_Query_Local_Expressions_Unary_Translators_ETranslator__Convert,
+        "ETranslator__Convert::Translate",
+        "#002",
+        "System.String",
+        "Nullable<System.TimeSpan>");
+     }//catch
     }//using db
 
     tr.Commit();
@@ -162,25 +177,22 @@ public static class TestSet_MIX004__param
 
       TestServices.ThrowWeWaitError();
      }
-     catch(InvalidOperationException e)
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
      {
       CheckErrors.PrintException_OK(e);
 
-      Assert.IsNotNull
+      Assert.IsNull
        (e.InnerException);
-
-      Assert.IsInstanceOf<structure_lib.exceptions.t_invalid_operation_exception>
-       (e.InnerException);
-
-      var e2=(structure_lib.exceptions.t_invalid_operation_exception)(e.InnerException);
 
       Assert.AreEqual
        (1,
-        TestUtils.GetRecordCount(e2));
+        TestUtils.GetRecordCount(e));
 
-      CheckErrors.CheckErrorRecord__common_err__unsupported_datatypes_conversion_2
-       (TestUtils.GetRecord(e2,0),
-        CheckErrors.c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeSpan,
+      CheckErrors.CheckErrorRecord__BugCheck__LocalEvalErr__unsupported_conversion
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__Basement_EF_Root_Query_Local_Expressions_Unary_Translators_ETranslator__Convert,
+        "ETranslator__Convert::Translate",
+        "#002",
         "System.String",
         "Nullable<System.TimeSpan>");
      }//catch

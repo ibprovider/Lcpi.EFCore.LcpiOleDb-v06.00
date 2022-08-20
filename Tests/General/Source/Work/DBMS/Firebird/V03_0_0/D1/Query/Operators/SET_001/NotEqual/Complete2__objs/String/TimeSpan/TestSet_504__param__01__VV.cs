@@ -76,28 +76,23 @@ public static class TestSet_504__param__01__VV
 
       TestServices.ThrowWeWaitError();
      }
-     catch(InvalidOperationException e)
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
      {
       CheckErrors.PrintException_OK(e);
 
-      Assert.IsNotNull
+      Assert.IsNull
        (e.InnerException);
-
-      Assert.IsInstanceOf<structure_lib.exceptions.t_invalid_operation_exception>
-       (e.InnerException);
-
-      var e2=(structure_lib.exceptions.t_invalid_operation_exception)(e.InnerException);
 
       Assert.AreEqual
        (1,
-        TestUtils.GetRecordCount(e2));
+        TestUtils.GetRecordCount(e));
 
       CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
-       (TestUtils.GetRecord(e2,0),
-        CheckErrors.c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Op2_Code__NotEqual___Object__Object,
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
         System.Linq.Expressions.ExpressionType.NotEqual,
         "System.String",
-        "System.TimeSpan");
+        "Nullable<System.TimeSpan>");
      }//catch
     }//using db
 
@@ -133,28 +128,23 @@ public static class TestSet_504__param__01__VV
 
       TestServices.ThrowWeWaitError();
      }
-     catch(InvalidOperationException e)
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
      {
       CheckErrors.PrintException_OK(e);
 
-      Assert.IsNotNull
+      Assert.IsNull
        (e.InnerException);
-
-      Assert.IsInstanceOf<structure_lib.exceptions.t_invalid_operation_exception>
-       (e.InnerException);
-
-      var e2=(structure_lib.exceptions.t_invalid_operation_exception)(e.InnerException);
 
       Assert.AreEqual
        (1,
-        TestUtils.GetRecordCount(e2));
+        TestUtils.GetRecordCount(e));
 
       CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
-       (TestUtils.GetRecord(e2,0),
-        CheckErrors.c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Op2_Code__NotEqual___Object__Object,
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
         System.Linq.Expressions.ExpressionType.NotEqual,
         "System.String",
-        "System.TimeSpan");
+        "Nullable<System.TimeSpan>");
      }//catch
     }//using db
 
@@ -190,28 +180,23 @@ public static class TestSet_504__param__01__VV
 
       TestServices.ThrowWeWaitError();
      }
-     catch(InvalidOperationException e)
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
      {
       CheckErrors.PrintException_OK(e);
 
-      Assert.IsNotNull
+      Assert.IsNull
        (e.InnerException);
-
-      Assert.IsInstanceOf<structure_lib.exceptions.t_invalid_operation_exception>
-       (e.InnerException);
-
-      var e2=(structure_lib.exceptions.t_invalid_operation_exception)(e.InnerException);
 
       Assert.AreEqual
        (1,
-        TestUtils.GetRecordCount(e2));
+        TestUtils.GetRecordCount(e));
 
       CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
-       (TestUtils.GetRecord(e2,0),
-        CheckErrors.c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Op2_Code__NotEqual___Object__Object,
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
         System.Linq.Expressions.ExpressionType.NotEqual,
         "System.String",
-        "System.TimeSpan");
+        "Nullable<System.TimeSpan>");
      }//catch
     }//using db
 
@@ -247,28 +232,23 @@ public static class TestSet_504__param__01__VV
 
       TestServices.ThrowWeWaitError();
      }
-     catch(InvalidOperationException e)
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
      {
       CheckErrors.PrintException_OK(e);
 
-      Assert.IsNotNull
+      Assert.IsNull
        (e.InnerException);
-
-      Assert.IsInstanceOf<structure_lib.exceptions.t_invalid_operation_exception>
-       (e.InnerException);
-
-      var e2=(structure_lib.exceptions.t_invalid_operation_exception)(e.InnerException);
 
       Assert.AreEqual
        (1,
-        TestUtils.GetRecordCount(e2));
+        TestUtils.GetRecordCount(e));
 
       CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
-       (TestUtils.GetRecord(e2,0),
-        CheckErrors.c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Op2_Code__NotEqual___Object__Object,
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
         System.Linq.Expressions.ExpressionType.NotEqual,
         "System.String",
-        "System.TimeSpan");
+        "Nullable<System.TimeSpan>");
      }//catch
     }//using db
 
@@ -304,28 +284,23 @@ public static class TestSet_504__param__01__VV
 
       TestServices.ThrowWeWaitError();
      }
-     catch(InvalidOperationException e)
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
      {
       CheckErrors.PrintException_OK(e);
 
-      Assert.IsNotNull
+      Assert.IsNull
        (e.InnerException);
-
-      Assert.IsInstanceOf<structure_lib.exceptions.t_invalid_operation_exception>
-       (e.InnerException);
-
-      var e2=(structure_lib.exceptions.t_invalid_operation_exception)(e.InnerException);
 
       Assert.AreEqual
        (1,
-        TestUtils.GetRecordCount(e2));
+        TestUtils.GetRecordCount(e));
 
       CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
-       (TestUtils.GetRecord(e2,0),
-        CheckErrors.c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Op2_Code__NotEqual___Object__Object,
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
         System.Linq.Expressions.ExpressionType.NotEqual,
         "System.String",
-        "System.TimeSpan");
+        "Nullable<System.TimeSpan>");
      }//catch
     }//using db
 
@@ -361,28 +336,23 @@ public static class TestSet_504__param__01__VV
 
       TestServices.ThrowWeWaitError();
      }
-     catch(InvalidOperationException e)
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
      {
       CheckErrors.PrintException_OK(e);
 
-      Assert.IsNotNull
+      Assert.IsNull
        (e.InnerException);
-
-      Assert.IsInstanceOf<structure_lib.exceptions.t_invalid_operation_exception>
-       (e.InnerException);
-
-      var e2=(structure_lib.exceptions.t_invalid_operation_exception)(e.InnerException);
 
       Assert.AreEqual
        (1,
-        TestUtils.GetRecordCount(e2));
+        TestUtils.GetRecordCount(e));
 
       CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
-       (TestUtils.GetRecord(e2,0),
-        CheckErrors.c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Op2_Code__NotEqual___Object__Object,
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
         System.Linq.Expressions.ExpressionType.NotEqual,
         "System.String",
-        "System.TimeSpan");
+        "Nullable<System.TimeSpan>");
      }//catch
     }//using db
 
@@ -409,33 +379,33 @@ public static class TestSet_504__param__01__VV
 
      var recs=db.testTable.Where(r => ((object)(T_DATA1)(System.Object)vv1__null_obj) /*OP{*/ != /*}OP*/ ((object)vv2));
 
-     int nRecs=0;
-
-     foreach(var r in recs)
+     try
      {
-      Assert.AreEqual
-       (0,
-        nRecs);
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-      ++nRecs;
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
 
-      Assert.IsTrue
-       (r.TEST_ID.HasValue);
+      Assert.IsNull
+       (e.InnerException);
 
       Assert.AreEqual
        (1,
-        r.TEST_ID.Value);
-     }//foreach r
+        TestUtils.GetRecordCount(e));
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("d","ID").EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("d").EOL()
-        .T("WHERE ").P_BOOL("__Exec_V_V_0"));
-
-     Assert.AreEqual
-      (1,
-       nRecs);
+      CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
+        System.Linq.Expressions.ExpressionType.NotEqual,
+        "System.String",
+        "Nullable<System.TimeSpan>");
+     }//catch
     }//using db
 
     tr.Commit();
@@ -461,33 +431,33 @@ public static class TestSet_504__param__01__VV
 
      var recs=db.testTable.Where(r => ((object)vv1) /*OP{*/ != /*}OP*/ ((object)(T_DATA2)(System.Object)vv2__null_obj));
 
-     int nRecs=0;
-
-     foreach(var r in recs)
+     try
      {
-      Assert.AreEqual
-       (0,
-        nRecs);
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-      ++nRecs;
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
 
-      Assert.IsTrue
-       (r.TEST_ID.HasValue);
+      Assert.IsNull
+       (e.InnerException);
 
       Assert.AreEqual
        (1,
-        r.TEST_ID.Value);
-     }//foreach r
+        TestUtils.GetRecordCount(e));
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("d","ID").EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("d").EOL()
-        .T("WHERE ").P_BOOL("__Exec_V_V_0"));
-
-     Assert.AreEqual
-      (1,
-       nRecs);
+      CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
+        System.Linq.Expressions.ExpressionType.NotEqual,
+        "System.String",
+        "Nullable<System.TimeSpan>");
+     }//catch
     }//using db
 
     tr.Commit();
@@ -513,16 +483,33 @@ public static class TestSet_504__param__01__VV
 
      var recs=db.testTable.Where(r => ((object)(T_DATA1)(System.Object)vv1__null_obj) /*OP{*/ != /*}OP*/ ((object)(T_DATA2)(System.Object)vv2__null_obj));
 
-     foreach(var r in recs)
+     try
      {
-      TestServices.ThrowSelectedRow();
-     }//foreach r
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("d","ID").EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("d").EOL()
-        .T("WHERE ").P_BOOL("__Exec_V_V_0"));
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
+
+      Assert.IsNull
+       (e.InnerException);
+
+      Assert.AreEqual
+       (1,
+        TestUtils.GetRecordCount(e));
+
+      CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
+        System.Linq.Expressions.ExpressionType.NotEqual,
+        "System.String",
+        "Nullable<System.TimeSpan>");
+     }//catch
     }//using db
 
     tr.Commit();
@@ -548,16 +535,33 @@ public static class TestSet_504__param__01__VV
 
      var recs=db.testTable.Where(r => !(((object)(T_DATA1)(System.Object)vv1__null_obj) /*OP{*/ != /*}OP*/ ((object)vv2)));
 
-     foreach(var r in recs)
+     try
      {
-      TestServices.ThrowSelectedRow();
-     }//foreach r
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("d","ID").EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("d").EOL()
-        .T("WHERE ").P_BOOL("__Exec_V_0"));
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
+
+      Assert.IsNull
+       (e.InnerException);
+
+      Assert.AreEqual
+       (1,
+        TestUtils.GetRecordCount(e));
+
+      CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
+        System.Linq.Expressions.ExpressionType.NotEqual,
+        "System.String",
+        "Nullable<System.TimeSpan>");
+     }//catch
     }//using db
 
     tr.Commit();
@@ -583,16 +587,33 @@ public static class TestSet_504__param__01__VV
 
      var recs=db.testTable.Where(r => !(((object)vv1) /*OP{*/ != /*}OP*/ ((object)(T_DATA2)(System.Object)vv2__null_obj)));
 
-     foreach(var r in recs)
+     try
      {
-      TestServices.ThrowSelectedRow();
-     }//foreach r
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("d","ID").EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("d").EOL()
-        .T("WHERE ").P_BOOL("__Exec_V_0"));
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
+
+      Assert.IsNull
+       (e.InnerException);
+
+      Assert.AreEqual
+       (1,
+        TestUtils.GetRecordCount(e));
+
+      CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
+        System.Linq.Expressions.ExpressionType.NotEqual,
+        "System.String",
+        "Nullable<System.TimeSpan>");
+     }//catch
     }//using db
 
     tr.Commit();
@@ -618,33 +639,33 @@ public static class TestSet_504__param__01__VV
 
      var recs=db.testTable.Where(r => !(((object)(T_DATA1)(System.Object)vv1__null_obj) /*OP{*/ != /*}OP*/ ((object)(T_DATA2)(System.Object)vv2__null_obj)));
 
-     int nRecs=0;
-
-     foreach(var r in recs)
+     try
      {
-      Assert.AreEqual
-       (0,
-        nRecs);
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-      ++nRecs;
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
 
-      Assert.IsTrue
-       (r.TEST_ID.HasValue);
+      Assert.IsNull
+       (e.InnerException);
 
       Assert.AreEqual
        (1,
-        r.TEST_ID.Value);
-     }//foreach r
+        TestUtils.GetRecordCount(e));
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("d","ID").EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("d").EOL()
-        .T("WHERE ").P_BOOL("__Exec_V_0"));
-
-     Assert.AreEqual
-      (1,
-       nRecs);
+      CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
+        System.Linq.Expressions.ExpressionType.NotEqual,
+        "System.String",
+        "Nullable<System.TimeSpan>");
+     }//catch
     }//using db
 
     tr.Commit();

@@ -56,6 +56,9 @@ static class CheckErrors
  public const string c_src__EFCoreDataProvider__LcpiOleDb__Extensions__Model
   ="Microsoft.EntityFrameworkCore.LcpiOleDb__Extensions__Model";
 
+ public const string c_src__EFCoreDataProvider__LcpiOleDb__LocalEval_Services__Extensions
+  ="Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Extensions.LcpiOleDb__LocalEval_Services__Extensions.LcpiOleDb__LocalEval_Services__Extensions";
+
  public const string c_src__EFCoreDataProvider__LcpiOleDb__Extensions__Type
   ="Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.LcpiOleDb__Extensions__Type";
 
@@ -175,6 +178,9 @@ static class CheckErrors
 
  public const string c_src__EFCoreDataProvider__FB_V03_0_0__MigrationSqlGenerator
   ="Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Migrations.FB_V03_0_0__MigrationsSqlGenerator";
+
+ public const string c_src__EFCoreDataProvider__Basement_EF_Root_Query_Local_Expressions_Unary_Translators_ETranslator__Convert
+  ="Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Unary.Translators.ETranslator__Convert";
 
  public const string c_src__EFCoreDataProvider__Basement_EF_Dbms_Firebird_V03_0_0_Infrastructure___FB_V03_0_0__ModelValidator
   ="Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Dbms.Firebird.V03_0_0.Infrastructure.FB_V03_0_0__ModelValidator";
@@ -350,8 +356,8 @@ static class CheckErrors
  public const string c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_MasterCode__Single__Decimal
   ="Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.MasterCode.Convert_MasterCode__Single__Decimal";
 
- public const string c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_Code__Object__NullableTimeSpan
-  ="Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NullableTimeSpan";
+ public const string c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_Code__Object__NULLABLE_VALUE
+  ="Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__NULLABLE_VALUE";
 
  public const string c_src__EFCoreDataProvider__Root_Query_Local_Expressions__Cvt_Code__Object__String
   ="Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.Basement.EF.Root.Query.Local.Expressions.Converts.Code.Convert_Code__Object__String";

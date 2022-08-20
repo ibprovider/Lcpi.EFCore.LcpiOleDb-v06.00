@@ -11,6 +11,12 @@ using LOCAL_EVAL__Op2__ETranslator__Std__Simple
 using LOCAL_EVAL__Op2__ETranslator__Std__Simple__Descr
  =Root.Query.Local.LcpiOleDb__LocalEval_Op2__Descr<Root.Query.Local.Expressions.Op2.Translators.Std.ETranslator__Std__Simple>;
 
+using LOCAL_EVAL__Op2__ETranslator__Std__WithOpCtx
+ =Root.Query.Local.Expressions.Op2.Translators.Std.ETranslator__Std__WithOpCtx;
+
+using LOCAL_EVAL__Op2__ETranslator__Std__WithOpCtx__Descr
+ =Root.Query.Local.LcpiOleDb__LocalEval_Op2__Descr<Root.Query.Local.Expressions.Op2.Translators.Std.ETranslator__Std__WithOpCtx>;
+
 ////////////////////////////////////////////////////////////////////////////////
 //class ETranslators__Equal__NullableDateOnly
 
@@ -22,11 +28,18 @@ static class ETranslators__Equal__NullableDateOnly
      (new LOCAL_EVAL__Op2__ETranslator__Std__Simple(Code.Op2_Code__Equal___NullableDateOnly__DateOnly.MethodInfo_V_V),
       Code.Op2_Code__Equal___NullableDateOnly__DateOnly.Instance);
 
+ public static readonly LOCAL_EVAL__Op2__ETranslator__Std__WithOpCtx__Descr
+  sm_Instance__String
+   =new LOCAL_EVAL__Op2__ETranslator__Std__WithOpCtx__Descr
+     (new LOCAL_EVAL__Op2__ETranslator__Std__WithOpCtx(Code.Op2_Code__Equal___NullableDateOnly__String.MethodInfo_V_V),
+      Code.Op2_Code__Equal___NullableDateOnly__String.Instance);
+
  //-------------------------------------------------------- NULLABLE
  public static readonly LOCAL_EVAL__Op2__ETranslator__Std__Simple__Descr
   sm_Instance__NullableDateOnly
    =new LOCAL_EVAL__Op2__ETranslator__Std__Simple__Descr
-     (new LOCAL_EVAL__Op2__ETranslator__Std__Simple(Code.Op2_Code__Equal___NullableDateOnly__NullableDateOnly.MethodInfo_V_V));
+     (new LOCAL_EVAL__Op2__ETranslator__Std__Simple(Code.Op2_Code__Equal___NullableDateOnly__NullableDateOnly.MethodInfo_V_V),
+      Code.Op2_Code__Equal___NullableDateOnly__NullableDateOnly.Instance);
 };//class ETranslators__Equal__NullableDateOnly
 
 ////////////////////////////////////////////////////////////////////////////////

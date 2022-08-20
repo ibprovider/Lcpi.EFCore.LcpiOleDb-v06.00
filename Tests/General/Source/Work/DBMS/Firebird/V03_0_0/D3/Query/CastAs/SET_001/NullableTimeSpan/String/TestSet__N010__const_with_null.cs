@@ -10,6 +10,8 @@ using NUnit.Framework;
 
 using xdb=lcpi.data.oledb;
 
+using structure_lib=lcpi.lib.structure;
+
 namespace EFCore_LcpiOleDb_Tests.General.Work.DBMS.Firebird.V03_0_0.D3.Query.CastAs.SET_001.NullableTimeSpan.String{
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -60,16 +62,34 @@ public static class TestSet__N010__const_with_null
     {
      var recs=db.testTable.Where(r => ((T_TARGET_VALUE)(object)new T_SOURCE_VALUE())=="-1");
 
-     foreach(var r in recs)
+     try
      {
-      TestServices.ThrowSelectedRow();
-     }//foreach r
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("d","ID").EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("d").EOL()
-        .T("WHERE FALSE"));
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
+
+      Assert.IsNull
+       (e.InnerException);
+
+      Assert.AreEqual
+       (1,
+        TestUtils.GetRecordCount(e));
+
+      CheckErrors.CheckErrorRecord__BugCheck__LocalEvalErr__unsupported_conversion
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__Basement_EF_Root_Query_Local_Expressions_Unary_Translators_ETranslator__Convert,
+        "ETranslator__Convert::Translate",
+        "#002",
+        "Nullable<System.TimeSpan>",
+        "System.String");
+     }//catch
     }//using db
 
     tr.Rollback();
@@ -92,32 +112,34 @@ public static class TestSet__N010__const_with_null
     {
      var recs=db.testTable.Where(r => ((T_TARGET_VALUE)(object)new T_SOURCE_VALUE())==null);
 
-     int nRecs=0;
-
-     foreach(var r in recs)
+     try
      {
-      Assert.AreEqual
-       (0,
-        nRecs);
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-      ++nRecs;
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
 
-      Assert.IsTrue
-       (r.TEST_ID.HasValue);
+      Assert.IsNull
+       (e.InnerException);
 
       Assert.AreEqual
        (1,
-        r.TEST_ID.Value);
-     }//foreach r
+        TestUtils.GetRecordCount(e));
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("d","ID").EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("d"));
-
-     Assert.AreEqual
-      (1,
-       nRecs);
+      CheckErrors.CheckErrorRecord__BugCheck__LocalEvalErr__unsupported_conversion
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__Basement_EF_Root_Query_Local_Expressions_Unary_Translators_ETranslator__Convert,
+        "ETranslator__Convert::Translate",
+        "#002",
+        "Nullable<System.TimeSpan>",
+        "System.String");
+     }//catch
     }//using db
 
     tr.Rollback();
@@ -140,16 +162,34 @@ public static class TestSet__N010__const_with_null
     {
      var recs=db.testTable.Where(r => ((T_TARGET_VALUE)(object)new T_SOURCE_VALUE())!=null);
 
-     foreach(var r in recs)
+     try
      {
-      TestServices.ThrowSelectedRow();
-     }//foreach r
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("d","ID").EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("d").EOL()
-        .T("WHERE FALSE"));
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
+
+      Assert.IsNull
+       (e.InnerException);
+
+      Assert.AreEqual
+       (1,
+        TestUtils.GetRecordCount(e));
+
+      CheckErrors.CheckErrorRecord__BugCheck__LocalEvalErr__unsupported_conversion
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__Basement_EF_Root_Query_Local_Expressions_Unary_Translators_ETranslator__Convert,
+        "ETranslator__Convert::Translate",
+        "#002",
+        "Nullable<System.TimeSpan>",
+        "System.String");
+     }//catch
     }//using db
 
     tr.Rollback();

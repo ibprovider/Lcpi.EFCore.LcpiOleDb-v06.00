@@ -1,0 +1,491 @@
+BUG FIX. Wrong c_bug_check in Method_MasterCode__Object__ToString.Exec
+
+[Source]
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Methods\MasterCode\Object\Method_MasterCode__Object__ToString.cs
+ - Method_MasterCode__Object__ToString.Exec
+   - A correction of c_bugcheck_src
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Implementation of Core.Core_Op2<T_ARG1,T_ARG2,T_RESULT> in some of op2-classes
+ - Op2_Code__Equal___NullableTimeOnly__NullableTimeOnly
+ - Op2_Code__NotEqual___NullableDateTime__NullableDateTime
+ - Op2_Code__NotEqual___NullableTimeOnly__NullableTimeOnly
+
+Preparing for the next changes in code.
+
+[Source]
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D0\Expressions\Op2\Code\Equal\NullableTimeOnly\Op2_Code__Equal___NullableTimeOnly__NullableTimeOnly.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D0\Expressions\Op2\Code\NotEqual\NullableDateTime\Op2_Code__NotEqual___NullableDateTime__NullableDateTime.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D0\Expressions\Op2\Code\NotEqual\NullableTimeOnly\Op2_Code__NotEqual___NullableTimeOnly__NullableTimeOnly.cs
+ - implementation of Core.Core_Op2<T_ARG1,T_ARG2,T_RESULT>
+   - [add] static Instance
+   - [add] public void Exec(...)
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D0\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableTimeOnly.cs
+ - sm_Instance__NullableTimeOnly
+   - [reg] Code.Op2_Code__Equal___NullableTimeOnly__NullableTimeOnly.Instance
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D0\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__NullableDateTime.cs
+ - sm_Instance__NullableDateTime
+   - [reg] Code.Op2_Code__NotEqual___NullableDateTime__NullableDateTime.Instance
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D0\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__NullableTimeOnly.cs
+ - sm_Instance__NullableTimeOnly
+   - [reg] Code.Op2_Code__NotEqual___NullableTimeOnly__NullableTimeOnly.Instance
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Implementation of Core.Core_Op2<T_ARG1,T_ARG2,T_RESULT> in some of op2-classes
+ - Op2_Code__Equal___NullableBoolean__NullableBoolean
+ - Op2_Code__NotEqual___NullableBoolean__NullableBoolean
+ - Op2_Code__NotEqual___NullableDateOnly__NullableDateOnly
+
+Preparing for the next changes in code.
+
+[Source]
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableBoolean\Op2_Code__Equal___NullableBoolean__NullableBoolean.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\NullableBoolean\Op2_Code__NotEqual___NullableBoolean__NullableBoolean.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\NullableDateOnly\Op2_Code__NotEqual___NullableDateOnly__NullableDateOnly.cs
+ - implementation of Core.Core_Op2<T_ARG1,T_ARG2,T_RESULT>
+   - [add] static Instance
+   - [add] public void Exec(...)
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableBoolean.cs
+ - sm_Instance__NullableBoolean
+   - [reg] Code.Op2_Code__Equal___NullableBoolean__NullableBoolean.Instance
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__NullableBoolean.cs
+ - sm_Instance__NullableBoolean
+   - [reg] Code.Op2_Code__NotEqual___NullableBoolean__NullableBoolean.Instance
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__NullableDateOnly.cs
+ - sm_Instance__NullableDateOnly
+   - [reg] Code.Op2_Code__NotEqual___NullableDateOnly__NullableDateOnly.Instance
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+A registration of Code.Op2_Code__Equal___NullableDateOnly__NullableDateOnly.Instance
+
+This class has already provided Instance, we had forgotten to register it.
+
+[Source]
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableDateOnly.cs
+ - sm_Instance__NullableDateOnly
+   - [reg] Code.Op2_Code__Equal___NullableDateOnly__NullableDateOnly.Instance
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+New local NotEqual-operators for {Bool?,DateOnly?,DateTime?,TimeOnly?} and {String}
+ - Op2_Code__NotEqual___NullableBoolean__String
+ - Op2_Code__NotEqual___NullableDateOnly__String
+ - Op2_Code__NotEqual___NullableDateTime__String
+ - Op2_Code__NotEqual___NullableTimeOnly__String
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\NullableBoolean\Op2_Code__NotEqual___NullableBoolean__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\NullableDateOnly\Op2_Code__NotEqual___NullableDateOnly__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\NullableDateTime\Op2_Code__NotEqual___NullableDateTime__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\NullableTimeOnly\Op2_Code__NotEqual___NullableTimeOnly__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__NullableDateTime.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__NullableTimeOnly.cs
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D1\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__NotEqual.cs
+ - [add] Common_ETRS.ETranslators__NotEqual__NullableBoolean.sm_Instance__String
+ - [add] Common_ETRS.ETranslators__NotEqual__NullableDateOnly.sm_Instance__String
+ - [add] Common_ETRS.ETranslators__NotEqual__NullableDateTime.sm_Instance__String
+ - [add] Common_ETRS.ETranslators__NotEqual__NullableTimeOnly.sm_Instance__String
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D3\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__NotEqual.cs
+ - [add] Common_ETRS.ETranslators__NotEqual__NullableBoolean.sm_Instance__String
+ - [add] Common_ETRS.ETranslators__NotEqual__NullableDateOnly.sm_Instance__String
+ - [add] Common_ETRS.ETranslators__NotEqual__NullableDateTime.sm_Instance__String
+ - [add] Common_ETRS.ETranslators__NotEqual__NullableTimeOnly.sm_Instance__String
+
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\NullableBoolean\Op2_Code__NotEqual___NullableBoolean__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\NullableDateOnly\Op2_Code__NotEqual___NullableDateOnly__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\NullableDateTime\Op2_Code__NotEqual___NullableDateTime__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\NullableTimeOnly\Op2_Code__NotEqual___NullableTimeOnly__String.cs
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__NullableBoolean.cs
+ - [add] sm_Instance__String
+     - Op2_Code__NotEqual___NullableBoolean__String
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__NullableDateOnly.cs
+ - [add] sm_Instance__String
+     - Op2_Code__NotEqual___NullableDateOnly__String
+
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__NullableDateTime.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__NullableTimeOnly.cs
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+New local NotEqual-operators for {String} and {Bool?,DateOnly?,DateTime?,TimeOnly?}.
+
+List:
+ - Op2_Code__NotEqual___String__NullableBoolean
+ - Op2_Code__NotEqual___String__NullableDateOnly
+ - Op2_Code__NotEqual___String__NullableDateTime
+ - Op2_Code__NotEqual___String__NullableTimeOnly
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\String\Op2_Code__NotEqual___String__NullableBoolean.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\String\Op2_Code__NotEqual___String__NullableDateOnly.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\String\Op2_Code__NotEqual___String__NullableDateTime.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\String\Op2_Code__NotEqual___String__NullableTimeOnly.cs
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D1\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__NotEqual.cs
+ - [add] Common_ETRS.ETranslators__NotEqual__String.sm_Instance__NullableBoolean
+ - [add] Common_ETRS.ETranslators__NotEqual__String.sm_Instance__NullableDateOnly
+ - [add] Common_ETRS.ETranslators__NotEqual__String.sm_Instance__NullableDateTime
+ - [add] Common_ETRS.ETranslators__NotEqual__String.sm_Instance__NullableTimeOnly
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D3\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__NotEqual.cs
+ - [add] Common_ETRS.ETranslators__NotEqual__String.sm_Instance__NullableBoolean
+ - [add] Common_ETRS.ETranslators__NotEqual__String.sm_Instance__NullableDateOnly
+ - [add] Common_ETRS.ETranslators__NotEqual__String.sm_Instance__NullableDateTime
+ - [add] Common_ETRS.ETranslators__NotEqual__String.sm_Instance__NullableTimeOnly
+
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\String\Op2_Code__NotEqual___String__NullableBoolean.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\String\Op2_Code__NotEqual___String__NullableDateOnly.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\String\Op2_Code__NotEqual___String__NullableDateTime.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\NotEqual\String\Op2_Code__NotEqual___String__NullableTimeOnly.cs
+
+work\Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\NotEqual\ETranslators__NotEqual__String.cs
+ - [add] sm_Instance__NullableBoolean
+    - Op2_Code__NotEqual___String__NullableBoolean
+
+ - [add] sm_Instance__NullableDateOnly
+    - Op2_Code__NotEqual___String__NullableDateOnly
+
+ - [add] sm_Instance__NullableDateTime
+    - Op2_Code__NotEqual___String__NullableDateTime
+
+ - [add] sm_Instance__NullableTimeOnly
+    - Op2_Code__NotEqual___String__NullableTimeOnly
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+New local Equal-operators for {Bool?,DateOnly?,DateTime?,TimeOnly?} and {String}.
+
+List:
+ - Op2_Code__Equal___NullableBoolean__String
+ - Op2_Code__Equal___NullableDateOnly__String
+ - Op2_Code__Equal___NullableDateTime__String
+ - Op2_Code__Equal___NullableTimeOnly__String
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableBoolean\Op2_Code__Equal___NullableBoolean__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableDateOnly\Op2_Code__Equal___NullableDateOnly__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableDateTime\Op2_Code__Equal___NullableDateTime__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableTimeOnly\Op2_Code__Equal___NullableTimeOnly__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableDateTime.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableTimeOnly.cs
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D1\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__Equal.cs
+ - [add] Common_ETRS.ETranslators__Equal__NullableBoolean.sm_Instance__String
+ - [add] Common_ETRS.ETranslators__Equal__NullableDateOnly.sm_Instance__String
+ - [add] Common_ETRS.ETranslators__Equal__NullableDateTime.sm_Instance__String
+ - [add] Common_ETRS.ETranslators__Equal__NullableTimeOnly.sm_Instance__String
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D3\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__Equal.cs
+ - [add] Common_ETRS.ETranslators__Equal__NullableBoolean.sm_Instance__String
+ - [add] Common_ETRS.ETranslators__Equal__NullableDateOnly.sm_Instance__String
+ - [add] Common_ETRS.ETranslators__Equal__NullableDateTime.sm_Instance__String
+ - [add] Common_ETRS.ETranslators__Equal__NullableTimeOnly.sm_Instance__String
+
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableBoolean\Op2_Code__Equal___NullableBoolean__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableDateOnly\Op2_Code__Equal___NullableDateOnly__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableDateTime\Op2_Code__Equal___NullableDateTime__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\NullableTimeOnly\Op2_Code__Equal___NullableTimeOnly__String.cs
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableBoolean.cs
+ - [add] sm_Instance__String
+    - Op2_Code__Equal___NullableBoolean__String
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableDateOnly.cs
+ - [add] sm_Instance__String
+    - Op2_Code__Equal___NullableDateOnly__String
+
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableDateTime.cs
+ - for Op2_Code__Equal___NullableDateTime__String
+
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__NullableTimeOnly.cs
+ - for Op2_Code__Equal___NullableTimeOnly__String
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+New local Equal-operators for {String} and {Bool?,DateOnly?,DateTime?,TimeOnly?}.
+
+List:
+ - Op2_Code__Equal___String__NullableBoolean
+ - Op2_Code__Equal___String__NullableDateOnly
+ - Op2_Code__Equal___String__NullableDateTime
+ - Op2_Code__Equal___String__NullableTimeOnly
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\String\Op2_Code__Equal___String__NullableBoolean.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\String\Op2_Code__Equal___String__NullableDateOnly.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\String\Op2_Code__Equal___String__NullableDateTime.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\String\Op2_Code__Equal___String__NullableTimeOnly.cs
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D1\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__Equal.cs
+ - [add] Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableBoolean
+ - [add] Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableDateOnly
+ - [add] Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableDateTime
+ - [add] Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableTimeOnly
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D3\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__Equal.cs
+ - [add] Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableBoolean
+ - [add] Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableDateOnly
+ - [add] Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableDateTime
+ - [add] Common_ETRS.ETranslators__Equal__String.sm_Instance__NullableTimeOnly
+
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\String\Op2_Code__Equal___String__NullableBoolean.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\String\Op2_Code__Equal___String__NullableDateOnly.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\String\Op2_Code__Equal___String__NullableDateTime.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Equal\String\Op2_Code__Equal___String__NullableTimeOnly.cs
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Instances\Equal\ETranslators__Equal__String.cs
+ - [add] sm_Instance__NullableBoolean
+    - Op2_Code__Equal___String__NullableBoolean
+
+ - [add] sm_Instance__NullableDateOnly
+    - Op2_Code__Equal___String__NullableDateOnly
+
+ - [add] sm_Instance__NullableDateTime
+    - Op2_Code__Equal___String__NullableDateTime
+
+ - [add] sm_Instance__NullableTimeOnly
+    - Op2_Code__Equal___String__NullableTimeOnly
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+BUG FIX. Correction of project file.
+
+Forgot to add Convert_Code__Object__NULLABLE_VALUE.cs.
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - [BUG FIX] [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Object\Convert_Code__Object__NULLABLE_VALUE.cs
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+New local converters from NullableValue to String.
+
+List:
+ - Convert_Code__NullableBoolean__String
+ - Convert_Code__NullableByte__String
+ - Convert_Code__NullableDateOnly__String
+ - Convert_Code__NullableDateTime__String
+ - Convert_Code__NullableDecimal__String
+ - Convert_Code__NullableDouble__String
+ - Convert_Code__NullableGuid__String
+ - Convert_Code__NullableInt16__String
+ - Convert_Code__NullableInt32__String
+ - Convert_Code__NullableInt64__String
+ - Convert_Code__NullableSByte__String
+ - Convert_Code__NullableSingle__String
+ - Convert_Code__NullableTimeOnly__String
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Convert_Code__NULLABLE_VALUE__CLASS.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableBoolean\Convert_Code__NullableBoolean__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableByte\Convert_Code__NullableByte__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDateOnly\Convert_Code__NullableDateOnly__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDateTime\Convert_Code__NullableDateTime__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDecimal\Convert_Code__NullableDecimal__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDouble\Convert_Code__NullableDouble__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableGuid\Convert_Code__NullableGuid__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt16\Convert_Code__NullableInt16__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt32\Convert_Code__NullableInt32__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt64\Convert_Code__NullableInt64__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSByte\Convert_Code__NullableSByte__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSingle\Convert_Code__NullableSingle__String.cs
+ - [add] Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableTimeOnly\Convert_Code__NullableTimeOnly__String.cs
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D1\Expressions\FB_Data__Expressions_Local__Converts.cs
+ - [add] Common_ETRS.ETranslators__From_NullableBoolean.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableGuid.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableByte.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableSByte.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableInt16.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableInt32.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableInt64.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableSingle.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDouble.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDecimal.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDateOnly.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDateTime.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableTimeOnly.sm_TO__String
+
+work\Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D3\Expressions\FB_Data__Expressions_Local__Converts.cs
+ - [add] Common_ETRS.ETranslators__From_NullableBoolean.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableGuid.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableByte.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableSByte.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableInt16.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableInt32.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableInt64.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableSingle.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDouble.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDecimal.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDateOnly.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableDateTime.sm_TO__String
+ - [add] Common_ETRS.ETranslators__From_NullableTimeOnly.sm_TO__String
+
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\Convert_Code__NULLABLE_VALUE__CLASS.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableBoolean\Convert_Code__NullableBoolean__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableByte\Convert_Code__NullableByte__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDateOnly\Convert_Code__NullableDateOnly__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDateTime\Convert_Code__NullableDateTime__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDecimal\Convert_Code__NullableDecimal__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableDouble\Convert_Code__NullableDouble__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableGuid\Convert_Code__NullableGuid__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt16\Convert_Code__NullableInt16__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt32\Convert_Code__NullableInt32__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableInt64\Convert_Code__NullableInt64__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSByte\Convert_Code__NullableSByte__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableSingle\Convert_Code__NullableSingle__String.cs
+[add] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Code\NullableTimeOnly\Convert_Code__NullableTimeOnly__String.cs
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableBoolean.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableBoolean__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableByte.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableByte__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableDateOnly.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableDateOnly__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableDateTime.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableDateTime__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableDecimal.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableDecimal__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableDouble.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableDouble__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableGuid.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableGuid__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableInt16.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableInt16__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableInt32.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableInt32__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableInt64.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableInt64__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableSByte.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableSByte__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableSingle.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableSingle__String.MethodInfo
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Converts\Translators\Instances\ETranslators__From_NullableTimeOnly.cs
+ - [add] sm_TO__String
+   - Code.Convert_Code__NullableTimeOnly__String.MethodInfo
+
+Code\Provider\Source\ErrorServices\ErrSourceID.cs
+Code\Provider\Source\ErrorServices\ErrSourceID.resx
+ - [add] Root_Query_Local_Expressions__Cvt_Code__NULLABLE_VALUE__CLASS
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Rework of local CONCAT-operation.
+
+ - Explicit definition of all valid concatenations
+ - We will remove a conversion of CONCAT-arguments to object. This will provide and save an original type of argument.
+ - Always work with String-version of CONCAT. A forced conversion of arguments to String will be used.
+
+[Source]
+
+Code\Provider\Lcpi.EntityFrameworkCore.DataProvider.LcpiOleDb.csproj
+ - [del] Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Concat\Object\Op2_Code__Concat___Object__Object.cs
+
+ - [add] Source\Structure\Structure_ExpressionUtils.cs
+
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D1\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__Add.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D1\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__Concat.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D3\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__Add.cs
+Code\Provider\Source\Basement\EF\Dbms\Firebird\V03_0_0\Query\Local\D3\Expressions\FB_Data__Expressions_Local__Op2__V_V-Helper__Reg__Concat.cs
+ - define all valid concatenations with string
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Methods\Translators\String\ETranslator__String__std__Concat__obj1.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Methods\Translators\String\ETranslator__String__std__Concat__obj2.cs
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Methods\Translators\String\ETranslator__String__std__Concat__obj3.cs
+ - public override Expression Translate(in tagOpData opData)
+   - All the arguments pass through Structure_ExpressionUtils.RemoveConvertToObject
+
+[del] Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Code\Concat\Object\Op2_Code__Concat___Object__Object.cs
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Expressions\Op2\Translators\Std\ETranslator__Std__Concat_obj.cs
+ - [add] c_ErrSrcID
+ - public override Expression Translate(in tagOpData opData)
+   - All the arguments pass through Helper__CvtToString
+
+   - works with Code.Op2_Code__Concat___String__String
+
+ - [add] Helper__CvtToString
+
+Code\Provider\Source\ErrorServices\ErrSourceID.cs
+Code\Provider\Source\ErrorServices\ErrSourceID.resx
+ - [add] Root_Query_Local_Expressions__Op2_ETranslator__Std__Concat_obj
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+[ATTENTION] LocalEval: ignore conversion to object. Like to SQL translation.
+
+This will resolve a problem with losing of values types.
+
+Correction of test will be committed later.
+
+[Source]
+
+work\Code\Provider\Source\Basement\EF\Root\Query\Local\Svcs\LcpiOleDb__LocalSvc__PrepareForLocalEvaluation.cs
+ - Helper__CanRemoveConvert
+   - if(unaryExpression.Type==Structure.Structure_TypeCache.TypeOf__System_Object)
+      - return true.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+LocalEval: ignore conversion to the same type
+
+It looks as a safe change - there is no need change any tests.
+
+[Source]
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Svcs\LcpiOleDb__LocalSvc__PrepareForLocalEvaluation.cs
+ - Helper__CanRemoveConvert
+   - if(innerType==convertedType)
+      return true;
