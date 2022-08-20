@@ -476,3 +476,16 @@ work\Code\Provider\Source\Basement\EF\Root\Query\Local\Svcs\LcpiOleDb__LocalSvc_
  - Helper__CanRemoveConvert
    - if(unaryExpression.Type==Structure.Structure_TypeCache.TypeOf__System_Object)
       - return true.
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+LocalEval: ignore conversion to the same type
+
+It looks as a safe change - there is no need change any tests.
+
+[Source]
+
+Code\Provider\Source\Basement\EF\Root\Query\Local\Svcs\LcpiOleDb__LocalSvc__PrepareForLocalEvaluation.cs
+ - Helper__CanRemoveConvert
+   - if(innerType==convertedType)
+      return true;

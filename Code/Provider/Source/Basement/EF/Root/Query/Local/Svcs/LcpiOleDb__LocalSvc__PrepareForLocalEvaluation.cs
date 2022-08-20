@@ -360,10 +360,10 @@ sealed partial class LcpiOleDb__LocalSvc__PrepareForLocalEvaluation
   //
   // SQL Translator rule:
   //
-  // if(innerType==convertedType)
-  // {
-  //  return true;
-  // }//if
+  if(innerType==convertedType)
+  {
+   return true;
+  }//if
 
   if(convertedType==Structure_TypeCache.TypeOf__System_Enum)
   {
