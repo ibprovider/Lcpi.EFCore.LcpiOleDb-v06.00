@@ -11,6 +11,8 @@ using NUnit.Framework;
 
 using xdb=lcpi.data.oledb;
 
+using structure_lib=lcpi.lib.structure;
+
 namespace EFCore_LcpiOleDb_Tests.General.Work.DBMS.Firebird.V03_0_0.D1.Query.Operators.SET_001.NotEqual.Complete2__objs.String.TimeSpan{
 ////////////////////////////////////////////////////////////////////////////////
 
@@ -65,33 +67,33 @@ public static class TestSet_504__param__03__NV
 
      var recs=db.testTable.Where(r => ((object)vv1) /*OP{*/ != /*}OP*/ ((object)vv2));
 
-     int nRecs=0;
-
-     foreach(var r in recs)
+     try
      {
-      Assert.AreEqual
-       (0,
-        nRecs);
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-      ++nRecs;
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
 
-      Assert.IsTrue
-       (r.TEST_ID.HasValue);
+      Assert.IsNull
+       (e.InnerException);
 
       Assert.AreEqual
        (1,
-        r.TEST_ID.Value);
-     }//foreach r
+        TestUtils.GetRecordCount(e));
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("d","ID").EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("d").EOL()
-        .T("WHERE ").P_BOOL("__Exec_V_V_0"));
-
-     Assert.AreEqual
-      (1,
-       nRecs);
+      CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
+        System.Linq.Expressions.ExpressionType.NotEqual,
+        "System.String",
+        "Nullable<System.TimeSpan>");
+     }//catch
     }//using db
 
     tr.Commit();
@@ -117,16 +119,33 @@ public static class TestSet_504__param__03__NV
 
      var recs=db.testTable.Where(r => !(((object)vv1) /*OP{*/ != /*}OP*/ ((object)vv2)));
 
-     foreach(var r in recs)
+     try
      {
-      TestServices.ThrowSelectedRow();
-     }//foreach r
+      foreach(var r in recs)
+      {
+       TestServices.ThrowSelectedRow();
+      }//foreach r
 
-     db.CheckTextOfLastExecutedCommand
-      (new TestSqlTemplate()
-        .T("SELECT ").N("d","ID").EOL()
-        .T("FROM ").N(c_NameOf__TABLE).T(" AS ").N("d").EOL()
-        .T("WHERE ").P_BOOL("__Exec_V_0"));
+      TestServices.ThrowWeWaitError();
+     }
+     catch(structure_lib.exceptions.t_invalid_operation_exception e)
+     {
+      CheckErrors.PrintException_OK(e);
+
+      Assert.IsNull
+       (e.InnerException);
+
+      Assert.AreEqual
+       (1,
+        TestUtils.GetRecordCount(e));
+
+      CheckErrors.CheckErrorRecord__local_eval_err__binary_operator_not_supported_3
+       (TestUtils.GetRecord(e,0),
+        CheckErrors.c_src__EFCoreDataProvider__LcpiOleDb__LocalSvc__PrepareForLocalEvaluation,
+        System.Linq.Expressions.ExpressionType.NotEqual,
+        "System.String",
+        "Nullable<System.TimeSpan>");
+     }//catch
     }//using db
 
     tr.Commit();
