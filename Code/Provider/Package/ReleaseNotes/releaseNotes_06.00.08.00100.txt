@@ -2,4 +2,4 @@
     - It helps avoid the loss of type information
     - The same behavior has been existing in the SQL translator since beginning
 
-* Migration to EFCore 3.0.8
+* Migration to EFCore 6.0.8
