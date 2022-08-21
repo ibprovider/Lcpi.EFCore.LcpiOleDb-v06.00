@@ -1,5 +1,5 @@
 * Local evaluation now ignores the cast to System.Object
     - It helps avoid the loss of type information
-    - The same behavior has been existing in the SQL translator since beginning.
+    - The same behavior has been existing in the SQL translator since beginning
 
 * Migration to EFCore 3.0.8
