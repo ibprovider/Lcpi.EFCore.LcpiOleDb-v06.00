@@ -22,7 +22,7 @@ interface Core_Op2Provider:Core_Svc
  //! \param[in] typeRight
  //!  Not null.
  //! \returns
- //!  Null, if operation does not supported.
+ //!  Null, if operation isn't supported.
  Core_Op2 GetOp2(LcpiOleDb__ExpressionType opId,
                  System.Type               typeLeft,
                  System.Type               typeRight);

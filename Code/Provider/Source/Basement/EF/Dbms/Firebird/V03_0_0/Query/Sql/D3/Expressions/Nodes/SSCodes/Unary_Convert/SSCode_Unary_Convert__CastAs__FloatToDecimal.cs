@@ -79,7 +79,7 @@ sealed class SSCode_Unary_Convert__CastAs__FloatToDecimal
 
   if(IscBase_Const.c_SqlPrecision__NUMERIC__Int64<sqlNode.TypeMapping.Precision.Value)
   {
-   //ERROR - required precision does not supported in current (3) dialect
+   //ERROR - required precision isn't supported by the current (3) dialect
 
    ThrowError.SqlGenErr__DecimalPrecisionNotSupportedInCurrentCnDialect
     (c_ErrSrcID,
