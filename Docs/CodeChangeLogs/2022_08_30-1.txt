@@ -1,0 +1,10 @@
+English.
+
+[Source]
+
+Code\Provider\Source\ErrorServices\ErrMessageID.resx
+ - common_err__unsupported_datatypes_conversion_2
+ - msql_gen_err__computed_column_not_supported__0
+   - "... isn't supported ..."
+
+     passive form.

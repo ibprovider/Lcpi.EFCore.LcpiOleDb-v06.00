@@ -244,7 +244,7 @@
     <value>Multiple configurations for LcpiOleDb provider.</value>
   </data>
   <data name="common_err__unsupported_datatypes_conversion_2" xml:space="preserve">
-    <value>Conversion of value from [%1] to [%2] does not supported.</value>
+    <value>Conversion of value from [%1] to [%2] isn't supported.</value>
   </data>
   <data name="common_err__cant_convert_value_between_types_2" xml:space="preserve">
     <value>Failed to convert a value from type [%1] to type [%2].</value>
@@ -406,7 +406,7 @@
     <value>Failed to generate a definition of column [%1][%2].</value>
   </data>
   <data name="msql_gen_err__computed_column_not_supported__0" xml:space="preserve">
-    <value>Generation of SQL for computed column does not supported.</value>
+    <value>Generation of SQL for computed column isn't supported.</value>
   </data>
   <data name="msql_gen_err__cant_find_type_mapping_for_column__2" xml:space="preserve">
     <value>Can't find type description (TypeMapping) for column [%1][%2].</value>

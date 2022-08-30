@@ -1537,7 +1537,7 @@ static class CheckErrors
 
   var msg_en
    =string.Format
-     ("Conversion of value from [{0}] to [{1}] does not supported.",
+     ("Conversion of value from [{0}] to [{1}] isn't supported.",
        args);
 
   //----------------------------------------
@@ -1805,7 +1805,7 @@ static class CheckErrors
 
   var msg_en
    =string.Format
-     ("Conversion of value from [{0}] to [{1}] does not supported.",
+     ("Conversion of value from [{0}] to [{1}] isn't supported.",
        args);
 
   //----------------------------------------
@@ -5637,7 +5637,7 @@ static class CheckErrors
     args);
 
   var msg_en=String.Format
-   ("Generation of SQL for computed column does not supported.",
+   ("Generation of SQL for computed column isn't supported.",
     args);
 
   CheckErrors.TestErrRecordSrcAndDescr2_RU_EN
