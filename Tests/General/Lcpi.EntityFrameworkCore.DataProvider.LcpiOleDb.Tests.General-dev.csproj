@@ -295,6 +295,7 @@
     <Compile Include="Source\Unit\Objects\LcpiOleDb__DataToolException\TestSet_02__Serialization_bin.cs" />
     <Compile Include="Source\Unit\Resources\TestErrorResourceData.cs" />
     <Compile Include="Source\Unit\Resources\TestErrorResourceIDs.cs" />
+    <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__AssignOnceIfNotNull.cs" />
     <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__ConstructDecimalFromLongValue.cs" />
     <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__Exchange.cs" />
     <Compile Include="Source\Unit\Structure\Structure_ADP\TestsFor__EqualDatabaseTypeName.cs" />
