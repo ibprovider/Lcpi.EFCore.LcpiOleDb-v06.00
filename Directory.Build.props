@@ -19,7 +19,7 @@
   <PropertyGroup>
     <LCPI_EFCoreVersion_Major>6</LCPI_EFCoreVersion_Major>
     <LCPI_EFCoreVersion_Minor>0</LCPI_EFCoreVersion_Minor>
-    <LCPI_EFCoreVersion_Patch>8</LCPI_EFCoreVersion_Patch>
+    <LCPI_EFCoreVersion_Patch>12</LCPI_EFCoreVersion_Patch>
 
     <!-- Final version or EFCore -->
     <LCPI_EFCoreVersion>$(LCPI_EFCoreVersion_Major).$(LCPI_EFCoreVersion_Minor).$(LCPI_EFCoreVersion_Patch)</LCPI_EFCoreVersion>
