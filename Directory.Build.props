@@ -27,7 +27,7 @@
 
   <PropertyGroup>
     <!-- MAJOR part of OUR release number. Value MUST be >=1 -->
-    <LCPI_EFCoreProviderReleaseNumber_Major>2</LCPI_EFCoreProviderReleaseNumber_Major>
+    <LCPI_EFCoreProviderReleaseNumber_Major>1</LCPI_EFCoreProviderReleaseNumber_Major>
 
     <!-- PATCH part of our release number. Value: 0..99 -->
     <LCPI_EFCoreProviderReleaseNumber_Patch>0</LCPI_EFCoreProviderReleaseNumber_Patch>
