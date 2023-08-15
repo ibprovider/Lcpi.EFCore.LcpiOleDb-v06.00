@@ -172,5 +172,8 @@ Deleting inserted record...
 
 ## Related packages
 
-* The underlying ADO.NET provider is [lcpi.data.oledb](https://www.nuget.org/packages/lcpi.data.oledb).
-* The underlying OLE DB provider is [LCPI.IBProvider](https://www.ibprovider.com/eng).
+* The underlying ADO.NET provider is [lcpi.data.oledb](https://www.nuget.org/packages/lcpi.data.oledb)
+* The underlying OLE DB provider is [LCPI.IBProvider](https://www.ibprovider.com/eng)
+
+## See also
+* [PhoneModels Application](https://github.com/dmitry-lipetsk/hobby-WPF-EFCore-IBP-PhoneModels)
