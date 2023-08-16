@@ -4493,7 +4493,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="lcpi.data.oledb" Version="[1.27.0.4751]" />
+    <PackageReference Include="lcpi.data.oledb" Version="[1.27.1.4754]" />
 
     <!-- Define PrivateAssets="none" like EFCORE.PG -->
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="[$(LCPI_EFCoreVersion)]" PrivateAssets="none" />
