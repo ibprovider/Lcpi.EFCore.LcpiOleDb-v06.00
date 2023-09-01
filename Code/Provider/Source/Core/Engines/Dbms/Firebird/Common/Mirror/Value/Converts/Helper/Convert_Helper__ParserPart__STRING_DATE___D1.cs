@@ -535,7 +535,7 @@ static class Convert_Helper__ParserPart__STRING_DATE___D1
     break;
    }//if
 
-   if(separators[1]=='-' && separators[1]=='-')
+   if(separators[0]=='-' && separators[1]=='-')
    {
     if(components[0].IsDigit() && components[1].IsDigit() && components[2].IsDigit())
     {

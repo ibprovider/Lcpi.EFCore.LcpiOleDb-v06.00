@@ -68,6 +68,8 @@
     <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithPrefix\TestsFor__GenParameterMarker__name.cs" />
     <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithPrefix\TestsFor__GenParameterName__builder_name.cs" />
     <Compile Include="Source\Unit\Core\Engines\Common\Common_EngineSvc__CommandParamereterNameBuilder__NameWithPrefix\TestsFor__GenParameterName__name.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\Common\Mirror\Value\Converts\Helpers\Convert_Helper__ParserPart__STRING_DATE___D1\TestSet_001__Common.cs" />
+    <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\Common\Mirror\Value\Converts\Helpers\Convert_Helper__ParserPart__STRING_DATE___D3\TestSet_001__Common.cs" />
     <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BIGINT\TestSet_001.cs" />
     <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BIGINT\TestSet_001___lower.cs" />
     <Compile Include="Source\Unit\Core\Engines\Dbms\Firebird\V03_0_0\FB_DataTypeParser\Types\BIGINT\TestSet_ERR001.cs" />
