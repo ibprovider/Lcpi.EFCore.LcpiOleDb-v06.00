@@ -19,7 +19,7 @@
   <PropertyGroup>
     <LCPI_EFCoreVersion_Major>6</LCPI_EFCoreVersion_Major>
     <LCPI_EFCoreVersion_Minor>0</LCPI_EFCoreVersion_Minor>
-    <LCPI_EFCoreVersion_Patch>21</LCPI_EFCoreVersion_Patch>
+    <LCPI_EFCoreVersion_Patch>27</LCPI_EFCoreVersion_Patch>
 
     <!-- Final version or EFCore -->
     <LCPI_EFCoreVersion>$(LCPI_EFCoreVersion_Major).$(LCPI_EFCoreVersion_Minor).$(LCPI_EFCoreVersion_Patch)</LCPI_EFCoreVersion>
@@ -27,10 +27,10 @@
 
   <PropertyGroup>
     <!-- MAJOR part of OUR release number. Value MUST be >=1 -->
-    <LCPI_EFCoreProviderReleaseNumber_Major>2</LCPI_EFCoreProviderReleaseNumber_Major>
+    <LCPI_EFCoreProviderReleaseNumber_Major>1</LCPI_EFCoreProviderReleaseNumber_Major>
 
     <!-- PATCH part of our release number. Value: 0..99 -->
-    <LCPI_EFCoreProviderReleaseNumber_Patch>1</LCPI_EFCoreProviderReleaseNumber_Patch>
+    <LCPI_EFCoreProviderReleaseNumber_Patch>0</LCPI_EFCoreProviderReleaseNumber_Patch>
 
     <!-- Final number of OUR release -->
     <LCPI_EFCoreProviderReleaseNumber>$([System.Decimal]::Add($([System.Decimal]::Multiply(100,$(LCPI_EFCoreProviderReleaseNumber_Major))),$(LCPI_EFCoreProviderReleaseNumber_Patch)))</LCPI_EFCoreProviderReleaseNumber>
