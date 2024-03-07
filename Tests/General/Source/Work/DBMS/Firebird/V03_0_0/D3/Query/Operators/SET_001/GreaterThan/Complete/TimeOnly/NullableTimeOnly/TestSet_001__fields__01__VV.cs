@@ -25,8 +25,8 @@ using T_DATA2_U=System.TimeOnly;
 public static class TestSet_001__fields__01__VV
 {
  private const string c_NameOf__TABLE            ="TEST_MODIFY_ROW2";
- private const string c_NameOf__COL_DATA1        ="COL_TIMESTAMP";
- private const string c_NameOf__COL_DATA2        ="COL2_TIMESTAMP";
+ private const string c_NameOf__COL_DATA1        ="COL_TYPE_TIME";
+ private const string c_NameOf__COL_DATA2        ="COL2_TYPE_TIME";
 
  private sealed class MyContext:TestBaseDbContext
  {

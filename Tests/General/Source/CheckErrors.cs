@@ -7846,7 +7846,7 @@ static class CheckErrors
     err.Source);
 
   StringAssert.Contains
-   ("Integer divide by zero.  The code attempted to divide an integer value by an integer divisor of zero.",
+   ("Integer divide by zero. The code attempted to divide an integer value by an integer divisor of zero.",
     err.Message);
 
   Assert.AreEqual
@@ -7866,7 +7866,7 @@ static class CheckErrors
     err.Source);
 
   StringAssert.Contains
-   ("Floating-point divide by zero.  The code attempted to divide a floating-point value by zero.",
+   ("Floating-point divide by zero. The code attempted to divide a floating-point value by zero.",
     err.Message);
 
   Assert.AreEqual
@@ -8010,7 +8010,7 @@ static class CheckErrors
     err.Source);
 
   StringAssert.Contains
-   ("Integer overflow.  The result of an integer operation caused the most significant bit of the result to carry.",
+   ("Integer overflow. The result of an integer operation caused the most significant bit of the result to carry.",
     err.Message);
 
   Assert.AreEqual
@@ -8030,7 +8030,7 @@ static class CheckErrors
     err.Source);
 
   StringAssert.Contains
-   ("Floating-point overflow.  The exponent of a floating-point operation is greater than the magnitude allowed.",
+   ("Floating-point overflow. The exponent of a floating-point operation is greater than the magnitude allowed.",
     err.Message);
 
   Assert.AreEqual
@@ -8097,13 +8097,13 @@ static class CheckErrors
   var msg_ru
    =string.Format
      ("Ошибка формирования ib-значения входящего параметра. Позиция {0}.\r\n"
-      +"Конвертирование из [{1}] в [{2}].",
+      +"Ошибка конвертирования типа данных [{1}] в [{2}].",
       args);
 
   var msg_en
    =string.Format
      ("IB-native IN-parameter value create failed. Position {0}.\r\n"
-      +"Conversion from [{1}] to [{2}].",
+      +"Conversion from datatype [{1}] into datatype [{2}] failed.",
       args);
 
   CheckErrors.TestErrRecordSrcAndDescr2_RU_EN
